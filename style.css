@@ -57,46 +57,44 @@ body {
 
 header {
 	position: fixed;
-	background-color: rgba(255, 255, 200, 1);
+	background-color: rgba(12, 12, 20, 1);
 	width: 100%;
 	z-index: 3;
-	padding: 1em;
+	padding: 0.5em 0.1em;
 }
 
 .main li{
+	font-family: Ubuntu, sans-serif;
+	font-size: 0.5em;
 	display: inline-block;
 }
 
 .main a{
 	font-size: 2em;
-	color: black;
+	color: rgba(255, 255, 255, 0.5);
 	text-decoration: none;
-  border-radius: 0.2em;
-	padding: 0.4em 0.6em;
+  border-radius: 0.1em;
+	padding: 0.5em;
+	top: 0.5em;
 }
 
 .main li:hover .submenu{
 	position: absolute;
-	background-color: white;
-	padding: 1em;
-	top: 4em;
 	display: block;
+	top: 2.8em;
+	background-color: #e665a5;
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
 }
 
 .submenu {
   display: none;
 }
 
-/*
-Código para que determinados criterios modifiquem o link
-a[href*="categoria.html"] {
-   font-weight: bold;
-} */
-
 
 .submenu li{
   display: block;
-	padding-top: 1em;
+	padding: 0.8em 4.5em 0.1em 0em;
 }
 
 .main a:hover {
@@ -107,22 +105,21 @@ a[href*="categoria.html"] {
 .submenu li a:hover {
 	background-color: lightgrey;
 	color: #2c296b;
-	font-weight: bold;
-  border-radius: 1em;
-	padding: 0.4em 0.6em;
+	text-decoration: line-through;
+	border-right: 9em;
+	/*font-weight: bold;*/
 }
 
 .active {
   background-color: #e665a5;
-  color:#03086c;
+  color:black;
 }
 
-.submenu img {
-	padding-top: 1em;
-	position: relative;
-	width: 80%;
-	background-color: transparent;
-}
+/*
+Código para que determinados criterios modifiquem o link
+a[href*="categoria.html"] {
+   font-weight: bold;
+} */
 
 img.image_full{
 	padding-top: 2em;
