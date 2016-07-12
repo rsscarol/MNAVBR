@@ -1,52 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
-
-:focus {
-  outline: 0;
-}
-
-ins {
-  text-decoration: none;
-}
-del {
-  text-decoration: line-through;
-}
-
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
+
+/*Page starts here*/
 
 body {
-  background-color: rgba(200,255,255,0.8);
+  background-color: white;
   margin: 0;
+}
+
+header {
+	position: fixed;
+	background-color: rgba(255, 255, 200, 1);
+	width: 100%;
+	z-index: 3;
+	padding: 1em;
+}
+
+.main li{
+	display: inline-block;
+}
+
+.main a{
+	font-size: 2em;
+	color: black;
+	text-decoration: none;
+  border-radius: 0.2em;
+	padding: 0.4em 0.6em;
+}
+
+.main li:hover .submenu{
+	position: absolute;
+	background-color: white;
+	padding: 1em;
+	top: 4em;
+	display: block;
+}
+
+.submenu {
+  display: none;
+}
+
+/*
+Código para que determinados criterios modifiquem o link
+a[href*="categoria.html"] {
+   font-weight: bold;
+} */
+
+
+.submenu li{
+  display: block;
+	padding-top: 1em;
+}
+
+.main a:hover {
+  background-color: #2c296b;
+	color: white;
+}
+
+.submenu li a:hover {
+	background-color: lightgrey;
+	color: #2c296b;
+	font-weight: bold;
+  border-radius: 1em;
+	padding: 0.4em 0.6em;
+}
+
+.active {
+  background-color: #e665a5;
+  color:#03086c;
+}
+
+.submenu img {
+	padding-top: 1em;
+	position: relative;
+	width: 80%;
+	background-color: transparent;
+}
+
+img.image_full{
+	padding-top: 2em;
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+post-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+article {
+  position:relative;
+  top:0;
+  left:0;
+}
+
+section{
+  width: 50%;
+  padding: 2%;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+section.content{
+  top:100%;
+  left:0;
+}
+
+section.photos{
+  top:100%;
+  left:50%;
+}
+
+img.image_full {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  padding-top: 2em;
+  color: #4d004d;
+  margin: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  color:  #4d004d;8
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9em;
+  color:  #4d004d;
+  padding-bottom: 1em;
+  margin: 0;
+  text-align: right;
+  font-weight: 100;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8em;
+  color: #330033;
+  margin: 0;
+  padding-bottom: 0.8em;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+.destaque {
+  font-weight: 900;
+}
+
+.name {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3em;
+  color: #4d004d;
+  font-weight: bold;
 }
