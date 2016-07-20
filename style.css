@@ -3,438 +3,413 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*Página começa aqui*/
 
+
 /* Definições do MENU DE NAVEGACAO */
 
 body {
-	background: #0a0d16;
-	background-image: url(img/logo_base.jpg);
-	background-size: auto;
+    background: #0a0d16;
+    background-image: url(img/logo_base.jpg);
+    background-size: auto;
 }
-
 header {
-	position: fixed;
-	background-color: rgba(252, 252, 252, 0.95);
-	width: 100%;
-	z-index: 5;
-	padding: 1em 0.5em 0.5em 1em;
-	border-bottom: 1px solid #ccc;
+    position: fixed;
+    background-color: rgba(252, 252, 252, 0.95);
+    width: 100%;
+    z-index: 5;
+    padding: 1em 0.5em 0.5em 1em;
+    border-bottom: 1px solid #ccc;
 }
-
-.main li{
-	font-family: 'Lato', sans-serif;
-	font-size: 0.5em;
-	display: inline-block;
+.main li {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.5em;
+    display: inline-block;
 }
-
-.main a:not(.active){
-	font-size: 2em;
-	text-decoration: none;
-	color: #4d004d;
-  border-radius: 0.1em;
-	padding: 0.5em;
-	top: 0.5em;
+.main a:not(.active) {
+    font-size: 2em;
+    text-decoration: none;
+    color: #4d004d;
+    border-radius: 0.1em;
+    padding: 0.5em;
+    top: 0.5em;
 }
-
-.main li:hover .submenu{
-	position: absolute;
-	display: block;
-	color: #4d004d;
-	top: 2.2em;
-	background-color: #FCFCFC;
-	text-decoration: none;
-	font-size: 2em;
-	padding-bottom: 0.5em;
-	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+.main li:hover .submenu {
+    position: absolute;
+    display: block;
+    color: #4d004d;
+    top: 2.2em;
+    background-color: #FCFCFC;
+    text-decoration: none;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
-
 .main a:hover:not(.active) {
-	text-decoration: underline;
+    text-decoration: underline;
 }
-
 .active {
-	font-size: 2em;
-	text-decoration: overline;
-	color: #929292;
-	border-radius: 0.1em;
-	padding: 0.5em;
-	top: 0.5em;
+    font-size: 2em;
+    text-decoration: overline;
+    color: #929292;
+    border-radius: 0.1em;
+    padding: 0.5em;
+    top: 0.5em;
 }
-
 .submenu {
-  display: none;
+    display: none;
 }
-
-.submenu li{
-  display: block;
-	font-size: 1em;
-	padding: 1em 4.5em 1em 1em;
-	position: relative;
+.submenu li {
+    display: block;
+    font-size: 1em;
+    padding: 1em 4.5em 1em 1em;
+    position: relative;
 }
-
 .submenu li:hover {
-	background-color: rgba(0,0,0,0.1);
-	border-right: 9em;
-	text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-right: 9em;
+    text-decoration: none;
 }
+
 /* SUB-Submenu Funções */
 
-.sub-submenu{
-	display: none;
+.sub-submenu {
+    display: none;
 }
-
-.submenu li:hover .sub-submenu{
-	position: absolute;
-	display: block;
-	top: 0.5em;
-	left:10em;
-	background-color: rgba(252, 252, 252, 1);
-	font-size: 0.5em;
-	padding: 0.5em;
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.4);
-	z-index: 4;
+.submenu li:hover .sub-submenu {
+    position: absolute;
+    display: block;
+    top: 0.5em;
+    left: 10em;
+    background-color: rgba(252, 252, 252, 1);
+    font-size: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4);
+    z-index: 4;
 }
-
-.sub-submenu li{
-  display: block;
-	position: relative;
-	white-space: nowrap;
+.sub-submenu li {
+    display: block;
+    position: relative;
+    white-space: nowrap;
 }
-
-.sub-submenu li:hover{
-	background-color: #FCFCFC;
-	color: red;
-	text-decoration: none;
+.sub-submenu li:hover {
+    background-color: #FCFCFC;
+    color: red;
+    text-decoration: none;
 }
-
 
 /* FIM do MENU DE NAVEGACAO */
 
+
 /* Definições da ESTRUTURA DAS PÁGINAS */
 
-
-img.image_full{
-	padding-top: 5%;
-	width: 100%;
-	display: block;
-	margin: 0;
+img.image_full {
+    padding-top: 5%;
+    width: 100%;
+    display: block;
+    margin: 0;
 }
-
-article{
-	width: 80%;
-	margin: auto 10% auto 10%;
-	padding-bottom: 4em;
-	background-color: #FCFCFC;
-	position: relative;
-	display: block;
+article {
+    width: 80%;
+    margin: auto 10% auto 10%;
+    padding-bottom: 4em;
+    background-color: #FCFCFC;
+    position: relative;
+    display: block;
 }
-
 
 /* Para inserção do formulário */
-section.iframe{
-	width: 80%;
-	margin: auto 10% auto 10%;
-	padding-bottom: 4em;
+
+section.iframe {
+    width: 80%;
+    margin: auto 10% auto 10%;
+    padding-bottom: 4em;
 }
 
 /* Fim da ESTRUTURA DAS PÁGINAS */
 
+
 /* Definições dos TEXTOS*/
 
 h1.paginas {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.5em;
-	padding:4em 0em 0.3em 1em;
-  color: rgba(74, 0, 74, 1);
-  margin: 0;
-	font-weight: bold;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.5em;
+    padding: 4em 0em 0.3em 1em;
+    color: rgba(74, 0, 74, 1);
+    margin: 0;
+    font-weight: bold;
+}
+h1.nome {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.5em;
+    color: #4d004d;
+    font-weight: bold;
 }
 
-h1.nome {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.5em;
-  color: #4d004d;
-	font-weight: bold;
+h1.nome_flip {
+    font-family: 'Lora', sans-serif;
+    color: #e863a5;
+    text-decoration: none;
 }
 
 h1.paginas a {
-  color: rgba(74, 0, 74, 0.7);
-	text-decoration: none;
-	font-weight: lighter;
+    color: rgba(74, 0, 74, 0.7);
+    text-decoration: none;
+    font-weight: lighter;
 }
-
 h1.paginas a:hover {
-  color: rgba(74, 0, 74, 0.3);
-	text-decoration: underline;
-	font-weight: lighter;
+    color: rgba(74, 0, 74, 0.3);
+    text-decoration: underline;
+    font-weight: lighter;
 }
-
 h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-	padding: 1em 2em 1em 2em;
-  color:  #4d004d;8
-  margin: 0;
-  line-height: 1.4;
-  font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    padding: 1em 2em 1em 2em;
+    color: #4d004d;
+    8 margin: 0;
+    line-height: 1.4;
+    font-weight: 100;
 }
-
 h2.olho {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-	padding: 1em 3em;
-  color:  #4d004d;
-  margin: 0;
-  line-height: 1.4;
-  font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    padding: 1em 3em;
+    color: #4d004d;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 100;
 }
-
 h2.funcoes_macro {
-  font-family: 'Lora', sans-serif;
-  font-size: 1em;
-	padding: 2em 0em 0em 2em;
-  color:  #4d004d;
-  margin: 0;
-  line-height: 1.4;
-  font-weight: bold;
+    font-family: 'Lora', sans-serif;
+    font-size: 1em;
+    padding: 2em 0em 0em 2em;
+    color: #4d004d;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: bold;
 }
-
 h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8em;
-  color:  #4d004d;
-	padding: 2em 3em;
-  margin: 0;
-  text-align: right;
-  font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    color: #4d004d;
+    padding: 2em 3em;
+    margin: 0;
+    text-align: right;
+    font-weight: 100;
 }
-
 h3.link {
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-	color: rgba(77, 0, 77, 0.6);
-	text-align: right;
-	padding: 0em;
-	font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: rgba(77, 0, 77, 0.6);
+    text-align: right;
+    padding: 0em;
+    font-weight: 100;
 }
-
-.link a{
-	font-weight: bold;
-	text-decoration: none;
-	color:  #4d004d;
+.link a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #4d004d;
 }
-
-.link a:hover{
-	color:  #e863a5;
+.link a:hover {
+    color: #e863a5;
 }
-
 h3.video-mostra {
-  color:  #e863a5;
-	padding: 0.5em 2em;
-	text-align: right;
-	white-space: nowrap;
+    color: #e863a5;
+    padding: 0.5em 2em;
+    text-align: right;
+    white-space: nowrap;
 }
-
 h4.cidade {
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  color:  #4d004d;
-  font-weight: bold;
-	text-align: right;
-	padding: 0em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #4d004d;
+    font-weight: bold;
+    text-align: right;
+    padding: 0em;
 }
-
 p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8em;
-  color: #330033;
-  margin: 0;
-	padding: 0em 3em;
-  text-align: justify;
-  line-height: 1.6;
-  font-weight: 100;
-	word-wrap:normal;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    color: #330033;
+    margin: 0;
+    padding: 0em 3em;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: 100;
+    word-wrap: normal;
 }
-
 p.apresentacao {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  color: #4d004d;
-  text-align:justify;
-  line-height: 1.6;
-	padding: 0em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: #4d004d;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0em;
 }
 
 /*Definições particulares das PAGINAS*/
 
+
 /* por FUNCAO */
-.funcoes li{
-	font-family: 'Lato', sans-serif;
-	font-size: 1em;
-	padding: 0em 0em 0.5em 1em;
-}
 
-.funcoes a{
-	color: #e863a5;
-	text-decoration: none;
+.funcoes li {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    padding: 0em 0em 0.5em 1em;
 }
-
-.funcoes a:hover{
-	color: #040E24;
-	border: 0.1em;
-	border-style: solid;
-	padding: 0.5em;
+.funcoes a {
+    color: #e863a5;
+    text-decoration: none;
+}
+.funcoes a:hover {
+    color: #040E24;
+    border: 0.1em;
+    border-style: solid;
+    padding: 0.5em;
 }
 
 /* Lista por Função em 2 COLUNAS*/
 
 article.post-container-funcao {
-	height: 80em;
+    height: 80em;
 }
-
-section.inner-left, .inner-right{
-	position: absolute;
-	width: 50%;
+section.inner-left, .inner-right {
+    position: absolute;
+    width: 50%;
 }
-
-section.inner-left{
-  left:0%;
-	display: block;
-	text-align: left;
+section.inner-left {
+    left: 0%;
+    display: block;
+    text-align: left;
 }
-
-section.inner-right{
-  right:0%;
-	display: block;
-	text-align: left;
+section.inner-right {
+    right: 0%;
+    display: block;
+    text-align: left;
 }
-
-
 
 /* BOXES*/
 
 article.post-container-boxes {
-	height: 130em;
+    height: 130em;
 }
-
 .box-container {
-	position: absolute;
-	padding-top: 5%;
+    position: absolute;
+    padding-top: 5%;
 }
 
 .box {
-	position: relative;
-	margin-top: 2em;
-	left: 5%;
-	width: 90%;
-	display: inline-flex;
-	background-color: #e8e3e5;
-	box-shadow: 4px 5px 20px 1px rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 2em;
+    left: 5%;
+    width: 90%;
+    display: inline-flex;
+    background-color: #e8e3e5;
+    box-shadow: 4px 5px 20px 1px rgba(0, 0, 0, 0.2);
 }
-
-.info{
-	position: relative;
-	display: block;
-	z-index: 3;
+.info {
+    position: relative;
+    display: block;
+    z-index: 3;
 }
-
 .box-nome {
-  position: relative;
-	padding: 2em 0em 1em 2.5em;
+    position: relative;
+    padding: 2em 0em 1em 2.5em;
 }
-
 .box-cidade {
-  position: relative;
-	padding: 0em 2em 1em 2.5em;
+    position: relative;
+    padding: 0em 2em 1em 2.5em;
 }
-
-.box-email{
-	position: relative;
-	padding: 0em 2em 1em 2.5em;
+.box-email {
+    position: relative;
+    padding: 0em 2em 1em 2.5em;
 }
-
 .box-apresentacao {
-	position: relative;
-	padding: 0em 2em 3em 2.5em;
+    position: relative;
+    padding: 0em 2em 3em 2.5em;
 }
-
 .box-site {
-	position: relative;
-	padding: 0em 2em 1em 2.5em;
+    position: relative;
+    padding: 0em 2em 1em 2.5em;
 }
-
-.box-outras-funcoes{
-	position: relative;
-	padding: 0em 2em 1em 2.5em;
-	line-height: 1.6;
+.box-outras-funcoes {
+    position: relative;
+    padding: 0em 2em 1em 2.5em;
+    line-height: 1.6;
 }
-
-.photo{
-	position: relative;
-	display: block;
+.photo {
+    position: relative;
+    display: block;
 }
-
 img.photo {
-	position: relative;
-	width: 100%;
-	padding-bottom: 1em;
+    position: relative;
+    width: 100%;
+    padding-bottom: 1em;
+}
+.video {
+    position: relative;
+    width: auto;
+    bottom: 0;
+    left: 0;
+}
+.video-mostra {
+    position: relative;
+    background-color: #0a0d16;
+    top: -0.1em;
 }
 
-.video{
-	position: relative;
-	width: auto;
-	bottom: 0;
-	left:0;
+
+/* PAINEIS FLIP DAS SESSOES */
+
+section.flip {
+  border: 0.1em;
+  border-style: solid;
+  padding: 1em;
+  white-space: nowrap;
+
 }
 
-.video-mostra{
-	position: relative;
-	background-color: #0a0d16;
-	top: -0.1em;
+section.flip:hover {
+  border: 0.1em;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 1em 1em 1em 2em;
+}
+
+
+.painel {
+		display: none;
 }
