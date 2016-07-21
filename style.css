@@ -35,6 +35,12 @@ table {
     border-spacing: 0;
 }
 
+
+
+
+
+
+
 /*Página começa aqui*/
 
 
@@ -42,8 +48,10 @@ table {
 
 body {
     background: #0a0d16;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(img/logo_base.jpg);
-    background-size: auto;
+    background-attachment: fixed;
 }
 header {
     position: fixed;
