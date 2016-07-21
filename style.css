@@ -46,6 +46,11 @@ table {
 
 /* Definições do MENU DE NAVEGACAO */
 
+html,body{
+    width: 100%;
+    height:100%;
+}
+
 body {
     background: #0a0d16;
     background-size: cover;
@@ -143,6 +148,8 @@ header {
 
 /* Definições da ESTRUTURA DAS PÁGINAS */
 
+
+
 img.image_full {
     padding-top: 5%;
     width: 100%;
@@ -150,9 +157,8 @@ img.image_full {
     margin: 0;
 }
 article {
-    width: 80%;
+    height: 100vh;
     margin: auto 10% auto 10%;
-    padding-bottom: 4em;
     background-color: #FCFCFC;
     position: relative;
     display: block;
@@ -164,6 +170,7 @@ section.iframe {
     width: 80%;
     margin: auto 10% auto 10%;
     padding-bottom: 4em;
+    height: 100vh;
 }
 
 /* Fim da ESTRUTURA DAS PÁGINAS */
@@ -286,6 +293,7 @@ p.apresentacao {
     text-align: justify;
     line-height: 1.6;
     padding: 0em;
+    word-wrap: break-word;
 }
 
 /*Definições particulares das PAGINAS*/
@@ -312,31 +320,45 @@ p.apresentacao {
 /* Lista por Função em 2 COLUNAS*/
 
 article.post-container-funcao {
-    height: 80em;
+  height: 150vh;
 }
+
+section.inner-left-right {
+    display: block;
+    position: relative;
+}
+
 section.inner-left, .inner-right {
+    height: auto;
     position: absolute;
     width: 50%;
+    background-color: #FCFCFC;
 }
 section.inner-left {
     left: 0%;
     display: block;
     text-align: left;
+    padding-bottom: 3em;
 }
 section.inner-right {
     right: 0%;
     display: block;
     text-align: left;
+    padding-bottom: 3em;
 }
 
 /* BOXES*/
 
 article.post-container-boxes {
-    height: 130em;
+    height: 100vh;
+
 }
+
 .box-container {
     position: absolute;
     padding-top: 5%;
+    background-color: #FCFCFC;
+    padding-bottom: 3em;
 }
 
 .box {
@@ -382,6 +404,7 @@ article.post-container-boxes {
     position: relative;
     display: block;
 }
+
 img.photo {
     position: relative;
     width: 100%;
@@ -395,7 +418,7 @@ img.photo {
 }
 .video-mostra {
     position: relative;
-    background-color: #0a0d16;
+    background-color: rgba(10, 13, 22, 0.8);
     top: -0.1em;
 }
 
