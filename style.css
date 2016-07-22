@@ -156,6 +156,7 @@ img.image_full {
     display: block;
     margin: 0;
 }
+
 article {
     height: 100vh;
     margin: auto 10% auto 10%;
@@ -245,6 +246,25 @@ h3 {
     text-align: right;
     font-weight: 100;
 }
+
+h3.flip {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 0em 0em 0.5em 1em;
+}
+
+.flip a {
+    color: #e863a5;
+    text-decoration: none;
+}
+.flip a:hover {
+    color: #040E24;
+    border: 0.1em;
+    border-style: solid;
+    padding: 0.5em;
+}
+
 h3.link {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -253,14 +273,17 @@ h3.link {
     padding: 0em;
     font-weight: 100;
 }
+
 .link a {
     font-weight: bold;
     text-decoration: none;
     color: #4d004d;
 }
+
 .link a:hover {
     color: #e863a5;
 }
+
 h3.video-mostra {
     color: #e863a5;
     padding: 0.5em 2em;
@@ -304,11 +327,12 @@ p.apresentacao {
 .funcoes li {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    padding: 0em 0em 0.5em 1em;
+    padding: 0.5em;
 }
 .funcoes a {
     color: #e863a5;
     text-decoration: none;
+    padding: 0.5em;
 }
 .funcoes a:hover {
     color: #040E24;
@@ -320,38 +344,42 @@ p.apresentacao {
 /* Lista por Função em 2 COLUNAS*/
 
 article.post-container-funcao {
-  height: 150vh;
 }
 
 section.inner-left-right {
-    display: block;
+    background-color: #FCFCFC;
+    box-sizing: content-box;
+    display: flex;
     position: relative;
+    align-items: flex-start;
+    justify-content: space-around;
+
 }
 
+/* DUAS COLUNAS NAO-FLEX
 section.inner-left, .inner-right {
     height: auto;
     position: absolute;
     width: 50%;
     background-color: #FCFCFC;
+    padding-bottom: 3em;
 }
+
 section.inner-left {
     left: 0%;
     display: block;
     text-align: left;
-    padding-bottom: 3em;
 }
+
 section.inner-right {
     right: 0%;
     display: block;
     text-align: left;
-    padding-bottom: 3em;
-}
+}*/
 
 /* BOXES*/
 
 article.post-container-boxes {
-    height: 100vh;
-
 }
 
 .box-container {
@@ -424,23 +452,11 @@ img.photo {
 
 
 /* PAINEIS FLIP DAS SESSOES */
-
-section.flip {
-  border: 0.1em;
-  border-style: solid;
-  padding: 1em;
-  white-space: nowrap;
-
-}
-
-section.flip:hover {
-  border: 0.1em;
-  border-style: solid;
-  box-sizing: border-box;
-  padding: 1em 1em 1em 2em;
-}
-
-
 .painel {
 		display: none;
+}
+
+.fechar{
+  padding: 1em 2em 1em 2.5em;
+  display: flex;
 }

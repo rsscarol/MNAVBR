@@ -51,7 +51,7 @@
                 <ul class="sub-submenu">
                   <li><a href="#">Correção de cor</a></li>
                   <li><a href="#">Desenho de efeitos</a></li>
-                  <li><a href="#">Edição</a></li>
+                  <li><a href="funcoes/edicao.html">Edição</a></li>
                   <li><a href="#">Gerência de Mídia (Logger)</a></li>
                 </ul>
               </li>
@@ -104,12 +104,63 @@
           <li><a href="contato.html">Contato</a></li>
         </ul>
 
-      <nav>
+      </nav>
     </header>
+
+
+
+    
     <section class="container">
         <article class="inner-container">
           <h1 class="paginas"> Contato </h1>
           <h2> Entre em contato conosco preenchendo o formulário abaixo ou envie um email para <em>mulheres.negras.avbr@gmail.com</em></h2>
+
+          <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" />
+            </div>
+            <div>
+              <label for="msg">Mensagem:</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Enviar sua mensagem</button>
+            </div>
+          </form>
+
+
+
+
+
+
+
+
+
+
+          <form>
+        	    <input type='text' name='contatoNome' value='Qual é o seu nome?'>
+        	    <input type='text' name='contatoEmail' value='Qual o seu e-mail?'>
+                <p> Como ficou sabendo do nosso site? </p>
+                <input type='checkbox' checked> Facebook
+                <input type='checkbox'> Indicação de um amigo
+                <input type='checkbox'> Outro
+
+        	    <p> Escreva a sua mensagem</p>
+        	    <input type='text' name="contatoMensagem" height="300px"><textarea></textarea>
+        	    <p> Você quer uma cópia da sua mensagem? </p>
+        	    <input type='radio' > Sim
+        	    <input type='radio'> Não
+        	<input type='submit'>
+
+
+
+
+
         </article>
       </section>
   </body>
