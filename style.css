@@ -75,7 +75,6 @@ header {
     font-size: 2em;
     text-decoration: none;
     color: #4d004d;
-    border-radius: 0.1em;
     padding: 0.5em;
     top: 0.5em;
 }
@@ -151,7 +150,7 @@ header {
 
 
 img.image_full {
-    padding-top: 5%;
+    padding-top: 5em;
     width: 100%;
     display: block;
     margin: 0;
@@ -179,23 +178,25 @@ section.iframe {
 
 /* Definições dos TEXTOS*/
 
+h1{
+  font-family: 'Lora', sans-serif;
+  padding: 3em 1em 2em 2em;
+}
+
 h1.paginas {
-    font-family: 'Lora', sans-serif;
-    font-size: 1.5em;
-    padding: 4em 0em 0.3em 1em;
+    font-size: 2.5em;
     color: rgba(74, 0, 74, 1);
     margin: 0;
     font-weight: bold;
 }
 h1.nome {
-    font-family: 'Lora', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
+    padding: 1em 0em;
     color: #4d004d;
     font-weight: bold;
 }
 
 h1.nome_flip {
-    font-family: 'Lora', sans-serif;
     color: #e863a5;
     text-decoration: none;
 }
@@ -213,16 +214,15 @@ h1.paginas a:hover {
 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
-    padding: 1em 2em 1em 2em;
+    padding: 2em 5.5em 2em 5.5em;
     color: #4d004d;
-    8 margin: 0;
+    margin: 0;
     line-height: 1.4;
     font-weight: 100;
 }
 h2.olho {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
-    padding: 1em 3em;
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
@@ -230,18 +230,30 @@ h2.olho {
 }
 h2.funcoes_macro {
     font-family: 'Lora', sans-serif;
-    font-size: 1em;
-    padding: 2em 0em 0em 2em;
+    padding: 0em 2em 0em 3em;
+    font-size: 2em;
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
     font-weight: bold;
 }
+
+h2.nomes_macro {
+    font-family: 'Lora', sans-serif;
+    padding: 0em 2em 0em 3em;
+    font-size: 2em;
+    color: #4d004d;
+    margin: 0;
+    background-color:
+    line-height: 1.4;
+    font-weight: bold;
+}
+
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 0.8em;
     color: #4d004d;
-    padding: 2em 3em;
+    padding: 2em 8em;
     margin: 0;
     text-align: right;
     font-weight: 100;
@@ -251,7 +263,7 @@ h3.flip {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     text-align: left;
-    padding: 0em 0em 0.5em 1em;
+    padding: 1em 6em;
 }
 
 .flip a {
@@ -260,9 +272,7 @@ h3.flip {
 }
 .flip a:hover {
     color: #040E24;
-    border: 0.1em;
-    border-style: solid;
-    padding: 0.5em;
+    text-decoration: underline;
 }
 
 h3.link {
@@ -303,7 +313,7 @@ p {
     font-size: 0.8em;
     color: #330033;
     margin: 0;
-    padding: 0em 3em;
+    padding: 3em 8em;
     text-align: justify;
     line-height: 1.6;
     font-weight: 100;
@@ -336,8 +346,7 @@ p.apresentacao {
 }
 .funcoes a:hover {
     color: #040E24;
-    border: 0.1em;
-    border-style: solid;
+    text-decoration: underline;
     padding: 0.5em;
 }
 
@@ -347,12 +356,12 @@ article.post-container-funcao {
 }
 
 section.inner-left-right {
+    padding: 0em 3em 0em 3em;
     background-color: #FCFCFC;
     box-sizing: content-box;
     display: flex;
     position: relative;
     align-items: flex-start;
-    justify-content: space-around;
 
 }
 
@@ -459,4 +468,17 @@ img.photo {
 .fechar{
   padding: 1em 2em 1em 2.5em;
   display: flex;
+}
+
+
+/* CONTATO */
+
+textarea {
+  width: 100%;
+  height: 5em;
+  display: inline;
+}
+
+input {
+  width: 100%;
 }

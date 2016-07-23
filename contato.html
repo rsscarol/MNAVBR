@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato|Lora' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.png" />
+    <script type="text/javascript" src="../.js/form.js"></script>
   </head>
   <body>
     <header>
@@ -109,57 +110,32 @@
 
 
 
-    
+
+
     <section class="container">
         <article class="inner-container">
           <h1 class="paginas"> Contato </h1>
-          <h2> Entre em contato conosco preenchendo o formulário abaixo ou envie um email para <em>mulheres.negras.avbr@gmail.com</em></h2>
+          <h2> Entre em contato conosco preenchendo o formulário abaixo ou envie um email para <em>mulheres.negras.avbr@gmail.com</em>
 
-          <form action="/pagina-processa-dados-do-form" method="post">
-            <div>
-              <label for="name">Nome:</label>
-              <input type="text" id="name" />
-            </div>
-            <div>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" />
-            </div>
-            <div>
-              <label for="msg">Mensagem:</label>
-              <textarea id="msg"></textarea>
-            </div>
-            <div class="button">
-              <button type="submit">Enviar sua mensagem</button>
-            </div>
-          </form>
-
-
-
-
-
-
-
-
-
-
-          <form>
-        	    <input type='text' name='contatoNome' value='Qual é o seu nome?'>
-        	    <input type='text' name='contatoEmail' value='Qual o seu e-mail?'>
-                <p> Como ficou sabendo do nosso site? </p>
-                <input type='checkbox' checked> Facebook
-                <input type='checkbox'> Indicação de um amigo
-                <input type='checkbox'> Outro
-
-        	    <p> Escreva a sua mensagem</p>
-        	    <input type='text' name="contatoMensagem" height="300px"><textarea></textarea>
-        	    <p> Você quer uma cópia da sua mensagem? </p>
-        	    <input type='radio' > Sim
-        	    <input type='radio'> Não
-        	<input type='submit'>
-
-
-
-
+            <form action="/pagina-processa-dados-do-form" method="post">
+              <br>
+              <div>
+                <label for="name">Nome </label><input type="text" id="contatoNome" >
+              </div>
+              <div>
+                <label for="cidade">Cidade/Estado </label><input type="text" id="contatoCidade">
+              </div>
+              <div>
+                <label for="email">E-mail </label><input type="text" id="contatoEmail">
+              </div>
+              <br>
+              <div>
+                <label for="msg" >Escreva a sua mensagem<br></label> <textarea id="msg" name="contatoMsg"></textarea>
+              </div>
+              <div class="button">
+                <a href="#" id="confirma">Enviar sua mensagem</a></h2>
+              </div>
+            </form>
 
         </article>
       </section>
