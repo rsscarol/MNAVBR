@@ -159,7 +159,7 @@ img.image_full {
 article {
     height: 100vh;
     margin: auto 10% auto 10%;
-    background-color: #FCFCFC;
+    background-color: #f5f4f4;
     position: relative;
     display: block;
 }
@@ -357,7 +357,7 @@ article.post-container-funcao {
 
 section.inner-left-right {
     padding: 0em 3em 0em 3em;
-    background-color: #FCFCFC;
+    background-color: #f5f4f4;
     box-sizing: content-box;
     display: flex;
     position: relative;
@@ -394,7 +394,7 @@ article.post-container-boxes {
 .box-container {
     position: absolute;
     padding-top: 5%;
-    background-color: #FCFCFC;
+    background-color:#f5f4f4;
     padding-bottom: 3em;
 }
 
@@ -404,8 +404,8 @@ article.post-container-boxes {
     left: 5%;
     width: 90%;
     display: inline-flex;
-    background-color: #e8e3e5;
-    box-shadow: 4px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FCFCFC;
+    box-shadow: 4px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
 .info {
     position: relative;

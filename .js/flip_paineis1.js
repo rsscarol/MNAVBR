@@ -12,3 +12,10 @@ function profissional_fechar(id){
 		$("#flip_"+id).css('display','block');
 	});
 }
+
+window.onload = function() {
+	var urlId = window.location.hash.substring(1);
+	$ ("#flip_" + urlId).css ('display','none');
+	$ ("#painel_" + urlId).slideDown ('fast',function(){
+	});
+}
