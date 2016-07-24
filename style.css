@@ -294,6 +294,13 @@ h3.link {
     color: #e863a5;
 }
 
+h3.link_nomes {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    text-align: left;
+    padding: 0em 0em 1em 0em;
+}
+
 h3.video-mostra {
     color: #e863a5;
     padding: 0.5em 2em;
@@ -411,6 +418,7 @@ article.post-container-boxes {
     position: relative;
     display: block;
     z-index: 3;
+    width: 100%;
 }
 .box-nome {
     position: relative;
@@ -440,16 +448,22 @@ article.post-container-boxes {
 .photo {
     position: relative;
     display: block;
+    width: 35%;
 }
 
 img.photo {
     position: relative;
-    width: 100%;
+    width: 90%;
+    top: 1em;
+    right: 1em;
     padding-bottom: 1em;
+    border: 0.1em solid #ddd;
+    padding: 0.5em;
 }
 .video {
     position: relative;
-    width: auto;
+    width: 100%;
+    height: auto;
     bottom: 0;
     left: 0;
 }
