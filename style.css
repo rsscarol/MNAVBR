@@ -452,14 +452,13 @@ article.post-container-boxes {
 }
 
 img.photo {
+    display: block;
     position: relative;
-    width: 90%;
-    top: 1em;
-    right: 1em;
-    padding-bottom: 1em;
-    border: 0.1em solid #ddd;
-    padding: 0.5em;
+    width: 100%;
+    height: auto;
+    z-index:1;
 }
+
 .video {
     position: relative;
     width: 100%;
@@ -470,7 +469,7 @@ img.photo {
 .video-mostra {
     position: relative;
     background-color: rgba(10, 13, 22, 0.8);
-    top: -0.1em;
+    top: -0.3em;
 }
 
 
