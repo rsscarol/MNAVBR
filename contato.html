@@ -115,25 +115,29 @@
     <section class="container">
         <article class="inner-container">
           <h1 class="paginas"> Contato </h1>
-          <h2> Entre em contato conosco preenchendo o formulário abaixo ou envie um email para <em>mulheres.negras.avbr@gmail.com</em>
+          <h2> Entre em contato conosco preenchendo o formulário abaixo ou envie um email para <em><a href="mailto:mulheres.negras.avbr@gmail.com?subject=Contato">mulheres.negras.avbr@gmail.com</a></em>
 
             <form action="/pagina-processa-dados-do-form" method="post">
               <br>
-              <div>
-                <label for="name">Nome </label><input type="text" id="contatoNome" >
-              </div>
-              <div>
-                <label for="cidade">Cidade/Estado </label><input type="text" id="contatoCidade">
-              </div>
-              <div>
-                <label for="email">E-mail </label><input type="text" id="contatoEmail">
-              </div>
-              <br>
-              <div>
-                <label for="msg" >Escreva a sua mensagem<br></label> <textarea id="msg" name="contatoMsg"></textarea>
+              <div class="contato">
+                <div>
+                  <label for="name">Nome </label>
+                  <br><input type="text" class="texto" id="contato_Nome" >
+                </div>
+                <div>
+                  <label for="cidade">Cidade/Estado </label>
+                  <br><input type="text" class="texto" id="contato_Cidade">
+                </div>
+                  <label for="email">E-mail </label>
+                  <br><input type="text" class="texto" id="contato_Email">
+                <div>
+                  <label for="msg" >Escreva a sua mensagem
+                  <br></label> <textarea class="msg" id="contato_Msg"></textarea>
+                </div>
               </div>
               <div class="button">
-                <a href="#" id="confirma">Enviar sua mensagem</a></h2>
+                <form id='contatoForm' action='' method='GET'>
+                  <input type='submit' id='envio' value='Enviar'>
               </div>
             </form>
 
