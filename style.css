@@ -273,7 +273,7 @@ h3.flip {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     text-align: left;
-    padding: 1em 6em;
+    padding: 0em 0em 1em 5em;
 }
 
 .flip a {
@@ -321,7 +321,7 @@ h4.cidade {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     color: #4d004d;
-    font-weight: bold;
+    font-weight: normal;
     text-align: right;
     padding: 0em;
 }
@@ -453,6 +453,7 @@ article.post-container-boxes {
 }
 .box-site {
     position: relative;
+    line-height: 2em;
     padding: 0em 2em 1.5em 2.5em;
 }
 .box-outras-funcoes {
@@ -513,6 +514,18 @@ img.photo {
   transition-property: z-index;
   transition-duration: 0.5s;
 }
+
+.photo_paisagem a img{
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  height:468px;
+  width: 100%;
+  z-index: 5;
+  transition-property: z-index;
+  transition-duration: 0.5s;
+}
+
 
 /* Style of image when zoomed out */
 .photo_paisagem a:focus img {
