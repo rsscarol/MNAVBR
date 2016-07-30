@@ -161,7 +161,7 @@ img.image_full {
 }
 
 article {
-    height: 100vh;
+    height: 100%;
     margin: auto 10% auto 10%;
     background-color: #f5f4f4;
     position: relative;
@@ -174,7 +174,7 @@ section.iframe {
     width: 80%;
     margin: auto 10% auto 10%;
     padding-bottom: 4em;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Fim da ESTRUTURA DAS PÁGINAS */
@@ -426,6 +426,7 @@ article.post-container-boxes {
     left: 5%;
     width: 90%;
     display: inline-flex;
+    box-sizing: border-box;
     background-color: #FCFCFC;
     box-shadow: 4px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
@@ -465,13 +466,9 @@ article.post-container-boxes {
     position: relative;
     display: block;
     width: 35%;
+    padding: 1em 2em 1em 0em;
 }
 
-img.photo {
-    display: block;
-    position: relative;
-    z-index:1;
-}
 
 .video {
     position: relative;
@@ -479,6 +476,7 @@ img.photo {
     height: auto;
     bottom: 0;
     left: 0;
+    z-index: 3;
 }
 .video-mostra {
     position: relative;
@@ -515,31 +513,18 @@ img.photo {
   transition-duration: 0.5s;
 }
 
-.photo_paisagem a img{
-  display: flex;
-  object-fit: cover;
-  position: relative;
-  height:468px;
-  width: 100%;
-  z-index: 5;
-  transition-property: z-index;
-  transition-duration: 0.5s;
-}
-
 
 /* Style of image when zoomed out */
 .photo_paisagem a:focus img {
     position:absolute;
     object-fit: cover;
-    justify-content: flex-end;
-    align-self: flex-start;
-    right: -10em;
+    right: -5em;
     top: -1em;
     width:auto;
     height: 550px;
     z-index:20;
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
-    transition-property: height, z-index;
+    transition-property: width, height, z-index;
     transition-duration: 0.5s;
 }
 
@@ -548,7 +533,7 @@ img.photo {
   background:transparent;
   cursor:pointer;
   display:none;
-  height:468px;
+  height:600px;
   left:0px;
   position:relative;
   top:0px;
@@ -560,9 +545,7 @@ img.photo {
 }
 
 
-
 /* PHOTO ZOOM OUT - RETRATO */
-
 .photo_retrato a {
     display: block;
     position: relative;
@@ -571,29 +554,36 @@ img.photo {
 .photo_retrato a img{
   display: flex;
   object-fit: cover;
+  object-position: 25% 75%;
   position: relative;
   height:468px;
   width: 100%;
   z-index: 5;
-  transition-property: height, z-index;
+  transition-property: z-index;
   transition-duration: 0.5s;
+}
+
+/* CORRECAO da POSICAO INTERNA DAS FOTOS */
+#esq {
+  object-position: 80% 20%;
+}
+
+#dir {
+  object-position: 20% 80%;
 }
 
 /* Style of image when zoomed out */
 .photo_retrato a:focus img {
     position:absolute;
     object-fit: cover;
-    justify-content: flex-end;
-    align-self: flex-start;
-    right: -4em;
+    right: -5em;
     top: -1em;
-    width:450px;
-    height: auto;
+    width:auto;
+    height: 600px;
     z-index:20;
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
-    transition-property: width, z-index;
+    transition-property: width, height, z-index;
     transition-duration: 0.5s;
-
 }
 
 /* extra close layer */
@@ -601,7 +591,7 @@ img.photo {
   background:transparent;
   cursor:pointer;
   display:none;
-  height:468px;
+  height:600px;
   left:0px;
   position:relative;
   top:0px;
@@ -614,15 +604,21 @@ img.photo {
 
 /*AVISO ZOOM*/
 
-.zoom_aviso{
+.zoom_aviso .link{
+  background-color: rgba(13, 17, 32, 0.5);
+  color: rgba(255, 255, 250, 0.8);
+  text-align: center;
+  padding: 0.5em;
   position: absolute;
   z-index: 6;
-  padding: -2em;
-  top: -2.5em;
-  right: 0em;
-  font-size: 0.8em;
+  top: 85%;
+  right:0;
+  left: 0;
 }
 
+.zoom_aviso:hover .link{
+  display: block;
+}
 /* CONTATO */
 
 
@@ -645,5 +641,6 @@ textarea {
   font-size: 1em;
 }
 
-#envio{
+#alerta{
+  display: none;
 }

@@ -19,3 +19,8 @@ window.onload = function() {
 	$ ("#painel_" + urlId).slideDown ('fast',function(){
 	});
 }
+
+var box = $ ("#alerta");
+$ ("#botao").on ("click", function (event) {
+	box.show ();
+});
