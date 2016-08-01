@@ -67,7 +67,7 @@ header {
     border-bottom: 1px solid #ccc;
 }
 .main li {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 0.5em;
     display: inline-block;
 }
@@ -183,7 +183,7 @@ section.iframe {
 /* Definições dos TEXTOS*/
 
 h1{
-  font-family: 'Lora', sans-serif;
+  font-family: font-family: 'Lato', sans-serif;
   padding: 3em 1em 2em 2em;
 }
 
@@ -216,7 +216,7 @@ h1.paginas a:hover {
     font-weight: lighter;
 }
 h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1.1em;
     padding: 2em 5.5em 2em 5.5em;
     color: #4d004d;
@@ -231,7 +231,7 @@ h2 a{
 }
 
 h2.olho {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1.1em;
     color: #4d004d;
     margin: 0;
@@ -239,7 +239,7 @@ h2.olho {
     font-weight: 100;
 }
 h2.funcoes_macro {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     padding: 0em 2em 0em 3em;
     font-size: 2em;
     color: #4d004d;
@@ -249,18 +249,18 @@ h2.funcoes_macro {
 }
 
 h2.nomes_macro {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
     padding: 0em 2em 0em 3em;
     font-size: 2em;
     color: #4d004d;
     margin: 0;
     background-color:
     line-height: 1.4;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 0.8em;
     color: #4d004d;
     padding: 2em 8em;
@@ -270,7 +270,7 @@ h3 {
 }
 
 h3.flip {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1em;
     text-align: left;
     padding: 0em 0em 1em 5em;
@@ -286,7 +286,7 @@ h3.flip {
 }
 
 h3.link {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1em;
     color: rgba(77, 0, 77, 0.6);
     text-align: right;
@@ -305,7 +305,7 @@ h3.link {
 }
 
 h3.link_nomes {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 0.8em;
     text-align: left;
     padding: 0em 0em 1em 0em;
@@ -318,7 +318,7 @@ h3.video-mostra {
     white-space: nowrap;
 }
 h4.cidade {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1em;
     color: #4d004d;
     font-weight: normal;
@@ -326,7 +326,7 @@ h4.cidade {
     padding: 0em;
 }
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 0.8em;
     color: #330033;
     margin: 0;
@@ -337,7 +337,7 @@ p {
     word-wrap: normal;
 }
 p.apresentacao {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1.1em;
     color: #4d004d;
     text-align: justify;
@@ -352,7 +352,7 @@ p.apresentacao {
 /* por FUNCAO */
 
 .funcoes li {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1em;
     padding: 0.5em;
 }
