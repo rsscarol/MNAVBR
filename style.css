@@ -52,12 +52,13 @@ html,body{
 }
 
 body {
-    background: #0a0d16;
+  background-color: #0d1529;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/logo_base.jpg);
     background-attachment: fixed;
 }
+
 header {
     position: fixed;
     background-color: rgba(252, 252, 252, 0.95);
@@ -65,12 +66,15 @@ header {
     z-index: 10;
     padding: 1em 0.5em 0.5em 1em;
     border-bottom: 1px solid #ccc;
+    margin: 0;
 }
+
 .main li {
     font-family: 'Lora', serif;
     font-size: 0.5em;
     display: inline-block;
 }
+
 .main a:not(.active) {
     font-size: 2em;
     text-decoration: none;
@@ -104,6 +108,7 @@ header {
 .active:hover {
     text-decoration: overline underline;
 }
+
 .submenu {
     display: none;
 }
@@ -113,6 +118,7 @@ header {
     padding: 1em 4.5em 1em 1em;
     position: relative;
 }
+
 .submenu li:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-right: 9em;
@@ -146,6 +152,12 @@ header {
     text-decoration: none;
 }
 
+li.logo_header_position {
+  float: right;
+  margin-top: -0.3em;
+  border-left: 0.1em solid #bbb;
+}
+
 /* FIM do MENU DE NAVEGACAO */
 
 
@@ -165,6 +177,7 @@ article {
     background-color: #f5f4f4;
     position: relative;
     display: block;
+    padding-bottom: 5em;
 }
 
 /* Para inserção do formulário */
@@ -213,11 +226,10 @@ h1.paginas a:hover {
     font-weight: lighter;
 }
 h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.1em;
-    padding: 2em 5.5em 2em 5.5em;
+    padding: 0em 4.4em 2em 4.4em;
     color: #4d004d;
-    margin: 0;
     line-height: 1.4;
     font-weight: 100;
 }
@@ -228,7 +240,6 @@ h2 a{
 }
 
 h2.olho {
-    font-family: 'Lora', serif;
     font-size: 1.1em;
     color: #4d004d;
     margin: 0;
@@ -237,7 +248,7 @@ h2.olho {
 }
 h2.funcoes_macro {
     font-family: 'Lato', sans-serif;
-    padding: 0em 2em 0em 3em;
+    padding: 0em 0em 0em 2.4em;
     font-size: 2em;
     color: #4d004d;
     margin: 0;
@@ -246,12 +257,17 @@ h2.funcoes_macro {
 
 h2.nomes_macro {
     font-family: 'Lato', sans-serif;
-    padding: 0em 2em 0em 3em;
+    padding: 0em 0em 0em 2.4em;
     font-size: 2em;
     color: #4d004d;
     margin: 0;
-    background-color:
     line-height: 1.4;
+}
+
+h2.logo_header{
+  padding: 0em 3em 0em 1em;
+  font-size: 1.5em;
+  color: #e863a5;
 }
 
 h3 {
@@ -325,22 +341,41 @@ p {
     font-size: 0.8em;
     color: #330033;
     margin: 0;
-    padding: 3em 8em;
-    text-align: justify;
     line-height: 1.6;
     font-weight: 100;
     word-wrap: normal;
 }
+
+p.textos {
+  padding: 2em 6em;
+  text-align: justify;
+}
+
 p.apresentacao {
-    font-family: 'Lora', serif;
     font-size: 1.1em;
     color: #4d004d;
     text-align: justify;
     line-height: 1.6;
     padding: 0em;
+}
+
+p.referencia {
+    font-size: 0.7em;
+    color: #4d004d;
+    text-align: left;
+    line-height: 1.6;
+    padding: 0em 0em;
     word-wrap: break-word;
 }
 
+p.referencia_titulo {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    color: #4d004d;
+    text-align: left;
+    line-height: 1.4;
+    padding: 0em 0em;
+}
 /*Definições particulares das PAGINAS*/
 
 
@@ -348,13 +383,12 @@ p.apresentacao {
 
 .funcoes li {
     font-family: 'Lora', serif;
-    font-size: 1em;
-    padding: 0.5em;
+    font-size: 0.9em;
+    padding: 0.5em 0em 0em 0em;
 }
 .funcoes a {
     color: #e863a5;
     text-decoration: none;
-    padding: 0.5em;
 }
 
 .funcoes a:visited {
@@ -364,16 +398,16 @@ p.apresentacao {
 .funcoes a:hover {
     color: #040E24;
     text-decoration: underline;
-    padding: 0.5em;
 }
 
 /* Lista por Função em 2 COLUNAS*/
 
 article.post-container-funcao {
+  background-color: #f5f4f4;
 }
 
 section.inner-left-right {
-    padding: 0em 3em 0em 3em;
+    padding-bottom: 5em;
     background-color: #f5f4f4;
     box-sizing: content-box;
     display: flex;
@@ -473,6 +507,7 @@ article.post-container-boxes {
     bottom: 0;
     left: 0;
     z-index: 3;
+    border-radius: 2em 2em 0em 0em;
 }
 .video-mostra {
     position: relative;
@@ -507,6 +542,8 @@ article.post-container-boxes {
   z-index: 5;
   transition-property: z-index;
   transition-duration: 0.5s;
+  border-radius: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 
@@ -522,6 +559,9 @@ article.post-container-boxes {
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
     transition-property: width, height, z-index;
     transition-duration: 0.5s;
+    border-radius: 0em;
+    padding-bottom: 0em;
+    border: 0em;
 }
 
 /* extra close layer */
@@ -557,6 +597,8 @@ article.post-container-boxes {
   z-index: 5;
   transition-property: z-index;
   transition-duration: 0.5s;
+  border-radius: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 /* CORRECAO da POSICAO INTERNA DAS FOTOS */
@@ -580,6 +622,9 @@ article.post-container-boxes {
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
     transition-property: width, height, z-index;
     transition-duration: 0.5s;
+    border-radius: 0em;
+    padding-bottom: 0em;
+    border: 0em;
 }
 
 /* extra close layer */
@@ -615,6 +660,33 @@ article.post-container-boxes {
 .zoom_aviso:hover .link{
   display: block;
 }
+
+/* REFERENCIAS */
+
+.referencias {
+    position: relative;
+    margin: auto 4em auto 4em;
+    display: inline-flex;
+    box-sizing: padding-box;
+}
+
+img.destaque {
+  width: 100%;
+  object-fit: cover;
+  object-position: 70% 30%;
+  height: 10em;
+  opacity: 0.5;
+}
+
+img.destaque:hover {
+  opacity: 1;
+}
+
+.destaque1, .destaque2, .destaque3 {
+  padding: 1em;
+  width: 30%;
+}
+
 /* CONTATO */
 
 
