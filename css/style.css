@@ -741,6 +741,7 @@ ul.buscar_grade{
 
 .buscar_grade img:hover{
   opacity: 0.5;
+  background-color: #e863a5;
 }
 
 
