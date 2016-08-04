@@ -4,128 +4,79 @@
 <head>
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../.js/flip_paineis1.js"></script>
+
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="main">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../apresentacao.html">Apresentação</a></li>
-                <li><a class="active" href="../funcao.html">Funções</a>
 
-                    <ul class="submenu">
-                      <li>Arte
-                        <ul class="sub-submenu">
-                          <li><a href="#">Cenografia</a></li>
-                          <li><a href="direcaodearte.html">Direção de Arte</a></li>
-                          <li><a href="figurino.html">Figurino</a></li>
-                          <li><a href="#">Maquiagem</a></li>
-                        </ul>
-                      </li>
+  <header>
+    <nav>
+      <ul class="main">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../apresentacao.html">Apresentação</a></li>
+        <li><a href="../buscar.html" class="active">Buscar</a>
+          <ul class="submenu">
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">por FUNÇÃO</a></li>
+          </ul>
+        <li><a href="../formulario.html">Inscreva-se</a></li>
+        <li><a href="../referencias.html">Referências</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+        <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
+      </ul>
+    </nav>
+  </header>
 
-                      <li>Atuação
-                        <ul class="sub-submenu">
-                          <li><a href="atuacao.html">Atuação</a></li>
-                          <li><a href="preparaelenco.html">Preparação de atores</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Direção
-                        <ul class="sub-submenu">
-                          <li><a href="#">Assistência de direção</a></li>
-                          <li><a href="continuidade.html">Continuidade</a></li>
-                          <li><a href="direcao.html">Direção</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Distribuição
-                        <ul class="sub-submenu">
-                          <li><a href="cineclubismo.html">Cineclubismo</a></li>
-                          <li><a href="#">Exibição</a></li>
-                          <li><a href="programacao.html">Programação e curadoria</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Edição e finalização
-                        <ul class="sub-submenu">
-                          <li><a href="#">Correção de cor</a></li>
-                          <li><a href="#">Desenho de efeitos</a></li>
-                          <li><a href="edicao.html">Edição</a></li>
-                          <li><a href="logger.html">Gerência de Mídia (Logger)</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Ensino e crítica
-                        <ul class="sub-submenu">
-                          <li><a href="#">Crítica</a></li>
-                          <li><a href="ensino.html">Ensino</a></li>
-                          <li><a href="#">Oficinas</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Imagem
-                        <ul class="sub-submenu">
-                          <li><a href="direcaodefoto.html">Direção de fotografia</a></li>
-                          <li><a href="still.html">Fotografia Still</a></li>
-                          <li><a href="#">Iluminação</a></li>
-                          <li><a href="#">Elétrica e maquinária</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Produção
-                        <ul class="sub-submenu">
-                          <li><a href="captacao.html">Captação de Recursos</a></li>
-                          <li><a href="producao.html">Produção</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Roteiro
-                        <ul class="sub-submenu">
-                          <li><a href="#">Pesquisa</a></li>
-                          <li><a href="roteiro.html">Roteiro</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Som
-                        <ul class="sub-submenu">
-                          <li><a href="#">Captação de som</a></li>
-                          <li><a href="#">Desenho de som</a></li>
-                          <li><a href="dublagem.html">Dublagem</a></li>
-                          <li><a href="mixagem.html">Mixagem e efeitos sonoros</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-
-                    <li><a href="../nome.html">Nomes</a>
-                    </li>
-                    <li><a href="../formulario.html">Inscreva-se</a></li>
-                    <li><a href="../referencias.html">Referências</a></li>
-                    <li><a href="../contato.html">Contato</a></li>
-                    <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
-            </ul>
-
-          </nav>
-    </header>
     <article class="post-container-boxes">
         <h1 class="paginas"><a href="../funcao.html">Funções</a> / Atuação </h1>
 
+        <!-- CHECKBOX ESTADOS-->
+
+        <div class="checkbox">
+          <h3 class="checkbox">
+          Você quer conhecer profissionais de quais estados?
+          <input type="checkbox" checked id="chk1" value="pe" onclick="change()">
+          <label for="chk1">PE</label>
+
+          <input type="checkbox" checked id="chk2" value="rj" />
+          <label for="chk2">RJ</label>
+
+          <input type="checkbox" checked id="chk3" value="sp" />
+          <label for="chk3">SP</label>
+        </h3>
+        </div>
+
+      <script>
+
+        $('input:checkbox').on('change', function (event) {
+            if ($(this).is(':checked')) {
+                $('.' + $(this).val()).show();
+            } else {
+                $('.' + $(this).val()).hide();
+            }
+        });
+
+        //# sourceURL=pen.js
+      </script>
+
+  <!-- BOXES -->
+
         <section class="box-container">
 
-
         <!-- NOVO BOX-->
-          <section class="flip"  id="flip_brendaligiamiguel">
+
+          <section class="result pe" id="flip_brendaligiamiguel">
             <h3 class="flip" id="brendaligiamiguel"><a href="javascript:" onClick="profissional('brendaligiamiguel')">Brenda Ligia Miguel (PE)</a></h3>
           </section>
 
-            <section class="painel" id="painel_brendaligiamiguel">
+            <section class="painel" id="painel_brendaligiamiguel" >
               <section class="box">
                 <section class="info">
                   <div class="fechar">
@@ -172,10 +123,10 @@
             </section>
           <!-- FIM BOX -->
 
-          <br>
+
 
           <!-- NOVO BOX-->
-            <section class="flip"  id="flip_cintialima">
+            <section class="result sp"  id="flip_cintialima" >
               <h3 class="flip" id="cintialima"><a href="javascript:" onClick="profissional('cintialima')">Cíntia Lima (SP)</a></h3>
             </section>
 
@@ -225,10 +176,10 @@
               </section>
               <!-- FIM BOX -->
 
-              <br>
+
 
               <!-- NOVO BOX-->
-                <section class="flip"  id="flip_lucianafernandes">
+                <section class="result sp"  id="flip_lucianafernandes">
                   <h3 class="flip" id="lucianafernandes"><a href="javascript:" onClick="profissional('lucianafernandes')">Luciana Fernandes (SP)</a></h3>
                 </section>
 
@@ -281,115 +232,120 @@
 
                   <!-- FIM BOX -->
 
-                  <br>
 
-                  <!-- NOVO BOX-->
-                  <section class="flip"  id="flip_nadiabambirra">
-                    <h3 class="flip" id="nadiabambirra"><a href="javascript:" onClick="profissional('nadiabambirra')">Nadia Bambirra (RJ)</a></h3>
-                  </section>
 
-                      <section class="painel" id="painel_nadiabambirra">
-                        <section class="box">
-                          <section class="info">
-                            <div class="fechar">
-                              <h3 class="link"><a href="javascript:" onClick="profissional_fechar('nadiabambirra')" >FECHAR </a></h3>
+                <!-- NOVO BOX-->
+                <section class="result rj"  id="flip_nadiabambirra" class="rj">
+                  <h3 class="flip" id="nadiabambirra"><a href="javascript:" onClick="profissional('nadiabambirra')">Nadia Bambirra (RJ)</a></h3>
+                </section>
+
+                    <section class="painel" id="painel_nadiabambirra">
+                      <section class="box">
+                        <section class="info">
+                          <div class="fechar">
+                            <h3 class="link"><a href="javascript:" onClick="profissional_fechar('nadiabambirra')" >FECHAR </a></h3>
+                          </div>
+                            <section class="box-nome">
+                                <h1 class="nome">Nadia Bambirra</h1>
+                            </section>
+                            <section class="box-cidade">
+                                <h4 class="cidade">51 anos | Rio de Janeiro (RJ)</h4>
+                            </section>
+                            <section class="box-email">
+                                <h3 class="link"><a href="mailto:nadiabambirra@hotmail.com?subject=Contato%20com%20Nadia">nadiabambirra@hotmail.com</a></h3>
+                            </section>
+                            <section class="box-apresentacao">
+                                <p class="apresentacao"> Diretora, atriz, produtora e treinadora de atores. Atualmente dando aula de interpretacao para camera, na escola Wolf Maya e ensaiando o proximo espetaculo.  </p>
+                            </section>
+                            <section class="box-site">
+                                <h3 class="link"><a href="http://curtaviver.blogspot.com" target="_blank"> http://curtaviver.blogspot.com </a></h3>
+                            </section>
+                            <section class="box-outras-funcoes">
+                                <h3 class="link">Outras atividades de Nadia Bambirra<br>
+                                  <a href="direcao.html#nadiabambirra">Direção</a> |
+                                  <a href="preparaelenco.html#nadiabambirra">Preparação de elenco</a> |
+                                  <a href="producao.html#nadiabambirra">Produção</a>
+                                  </h3>
+                            </section>
+                        </section>
+
+                        <section class="photo">
+                            <div class="photo_retrato">
+                              <a tabindex="1">
+                                <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                <img class="photo_retrato" src="../img/fotos/foto_nadiabambirra.jpg" id="esq" alt="Foto de Nadia Bambirra"></a>
+                              <span class="close"></span>
                             </div>
-                              <section class="box-nome">
-                                  <h1 class="nome">Nadia Bambirra</h1>
-                              </section>
-                              <section class="box-cidade">
-                                  <h4 class="cidade">51 anos | Rio de Janeiro (RJ)</h4>
-                              </section>
-                              <section class="box-email">
-                                  <h3 class="link"><a href="mailto:nadiabambirra@hotmail.com?subject=Contato%20com%20Nadia">nadiabambirra@hotmail.com</a></h3>
-                              </section>
-                              <section class="box-apresentacao">
-                                  <p class="apresentacao"> Diretora, atriz, produtora e treinadora de atores. Atualmente dando aula de interpretacao para camera, na escola Wolf Maya e ensaiando o proximo espetaculo.  </p>
-                              </section>
-                              <section class="box-site">
-                                  <h3 class="link"><a href="http://curtaviver.blogspot.com" target="_blank"> http://curtaviver.blogspot.com </a></h3>
-                              </section>
-                              <section class="box-outras-funcoes">
-                                  <h3 class="link">Outras atividades de Nadia Bambirra<br>
-                                    <a href="direcao.html#nadiabambirra">Direção</a> |
-                                    <a href="preparaelenco.html#nadiabambirra">Preparação de elenco</a> |
-                                    <a href="producao.html#nadiabambirra">Produção</a>
-                                    </h3>
-                              </section>
-                          </section>
 
-                          <section class="photo">
-                              <div class="photo_retrato">
-                                <a tabindex="1">
-                                  <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
-                                  <img class="photo_retrato" src="../img/fotos/foto_nadiabambirra.jpg" id="esq" alt="Foto de Nadia Bambirra"></a>
-                                <span class="close"></span>
-                              </div>
-
-                              <iframe class="video" src="https://www.youtube.com/embed/JdlM8NAc1qw" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-                              <section class="video-mostra">
-                                  <h3 class="video-mostra">Amostra de vídeo </h3>
-                              </section>
-                          </section>
+                            <iframe class="video" src="https://www.youtube.com/embed/JdlM8NAc1qw" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                            <section class="video-mostra">
+                                <h3 class="video-mostra">Amostra de vídeo </h3>
+                            </section>
                         </section>
                       </section>
-                      <!-- FIM BOX -->
+                    </section>
+                    <!-- FIM BOX -->
 
-                      <br>
 
-                      <!-- NOVO BOX-->
-                      <section class="flip"  id="flip_tatygodoi">
-                        <h3 class="flip" id="tatygodoi"><a href="javascript:" onClick="profissional('tatygodoi')">Taty Godoi (SP)</a></h3>
-                      </section>
 
-                          <section class="painel" id="painel_tatygodoi">
-                            <section class="box">
-                              <section class="info">
-                                <div class="fechar">
-                                  <h3 class="link"><a href="javascript:" onClick="profissional_fechar('tatygodoi')" >FECHAR </a></h3>
+                    <!-- NOVO BOX-->
+                    <section class="result sp" id="flip_tatygodoi" class="sp">
+                      <h3 class="flip" id="tatygodoi"><a href="javascript:" onClick="profissional('tatygodoi')">Taty Godoi (SP)</a></h3>
+                    </section>
+
+                        <section class="painel" id="painel_tatygodoi">
+                          <section class="box">
+                            <section class="info">
+                              <div class="fechar">
+                                <h3 class="link"><a href="javascript:" onClick="profissional_fechar('tatygodoi')" >FECHAR </a></h3>
+                              </div>
+                                <section class="box-nome">
+                                    <h1 class="nome">Taty Godoi</h1>
+                                </section>
+                                <section class="box-cidade">
+                                    <h4 class="cidade">41 anos | São Paulo (SP)</h4>
+                                </section>
+                                <section class="box-email">
+                                    <h3 class="link"><a href="mailto:tatianabgodoi@gmail.com?subject=Contato%20com%20Taty">tatianabgodoi@gmail.com</a></h3>
+                                </section>
+                                <section class="box-apresentacao">
+                                    <p class="apresentacao"> Nasci em SP, comecei a fazer teatro aos 10 anos de idade no grupo os 16  meninos da treze de maio,  fiz parte de alguns  grupos de Teatro, como timol e tusp em 2005 comecei a fazer parte de produções do audiovisual, fiz 20 curtas e participei de 5 longas, além de publicidades e videos internos meu canal do youtube/tatianagodoi </p>
+                                </section>
+                                <section class="box-site">
+                                    <h3 class="link"><a href="https://www.facebook.com/tatiana.godoi.98" target="_blank"> https://www.facebook.com/tatiana.godoi.98 </a></h3>
+                                </section>
+                                <!-- BOX OUTRAS FUNCOES
+                                <section class="box-outras-funcoes">
+                                      <h3 class="link">Outras atividades de Taty Godoi<br>
+                                      <a href="#"></a>
+                                      </h3>
+                                </section> -->
+                            </section>
+
+                            <section class="photo">
+                                <div class="photo_retrato">
+                                  <a tabindex="1">
+                                    <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                    <img class="photo_retrato" src="../img/fotos/foto_tatygodoi.jpg" alt="Foto de Taty Godoi"></a>
+                                  <span class="close"></span>
                                 </div>
-                                  <section class="box-nome">
-                                      <h1 class="nome">Taty Godoi</h1>
-                                  </section>
-                                  <section class="box-cidade">
-                                      <h4 class="cidade">41 anos | São Paulo (SP)</h4>
-                                  </section>
-                                  <section class="box-email">
-                                      <h3 class="link"><a href="mailto:tatianabgodoi@gmail.com?subject=Contato%20com%20Taty">tatianabgodoi@gmail.com</a></h3>
-                                  </section>
-                                  <section class="box-apresentacao">
-                                      <p class="apresentacao"> Nasci em SP, comecei a fazer teatro aos 10 anos de idade no grupo os 16  meninos da treze de maio,  fiz parte de alguns  grupos de Teatro, como timol e tusp em 2005 comecei a fazer parte de produções do audiovisual, fiz 20 curtas e participei de 5 longas, além de publicidades e videos internos meu canal do youtube/tatianagodoi </p>
-                                  </section>
-                                  <section class="box-site">
-                                      <h3 class="link"><a href="https://www.facebook.com/tatiana.godoi.98" target="_blank"> https://www.facebook.com/tatiana.godoi.98 </a></h3>
-                                  </section>
-                                  <!-- BOX OUTRAS FUNCOES
-                                  <section class="box-outras-funcoes">
-                                        <h3 class="link">Outras atividades de Taty Godoi<br>
-                                        <a href="#"></a>
-                                        </h3>
-                                  </section> -->
-                              </section>
 
-                              <section class="photo">
-                                  <div class="photo_retrato">
-                                    <a tabindex="1">
-                                      <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
-                                      <img class="photo_retrato" src="../img/fotos/foto_tatygodoi.jpg" alt="Foto de Taty Godoi"></a>
-                                    <span class="close"></span>
-                                  </div>
-
-                                  <iframe class="video" src="https://www.youtube.com/embed/587T3P0KNSY" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-                                  <section class="video-mostra">
-                                      <h3 class="video-mostra">Amostra de vídeo </h3>
-                                  </section>
-                              </section>
+                                <iframe class="video" src="https://www.youtube.com/embed/587T3P0KNSY" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                                <section class="video-mostra">
+                                    <h3 class="video-mostra">Amostra de vídeo </h3>
+                                </section>
                             </section>
                           </section>
-                          <!-- FIM BOX -->
-
-
+                        </section>
+                    <!-- FIM BOX -->
+                    
+        </section>
     </article>
+    <!--FOOTER-->
+        <div class="footer">
+          <h3 class="license"> MULHERES NEGRAS do Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+          Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
 </body>
 
 </html>

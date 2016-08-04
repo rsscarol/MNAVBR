@@ -4,123 +4,74 @@
 <head>
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../.js/flip_paineis1.js"></script>
+
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="main">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../apresentacao.html">Apresentação</a></li>
-                <li><a class="active" href="../funcao.html">Funções</a>
 
-                    <ul class="submenu">
-                      <li>Arte
-                        <ul class="sub-submenu">
-                          <li><a href="#">Cenografia</a></li>
-                          <li><a href="direcaodearte.html">Direção de Arte</a></li>
-                          <li><a href="figurino.html">Figurino</a></li>
-                          <li><a href="#">Maquiagem</a></li>
-                        </ul>
-                      </li>
+  <header>
+    <nav>
+      <ul class="main">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../apresentacao.html">Apresentação</a></li>
+        <li><a href="../buscar.html" class="active">Buscar</a>
+          <ul class="submenu">
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">por FUNÇÃO</a></li>
+          </ul>
+        <li><a href="../formulario.html">Inscreva-se</a></li>
+        <li><a href="../referencias.html">Referências</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+        <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
+      </ul>
+    </nav>
+  </header>
 
-                      <li>Atuação
-                        <ul class="sub-submenu">
-                          <li><a href="atuacao.html">Atuação</a></li>
-                          <li><a href="preparaelenco.html">Preparação de atores</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Direção
-                        <ul class="sub-submenu">
-                          <li><a href="#">Assistência de direção</a></li>
-                          <li><a href="continuidade.html">Continuidade</a></li>
-                          <li><a href="direcao.html">Direção</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Distribuição
-                        <ul class="sub-submenu">
-                          <li><a href="cineclubismo.html">Cineclubismo</a></li>
-                          <li><a href="#">Exibição</a></li>
-                          <li><a href="programacao.html">Programação e curadoria</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Edição e finalização
-                        <ul class="sub-submenu">
-                          <li><a href="#">Correção de cor</a></li>
-                          <li><a href="#">Desenho de efeitos</a></li>
-                          <li><a href="edicao.html">Edição</a></li>
-                          <li><a href="logger.html">Gerência de Mídia (Logger)</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Ensino e crítica
-                        <ul class="sub-submenu">
-                          <li><a href="#">Crítica</a></li>
-                          <li><a href="ensino.html">Ensino</a></li>
-                          <li><a href="#">Oficinas</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Imagem
-                        <ul class="sub-submenu">
-                          <li><a href="direcaodefoto.html">Direção de fotografia</a></li>
-                          <li><a href="still.html">Fotografia Still</a></li>
-                          <li><a href="#">Iluminação</a></li>
-                          <li><a href="#">Elétrica e maquinária</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Produção
-                        <ul class="sub-submenu">
-                          <li><a href="captacao.html">Captação de Recursos</a></li>
-                          <li><a href="producao.html">Produção</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Roteiro
-                        <ul class="sub-submenu">
-                          <li><a href="#">Pesquisa</a></li>
-                          <li><a href="roteiro.html">Roteiro</a></li>
-                        </ul>
-                      </li>
-
-                      <li>Som
-                        <ul class="sub-submenu">
-                          <li><a href="#">Captação de som</a></li>
-                          <li><a href="#">Desenho de som</a></li>
-                          <li><a href="dublagem.html">Dublagem</a></li>
-                          <li><a href="mixagem.html">Mixagem e efeitos sonoros</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-
-                    <li><a href="../nome.html">Nomes</a>
-                    </li>
-                    <li><a href="../formulario.html">Inscreva-se</a></li>
-                    <li><a href="../referencias.html">Referências</a></li>
-                    <li><a href="../contato.html">Contato</a></li>
-                    <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
-            </ul>
-
-          </nav>
-    </header>
     <article class="post-container-boxes">
         <h1 class="paginas"><a href="../funcao.html">Funções</a> / Produção </h1>
+
+        <!-- CHECKBOX ESTADOS-->
+
+        <div class="checkbox">
+          <h3 class="checkbox">
+          Você quer conhecer profissionais de quais estados?
+          <input type="checkbox" checked id="chk1" value="pe" onclick="change()">
+          <label for="chk1">PE</label>
+
+          <input type="checkbox" checked id="chk2" value="rj" />
+          <label for="chk2">RJ</label>
+
+          <input type="checkbox" checked id="chk3" value="sp" />
+          <label for="chk3">SP</label>
+        </h3>
+        </div>
+
+      <script>
+
+        $('input:checkbox').on('change', function (event) {
+            if ($(this).is(':checked')) {
+                $('.' + $(this).val()).show();
+            } else {
+                $('.' + $(this).val()).hide();
+            }
+        });
+
+        //# sourceURL=pen.js
+      </script>
+
+  <!-- BOXES -->
 
         <section class="box-container">
 
           <!-- NOVO BOX -->
-          <section class="flip"  id="flip_amandaramos">
+          <section class="result pe"  id="flip_amandaramos">
             <h3 class="flip" id="brendaligiamiguel"> <a href="javascript:" onClick="profissional('amandaramos')">Amanda Ramos (PE)</a></h3>
           </section>
 
@@ -166,10 +117,10 @@
               </section>
             <!-- FIM BOX -->
 
-              <br>
+
 
             <!-- NOVO BOX -->
-            <section class="flip"  id="flip_beatrizlima">
+            <section class="result rj"  id="flip_beatrizlima">
               <h3 class="flip" id="beatrizlima"> <a href="javascript:" onClick="profissional('beatrizlima')">Beatriz Lima (RJ)</a></h3>
             </section>
 
@@ -217,10 +168,10 @@
               </section>
               <!-- FIM BOX -->
 
-                <br>
+
 
               <!-- NOVO BOX -->
-              <section class="flip"  id="flip_diellyamarante">
+              <section class="result sp"  id="flip_diellyamarante">
                 <h3 class="flip" id="diellyamarante"> <a href="javascript:" onClick="profissional('diellyamarante')">Dielly Amarante (SP)</a></h3>
               </section>
 
@@ -273,10 +224,10 @@
                 </section>
                 <!-- FIM BOX -->
 
-                  <br>
+
 
                 <!-- NOVO BOX -->
-                <section class="flip"  id="flip_karinagama">
+                <section class="result rj"  id="flip_karinagama">
                   <h3 class="flip" id="karinagama"> <a href="javascript:" onClick="profissional('karinagama')">Karina Gama (RJ)</a></h3>
                 </section>
 
@@ -329,10 +280,10 @@
                   </section>
                   <!-- FIM BOX -->
 
-                    <br>
+
 
                   <!-- NOVO BOX -->
-                  <section class="flip"  id="flip_karolinemaia">
+                  <section class="result sp"  id="flip_karolinemaia">
                     <h3 class="flip" id="karolinemaia"> <a href="javascript:" onClick="profissional('karolinemaia')">Karoline Maia (SP)</a></h3>
                   </section>
 
@@ -385,10 +336,10 @@
                     </section>
                     <!-- FIM BOX -->
 
-                      <br>
+
 
                     <!-- NOVO BOX -->
-                    <section class="flip"  id="flip_luanadias">
+                    <section class="result rj"  id="flip_luanadias">
                       <h3 class="flip" id="luanadias"> <a href="javascript:" onClick="profissional('luanadias')">Luana Dias (RJ)</a></h3>
                     </section>
 
@@ -441,10 +392,10 @@
                       </section>
                       <!-- FIM BOX -->
 
-                        <br>
+
 
                       <!-- NOVO BOX -->
-                      <section class="flip"  id="flip_lumareis">
+                      <section class="result sp"  id="flip_lumareis">
                         <h3 class="flip" id="lumareis"> <a href="javascript:" onClick="profissional('lumareis')">Luma Reis (SP)</a></h3>
                       </section>
 
@@ -495,10 +446,10 @@
                         </section>
                         <!-- FIM BOX -->
 
-                        <br>
+
 
                         <!-- NOVO BOX-->
-                          <section class="flip"  id="flip_nadiabambirra">
+                          <section class="result rj"  id="flip_nadiabambirra">
                             <h3 class="flip" id="nadiabambirra"><a href="javascript:" onClick="profissional('nadiabambirra')">Nadia Bambirra (RJ)</a></h3>
                           </section>
 
@@ -527,7 +478,7 @@
                                         <h3 class="link">Outras atividades de Nadia Bambirra<br>
                                           <a href="atuacao.html#nadiabambirra">Atuação</a> |
                                           <a href="direcao.html#nadiabambirra">Direção</a> |
-                                          <a href="preparaelenco.html#nadiabambirra">Preparação de elenco</a> |
+                                          <a href="preparaelenco.html#nadiabambirra">Preparação de elenco</a>
                                           </h3>
                                     </section>
                                 </section>
@@ -549,10 +500,10 @@
                             </section>
                             <!-- FIM BOX -->
 
-                            <br>
+
 
                             <!-- NOVO BOX-->
-                              <section class="flip"  id="flip_sheilapereira">
+                              <section class="result pe"  id="flip_sheilapereira">
                                 <h3 class="flip" id="sheilapereira"><a href="javascript:" onClick="profissional('sheilapereira')">Sheila Pereira (PE)</a></h3>
                               </section>
 
@@ -603,10 +554,10 @@
                                 </section>
                                 <!-- FIM BOX -->
 
-                                  <br>
+
 
                                 <!-- NOVO BOX -->
-                                <section class="flip"  id="flip_stellazimmerman">
+                                <section class="result pe"  id="flip_stellazimmerman">
                                   <h3 class="flip" id="stellazimmerman"> <a href="javascript:" onClick="profissional('stellazimmerman')">Stella Zimmerman (PE)</a></h3>
                                 </section>
 
@@ -659,10 +610,10 @@
                                   </section>
                                   <!-- FIM BOX -->
 
-                                    <br>
+
 
                                   <!-- NOVO BOX -->
-                                  <section class="flip"  id="flip_vaniafeitosa">
+                                  <section class="result sp" id="flip_vaniafeitosa">
                                     <h3 class="flip" id="vaniafeitosa"> <a href="javascript:" onClick="profissional('vaniafeitosa')">Vânia Feitosa (SP)</a></h3>
                                   </section>
 
@@ -715,8 +666,13 @@
                                     </section>
                                     <!-- FIM BOX -->
 
-
+        </section>
     </article>
+    <!--FOOTER-->
+      <div class="footer">
+        <h3 class="license"> MULHERES NEGRAS do Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
 </body>
 
 </html>

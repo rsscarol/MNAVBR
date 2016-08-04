@@ -47,16 +47,16 @@ table {
 /* Definições do MENU DE NAVEGACAO */
 
 html,body{
-    width: 100%;
-    height:100%;
+  width: 100%;
+  height:100%;
 }
 
 body {
   background-color: #0d1529;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/logo_base.jpg);
-    background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/logo_base.jpg);
+  background-attachment: fixed;
 }
 
 header {
@@ -90,7 +90,6 @@ header {
     background-color: #FCFCFC;
     text-decoration: none;
     font-size: 2em;
-    padding-bottom: 0.5em;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .main a:hover:not(.active) {
@@ -114,7 +113,7 @@ header {
 }
 .submenu li {
     display: block;
-    font-size: 1em;
+    font-size: 0.5em;
     padding: 1em 4.5em 1em 1em;
     position: relative;
 }
@@ -122,35 +121,10 @@ header {
 .submenu li:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-right: 9em;
+    padding: 1em 4.5em 1em 1em;
     text-decoration: none;
 }
 
-/* SUB-Submenu Funções */
-
-.sub-submenu {
-    display: none;
-}
-.submenu li:hover .sub-submenu {
-    position: absolute;
-    display: block;
-    top: 0.5em;
-    left: 10em;
-    background-color: rgba(252, 252, 252, 1);
-    font-size: 0.5em;
-    padding: 0.5em;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4);
-    z-index: 4;
-}
-.sub-submenu li {
-    display: block;
-    position: relative;
-    white-space: nowrap;
-}
-.sub-submenu li:hover {
-    background-color: #FCFCFC;
-    color: red;
-    text-decoration: none;
-}
 
 li.logo_header_position {
   float: right;
@@ -172,12 +146,12 @@ img.image_full {
 }
 
 article {
-    height: 100%;
-    margin: auto 10% auto 10%;
+    margin: auto 10% 0 10%;
     background-color: #f5f4f4;
     position: relative;
     display: block;
-    padding-bottom: 5em;
+    height: 100%;
+    padding-bottom: 2em;
 }
 
 /* Para inserção do formulário */
@@ -239,6 +213,11 @@ h2 a{
   color: #e863a5;
 }
 
+h2 a:hover {
+  text-decoration: underline;
+  color: #4d004d;
+}
+
 h2.olho {
     font-size: 1.1em;
     color: #4d004d;
@@ -283,7 +262,7 @@ h3.flip {
     font-family: 'Lora', serif;
     font-size: 1em;
     text-align: left;
-    padding: 0em 0em 1em 5em;
+    padding: 0.5em 0em 0.5em 5em;
 }
 
 .flip a {
@@ -342,7 +321,7 @@ h3.link_nomes {
     font-family: 'Lora', serif;
     font-size: 0.8em;
     text-align: left;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 1em 1em;
 }
 
 h3.video-mostra {
@@ -414,10 +393,21 @@ p.referencia_titulo {
     padding: 0em 0em;
 }
 
+.intertitulo{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
 /*Definições particulares das PAGINAS*/
 
 
 /* por FUNCAO */
+
+article.post-container-funcao {
+    background-color:#f5f4f4;
+    height: 100%;
+    padding-bottom: 2em;
+}
 
 .funcoes li {
     font-family: 'Lora', serif;
@@ -438,36 +428,24 @@ p.referencia_titulo {
     text-decoration: underline;
 }
 
-/* Lista por Função em 2 COLUNAS*/
+        /* Lista por Função em 2 COLUNAS*/
 
-.inner-container{
-    background-color: #f5f4f4;
-    height: 100%;
-}
 
-article.post-container-funcao {
-  background-color: #f5f4f4;
-}
 
 section.inner-left-right {
-    padding-bottom: 5em;
+    width: 100%;
     background-color: #f5f4f4;
-    box-sizing: content-box;
-    display: flex;
     position: relative;
+    display: inline-flex;
+    padding-bottom: 2em;
 }
 
-.inner-left + .inner-right {
-  margin-left: 5%;
-}
 
-/* DUAS COLUNAS NAO-FLEX
-section.inner-left, .inner-right {
-    height: auto;
+DUAS COLUNAS NAO-FLEX
+.inner-left, .inner-right {
     position: absolute;
     width: 50%;
-    background-color: #FCFCFC;
-    padding-bottom: 3em;
+    background-color: #f5f4f4;
 }
 
 section.inner-left {
@@ -480,11 +458,13 @@ section.inner-right {
     right: 0%;
     display: block;
     text-align: left;
-}*/
+}
 
 /* BOXES*/
 
 article.post-container-boxes {
+    background-color:#f5f4f4;
+    height: 100%;
 }
 
 .box-container {
@@ -496,7 +476,8 @@ article.post-container-boxes {
 
 .box {
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
     left: 5%;
     width: 90%;
     display: inline-flex;
@@ -731,4 +712,70 @@ img.destaque:hover {
 .destaque1, .destaque2, .destaque3 {
   padding: 1em;
   width: 30%;
+}
+
+
+/* BUSCAR - Grade */
+
+ul.buscar_grade{
+  margin: 0em 4.5em;
+}
+
+.buscar_grade a {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.buscar_grade li {
+  display: initial;
+  list-style: none;
+}
+
+.buscar_grade img{
+  cursor: default;
+  width: 7em;
+  height: 7em;
+  object-fit: cover;
+  padding: 0;
+}
+
+.buscar_grade img:hover{
+  opacity: 0.5;
+}
+
+
+/* CHECKBOX */
+
+h3.checkbox{
+  font-size: 1em;
+  text-align: left;
+  padding: 0em 5em;
+}
+
+div.checkbox {
+  background-color: #ddd;
+  padding: 1em 0em;
+}
+
+/* FOOTER */
+.footer {
+position: flex;
+margin-bottom: 0;
+background: transparent;
+}
+
+h3.license{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #d5cfcc;
+}
+
+.footer a{
+  color: #e863a5;
+  text-decoration: none;
+  line-height: 1.5em;
+  }
+
+.footer a:hover {
+  text-decoration: underline;
 }
