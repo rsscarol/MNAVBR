@@ -10,6 +10,7 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../.js/flip_paineis1.js"></script>
+    <script src="../.js/loading.js"></script>
 
 
 </head>
@@ -34,7 +35,9 @@
     </nav>
   </header>
 
+
     <article class="post-container-boxes">
+
         <h1 class="paginas"><a href="../funcao.html">Funções</a> / Roteiro </h1>
         <!-- CHECKBOX ESTADOS-->
 
@@ -65,9 +68,16 @@
         //# sourceURL=pen.js
       </script>
 
+  <!-- CARREGADOR -->
+
+          <div id="loading">
+            <div class="loader"></div>
+            <h1 class="paginas"> CARREGAND&#9787;... </h1>
+          </div>
+
   <!-- BOXES -->
 
-        <section class="box-container">
+        <section class="box-container" id="content" style="display: none">
 
             <!-- NOVO BOX -->
               <section class="result rj"  id="flip_beatrizlima">
@@ -267,7 +277,7 @@
                               <img class="photo_paisagem" src="../img/fotos/foto_ellenpaes.jpg" alt="Foto de Ellen Paes"></a>
                             <span class="close"></span>
                           </div>
-                          <iframe class="video" src="https://amp.twimg.com/v/1c2b8150-6736-43c6-8ef4-9da9f0e0eb14" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="auto"></iframe>
+                          <a href="https://amp.twimg.com/v/1c2b8150-6736-43c6-8ef4-9da9f0e0eb14" target="_blank"><img src="../img/video_ellenpaes.jpg" class="video"></a>
                           <section class="video-mostra">
                               <h3 class="video-mostra">Amostra de vídeo</h3>
                           </section>
@@ -330,6 +340,64 @@
 
 
                   <!-- NOVO BOX -->
+                  <section class="result sp"  id="flip_jessicafigueiro">
+                    <h3 class="flip" id="jessicafigueiro"> <a href="javascript:" onClick="profissional('jessicafigueiro')">Jessica Figueiró (SP)</a></h3>
+                  </section>
+
+                    <section class="painel" id="painel_jessicafigueiro">
+                      <section class="box">
+                        <section class="info">
+                          <div class="fechar">
+                            <h3 class="link"><a href="javascript:" onClick="profissional_fechar('jessicafigueiro')" >FECHAR </a></h3>
+                          </div>
+                            <section class="box-nome">
+                                <h1 class="nome">Jessica Figueiró</h1>
+                            </section>
+                            <section class="box-cidade">
+                                <h4 class="cidade">23 anos | São Paulo/SP</h4>
+                            </section>
+                            <section class="box-email">
+                                <h3 class="link"><a href="mailto:figueiroh@outlook.com?subject=Contato%20com%20Jessica">figueiroh@outlook.com</a></h3>
+                            </section>
+                            <section class="box-apresentacao">
+                                <p class="apresentacao"> Olá, sou a Jessica, nascida e moradora da zona leste de São Paulo. Tenho técnico de design gráfico e cursos de computação gráfica. Ao escolher minha graduação, decidir unir minha paixão por design/ilustração com a de cinema, e escolhi Animação. Participei de algumas masterclass de animação e fiz um curso de Teoria e Estilos Cinematográficos com Pablo Villaça. Até o momento só trabalhei com design, direção de arte e ilustração. Meus trabalhos de audiovisual foram realizados até agora somente na faculdade. Atualmente estou finalizando um curso de Front End, no qual pretendo fazer mais uma ponte entre minhas paixões. </p>
+                            </section>
+                            <section class="box-site">
+                                <h3 class="link"><a href="http://flickr.com/jessicafigueiro" target="_blank"> http://flickr.com/jessicafigueiro</a> </h3>
+                            </section>
+
+                            <section class="box-outras-funcoes">
+                                <h3 class="link">Outras atividades de Jessica Figueiró<br>
+                                  <a href="animacao.html#jessicafigueiro">Animação</a> |
+                                  <a href="correcaocor.html#jessicafigueiro">Correção de cor</a> |
+                                  <a href="desenhoefeitos.html#jessicafigueiro">Desenho de efeitos</a> |
+                                  <a href="direcaodearte.html#jessicafigueiro">Direção de arte</a> |
+                                  <a href="edicao.html#jessicafigueiro">Edição</a>
+                                  </h3>
+                            </section>
+                        </section>
+
+                          <section class="photo">
+                              <div class="photo_paisagem">
+                                <a tabindex="1">
+                                  <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                  <img class="photo_paisagem" src="../img/fotos/foto_jessicafigueiro.jpg" alt="Foto de Jessica Figueiró"></a>
+                                <span class="close"></span>
+                              </div>
+
+
+                            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jessicafigueiro/23824626493/in/dateposted-public/" title="Firelight" target="_blank"><img src="https://c6.staticflickr.com/2/1460/23824626493_4860dfe982_n.jpg" alt="Firelight" class="video"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                            <section class="video-mostra">
+                                <h3 class="video-mostra">Amostra de vídeo</h3>
+                            </section>
+                        </section>
+                      </section>
+                    </section>
+                    <!-- FIM BOX -->
+
+
+
+                    <!-- NOVO BOX-->
                   <section class="result sp"  id="flip_lumareis">
                     <h3 class="flip" id="lumareis"> <a href="javascript:" onClick="profissional('lumareis')">Luma Reis (SP)</a></h3>
                   </section>
@@ -401,7 +469,7 @@
                                   <h4 class="cidade">34 anos | Rio de Janeio/RJ</h4>
                               </section>
                               <section class="box-email">
-                                  <h3 class="link"><a href="mailto:mariana.luiza@globo.com?subject=Contato%20com%20Luma">mariana.luiza@globo.com</a></h3>
+                                  <h3 class="link"><a href="mailto:mariana.luiza@globo.com?subject=Contato%20com%20Mariana">mariana.luiza@globo.com</a></h3>
                               </section>
                               <section class="box-apresentacao">
                                   <p class="apresentacao"> Formada em Administração pela UFF -RJ, graduada em roteiro de cinema pela New York Film Academy. Em 2010, dirigi e produzi o documentário A B Ser. O projeto foi vencedor, dentre 115 roteiros inscritos, do concurso de Roteiros Filma Brasil, e ganhou R$70.000,00 para produção do filme. No campo da literatura, recebi diversos prêmios proeminentes, incluindo o melhor conto, dentre 265 trabalhos, na IV Concurso Literário Internacional de Contos, promovido pela Associação de Arte, Ciência e Cultura latino-americana em Salzburg, Áustria (2006), e o prêmio pela melhor compilação de roteiros, dentre 3000 inscrições no Torneio da Criação - Escreva como Eça de Queiroz (2001), promovido pela Globo.com. </p>
