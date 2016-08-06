@@ -133,7 +133,9 @@ li.logo_header_position {
   border-left: 0.1em solid #bbb;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   li.logo_header_position {
     display: none;
   }
@@ -184,7 +186,9 @@ h1{
   padding: 3em 1em 2em 2em;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   h1{
     font-family: 'Lato', sans-serif;
     padding: 3em 1em 1em 1.3em;
@@ -226,11 +230,13 @@ h2 {
     font-weight: 100;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   h2 {
       font-family: 'Lato', sans-serif;
-      font-size: 1.1em;
-      padding: 0em 3em 0.5em 3em;
+      font-size: 0.8em;
+      padding: 0em 2em 1em 2em;
       color: #4d004d;
       line-height: 1.4;
       font-weight: 100;
@@ -248,7 +254,7 @@ h2 a:hover {
 }
 
 h2.olho {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
@@ -287,6 +293,20 @@ h3 {
     margin: 0;
     font-weight: 100;
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  h3 {
+      font-family: 'Lora', serif;
+      font-size: 0.5em;
+      color: #4d004d;
+      padding: 1em 2em 1em 2em;
+      margin: 0;
+      font-weight: 100;
+  }
+}
+
 
 h3.flip {
     font-family: 'Lora', serif;
@@ -387,7 +407,9 @@ p.textos {
   -webkit-column-gap: 3.5em;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   p.textos {
     padding: 2em 4em;
     text-align: justify;
@@ -477,10 +499,13 @@ section.inner-left-right {
     background-color: #f5f4f4;
     position: relative;
     display: inline-flex;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
+
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   section.inner-left-right {
       width: 100%;
       background-color: #f5f4f4;
@@ -491,9 +516,8 @@ section.inner-left-right {
 }
 
 
-DUAS COLUNAS NAO-FLEX
+/*DUAS COLUNAS NAO-FLEX*/
 .inner-left, .inner-right {
-    position: absolute;
     width: 50%;
     background-color: #f5f4f4;
     display: block;
@@ -508,7 +532,9 @@ section.inner-right {
     right: 0%;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   .inner-left, .inner-right {
       width: 100%;
   }
@@ -543,7 +569,9 @@ article.post-container-boxes {
     box-shadow: 4px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
     .box {
       position: relative;
       margin-bottom: 1em;
@@ -596,7 +624,9 @@ article.post-container-boxes {
     padding: 1em 2em 1em 0em;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   .photo {
       position: relative;
       display: block;
@@ -776,7 +806,9 @@ article.post-container-boxes {
     padding-bottom: 0em;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   .referencias {
       position: relative;
       margin: 1em 2em 0em 2em;
@@ -803,7 +835,9 @@ img.destaque:hover {
   width: 30%;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   .destaque1, .destaque2, .destaque3 {
     padding: 1em;
     width: 90%;
@@ -850,13 +884,17 @@ h3.checkbox{
   line-height: 1.5;
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   h3.checkbox{
     font-size: 1.2em;
   }
 }
 
-@media (max-width: 700px) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
   input{
     font-size: 2.5em;
     padding: 0em;
