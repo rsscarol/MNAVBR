@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
-
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../.js/flip_paineis1.js"></script>
     <script src="../.js/loading.js"></script>
@@ -18,14 +18,24 @@
 <body>
 
   <header>
+
+  <input type="checkbox" id="control-nav" class="menu"/>
+  <label for="control-nav" class="control-nav"></label>
+  <label for="control-nav" class="control-nav-close"></label>
+
+
     <nav>
       <ul class="main">
         <li><a href="../index.html">Início</a></li>
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="../nome.html">por NOME</a></li>
-            <li><a href="../funcao.html">por FUNÇÃO</a></li>
+            <li><a href="nome.html">por NOME</a></li>
+            <li><a href="funcao.html">por FUNÇÃO</a></li>
+          </ul>
+          <ul class="submenu_responsivo">
+            <li><a href="nome.html">por NOME</a></li>
+            <li><a href="funcao.html">por FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -65,7 +75,7 @@
 
                       <div id="loading">
                         <div class="loader"></div>
-                        <h1 class="paginas"> CARREGANDO ... </h1>
+                        <h1 class="load"> CARREGANDO ... </h1>
                       </div>
 
               <!-- BOXES -->

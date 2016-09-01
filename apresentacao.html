@@ -4,18 +4,28 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style_phones.css"  media="(max-device-width:768px)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" />
   </head>
   <body>
 
     <header>
+
+      <input type="checkbox" id="control-nav" class="menu"/>
+      <label for="control-nav" class="control-nav"></label>
+      <label for="control-nav" class="control-nav-close"></label>
+
       <nav>
         <ul class="main">
           <li><a href="index.html">Início</a></li>
           <li><a href="apresentacao.html" class="active">Apresentação</a></li>
           <li><a href="buscar.html">Buscar</a>
             <ul class="submenu">
+              <li><a href="nome.html">por NOME</a></li>
+              <li><a href="funcao.html">por FUNÇÃO</a></li>
+            </ul>
+            <ul class="submenu_responsivo">
               <li><a href="nome.html">por NOME</a></li>
               <li><a href="funcao.html">por FUNÇÃO</a></li>
             </ul>
@@ -35,7 +45,7 @@
             <ul class="artigo_img">
               <li><a href="funcoes/direcao.html#carolrodrigues"><img src="img/fotos/foto_carolrodrigues.jpg" class="icone"></a></li>
                   <ul class="funcoes">
-                  <li>Publicado por Carol Rodrigues, em 02 de setembro de 2016.</li>
+                  <li id="autora">Publicado por Carol Rodrigues, em 02 de setembro de 2016.</li>
                   </ul>
                 </ul>
 
