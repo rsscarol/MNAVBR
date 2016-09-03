@@ -68,7 +68,7 @@ picture img{
 /* Definições do MENU DE NAVEGACAO RESPONSIVO */
 
 header {
-  min-height: 8em;
+  min-height: 4em;
   position: fixed;
   top: 0;
   right: 0;
@@ -80,13 +80,13 @@ header {
 
 header .control-nav {
     position: absolute;
-    right: 2em;
-    top: 2em;
+    right: 1em;
+    top: 1em;
     display: block;
-    width: 6em;
-    padding: 1.5em 0;
+    width: 3.5em;
+    padding: 0.7em 0;
     border: solid #333;
-    border-width: 0.3em 0;
+    border-width: 0.2em 0;
     z-index: 25;
     cursor: pointer;
   }
@@ -149,11 +149,10 @@ input.menu{
 
 .main li {
     font-family: 'Lora', serif;
-    font-size: 1.5rem;
+    font-size: 0.8em;
     display: block;
     padding: 1.5em 2em;
     text-align:left;
-    line-height: 1rem;
 }
 
 .main a:not(.active):hover {
@@ -193,7 +192,6 @@ input.menu{
     display: block;
     padding-left: 2em;
     padding-top: 1em;
-    font-size: 1rem;
 }
 
 .submenu_responsivo li:hover {
@@ -253,15 +251,13 @@ h1{
 }
 
 h1.paginas {
-    font-size: 5em;
+    font-size: 3em;
     color: rgba(74, 0, 74, 1);
-    padding: 2.5em 1em 1em 0.8em;
+    padding: 3.5em 1em 1em 0.8em;
     margin: 0;
 }
 h1.nome {
-    font-size: 4em;
-    text-align: right;
-    padding: 1em;
+    font-size: 2em;
     color: #4d004d;
 }
 
@@ -285,9 +281,9 @@ h2 {
     font-family: 'Lato', sans-serif;
     padding: 0em 2em 3em 2em;
     color: #4d004d;
+    font-size: 1.3em;
     font-weight: 100;
     line-height: 1.3;
-    font-size: 0.8rem;
 }
 
 h2 a{
@@ -301,7 +297,7 @@ h2 a:hover {
 }
 
 h2.olho {
-    font-size: 2rem;
+    font-size: 2.1em;
     color: #4d004d;
     padding: 0em 2em 1em 2em;
     text-decoration: none;
@@ -315,7 +311,6 @@ h2.funcoes_macro {
     margin: 0;
     line-height: 1.4;
     text-decoration: none;
-    font-size: 3em;
 }
 
 h2.nomes_macro {
@@ -326,7 +321,6 @@ h2.nomes_macro {
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
-    font-size: 3.5em;
 }
 
 h3 {
@@ -374,13 +368,12 @@ h3.flip {
 
 h3.link {
     font-family: 'Lora', serif;
-    font-size: 2.5em;
+    font-size: 0.8em;
     color: rgba(77, 0, 77, 0.6);
-    text-align: left;
+    text-align: right;
     padding: 0em;
     font-weight: 100;
     word-wrap: break-word;
-    line-height: 1.5;
 }
 
 h3.link_referencia {
@@ -391,13 +384,13 @@ h3.link_referencia {
     text-decoration: none;
     list-style-position:outside;
     line-height: 1.5em;
-    padding: 0em 2em;
+    padding: 1em 2em;
     border-top: 0.1em;
     border-style: solid;
 }
 
 h3.link_referencia a {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #e863a5;
     text-decoration: none;
     list-style-position:outside;
@@ -434,15 +427,15 @@ h3.video-mostra {
 }
 h4.cidade {
     font-family: 'Lora', serif;
-    font-size: 2.5em;
+    font-size: 1em;
     color: #4d004d;
     font-weight: normal;
-    text-align: left;
+    text-align: right;
     padding: 0em;
 }
 p {
     font-family: 'Lora', serif;
-    font-size: 0.8rem;
+    font-size: 0.9em;
     color: #330033;
     margin: 0;
     line-height: 1.5;
@@ -450,8 +443,8 @@ p {
 }
 
 p.textos {
-  padding: 7em 7em;
-  word-spacing: 1em;
+  padding: 4em 3em;
+  word-spacing: 0.2em;
   text-align: left;
   -moz-column-count: 1;
   -webkit-column-count: 1;
@@ -470,17 +463,18 @@ p.textos a:hover {
 }
 
 p.apresentacao {
-    font-size: 2rem;
+    font-size: 1em;
     color: #4d004d;
-    text-align: left;
+    text-align: justify;
     line-height: 1.6;
-    padding: 0.5em 0em;
+    padding: 1em;
 }
 
 p.referencia {
-    font-size: 1rem;
+    font-size: 2em;
     color: #4d004d;
     text-align: left;
+    line-height: 1.4;
     padding: 0em 0em 2em 0em;
     word-wrap: break-word;
 }
@@ -492,7 +486,7 @@ p.referencia_titulo {
     text-align: left;
     line-height: 1.4;
     font-weight: bold;
-    padding: 1em 0em 0em 0em;
+    padding: 1em 0em 0.5em 0em;
 }
 
 .intertitulo{
@@ -515,11 +509,11 @@ article.post-container-funcao {
 .funcoes li {
     font-family: 'Lora', serif;
     font-size: 3em;
-    padding: 0.5em 0em 0em 1em;
+    padding: 0.5em 0em 0em 0.5em;
 }
 
 #autora{
-  font-size: 2.2em;
+  font-size: 1em;
   line-height: 1.3;
 }
 
@@ -571,16 +565,18 @@ article.post-container-boxes {
 
 .box-container {
     position: absolute;
+    padding-top: 5%;
     background-color:#f5f4f4;
     padding-bottom: 1em;
     width: 100%;
 }
 
 
+
 .box {
   position: relative;
   margin-bottom: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   left: 5%;
   width: 90%;
   display: block;
@@ -588,7 +584,6 @@ article.post-container-boxes {
   border-radius: 1em;
   box-shadow: 4px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 
 .info {
@@ -599,34 +594,34 @@ article.post-container-boxes {
 }
 .box-nome {
     position: relative;
-    padding: 0em;
+    padding: 0.5em 0em 0.5em 2.5em;
 }
 .box-cidade {
     position: relative;
-    padding: 0em 3em 1.5em 3em;
+    padding: 0em 2em 1.5em 2.5em;
 }
 .box-email {
     position: relative;
-    padding: 0em 1em 1.5em 2.5em;
+    padding: 0em 2em 1.5em 2.5em;
 }
 .box-apresentacao {
     position: relative;
-    padding: 0em 3em 0.5em 3em;
+    padding: 0em 2em 1.5em 2.5em;
 }
 .box-site {
     position: relative;
     line-height: 2em;
-    padding: 0em 3em 0.5em 3em;
+    padding: 0em 2em 1.5em 2.5em;
 }
 .box-outras-funcoes {
     position: relative;
-    padding: 0em 3em 0em 3em;
+    padding: 0em 2em 0em 2.5em;
     line-height: 1.6;
 }
 .photo {
     position: relative;
     display: block;
-    margin: 0% auto 0% auto;
+    margin: 10% auto 10% auto;
     width: 90%;
     padding: 1em 0em 1em 0em;
 }
@@ -634,7 +629,7 @@ article.post-container-boxes {
 .video {
     position: relative;
     width: 100%;
-    height:25em;
+    height: auto;
     bottom: 0;
     left: 0;
     z-index: 3;
@@ -654,7 +649,7 @@ article.post-container-boxes {
 }
 
 .fechar{
-  padding: 3em 0em 0em 2em;
+  padding: 1em 2em 1em 2.5em;
   display: flex;
 }
 
@@ -668,11 +663,12 @@ article.post-container-boxes {
 .photo_paisagem a img{
   display: flex;
   object-fit: cover;
-  object-position: 0 2%;
   position: relative;
-  height:500px;
+  height:468px;
   width: 100%;
   z-index: 5;
+  transition-property: z-index;
+  transition-duration: 0.5s;
   border-radius: 1.5em;
   padding-bottom: 0.5em;
 }
@@ -681,12 +677,14 @@ article.post-container-boxes {
 .photo_paisagem a:focus img {
     position:absolute;
     object-fit: cover;
-    width:52em;
-    height: auto;
-    z-index:10;
-    top:-6em;
-    left: -4em;
+    right: -5em;
+    top: -1em;
+    width:auto;
+    height: 550px;
+    z-index:20;
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition-property: width, height, z-index;
+    transition-duration: 0.5s;
     border-radius: 0em;
     padding-bottom: 0em;
     border: 0em;
@@ -718,34 +716,38 @@ article.post-container-boxes {
 .photo_retrato a img{
   display: flex;
   object-fit: cover;
-  object-position: 0 0;
+  object-position: 25% 75%;
   position: relative;
   height:468px;
   width: 100%;
   z-index: 5;
+  transition-property: z-index;
+  transition-duration: 0.5s;
   border-radius: 1.5em;
   padding-bottom: 0.5em;
 }
 
 /* CORRECAO da POSICAO INTERNA DAS FOTOS */
 #esq {
-  object-position: 0 0;
+  object-position: 80% 20%;
 }
 
 #dir {
-  object-position: 0 0;
+  object-position: 20% 80%;
 }
 
 /* Style of image when zoomed out */
 .photo_retrato a:focus img {
     position:absolute;
     object-fit: cover;
-    width:45em;
-    height: auto;
-    z-index:10;
-    top:-6em;
-    left: -1em;
+    right: -5em;
+    top: -1em;
+    width:auto;
+    height: 600px;
+    z-index:20;
     box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition-property: width, height, z-index;
+    transition-duration: 0.5s;
     border-radius: 0em;
     padding-bottom: 0em;
     border: 0em;
@@ -770,7 +772,15 @@ article.post-container-boxes {
 /*AVISO ZOOM*/
 
 .zoom_aviso .link{
-  display: none;
+  background-color: rgba(13, 17, 32, 0.5);
+  color: rgba(255, 255, 250, 0.8);
+  text-align: center;
+  padding: 0.5em;
+  position: absolute;
+  z-index: 6;
+  top: 85%;
+  right:0;
+  left: 0;
 }
 
 .zoom_aviso:hover .link{
@@ -781,7 +791,7 @@ article.post-container-boxes {
 
 .referencias {
     position: relative;
-    margin: 0em 3em;
+    margin: 0em 5em;
     display: block;
     padding: 0em;
 }
@@ -806,11 +816,11 @@ img.destaque:hover {
 /* ÍCONE FOTOS */
 
 .icone {
-  width: 10em;
-  height: 10em;
+  width: 4em;
+  height: 4em;
   object-fit: cover;
   padding: 0em ;
-  margin-left: 2em;
+  margin-left: 0em;
   margin-right: 1em;
   border-radius: 10em;
 }
@@ -824,7 +834,7 @@ img.destaque:hover {
 .artigo_img {
   display: flex;
   align-items: center;
-  padding: 0em 5em;
+  padding: 0em 3.5em;
 }
 
 .artigo_img:hover img{
@@ -864,14 +874,13 @@ ul.buscar_grade{
 /* CHECKBOX */
 
 h3.checkbox{
-  font-size: 2em;
+  font-size: 1em;
   padding: 0em;
 }
 
 input{
+  font-size: 2.5em;
   padding: 0em;
-  width: 30px;
-  height: 30px;
 }
 
 

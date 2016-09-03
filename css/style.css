@@ -390,7 +390,7 @@ p {
 
 p.textos {
   padding: 2em 6em;
-  text-align: justify;
+  text-align: left;
   -moz-column-count: 2;
   -webkit-column-count: 2;
   -moz-column-gap: 3.5em;
