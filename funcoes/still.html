@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -31,12 +31,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -57,8 +57,17 @@
                   <input type="checkbox" checked id="chk1" value="al" onclick="change()">
                   <label for="chk1">AL</label>
 
-                  <input type="checkbox" checked id="chk2" value="ro" />
-                  <label for="chk2">RO</label>
+                  <input type="checkbox" checked id="chk2" value="ba" />
+                  <label for="chk2">BA</label>
+
+                  <input type="checkbox" checked id="chk3" value="ro" />
+                  <label for="chk3">RO</label>
+
+                  <input type="checkbox" checked id="chk4" value="rs" />
+                  <label for="chk4">RS</label>
+
+                  <input type="checkbox" checked id="chk5" value="sp" />
+                  <label for="chk5">SP</label>
                 </h3>
                 </div>
 
@@ -87,7 +96,122 @@
         <section class="box-container" id="content" style="display: none">
 
 
-          <!-- NOVO BOX-->
+          <!-- NOVO BOX -->
+          <section class="result sp"  id="flip_annapaulafurtado">
+            <h3 class="flip" id="annapaulafurtado"> <a href="javascript:" onClick="profissional('annapaulafurtado')"><img src="../img/fotos/foto_annapaulafurtado.jpg" class="icone_funcoes">Anna Paula Furtado (SP)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_annapaulafurtado">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"><a href="javascript:" onClick="profissional_fechar('annapaulafurtado')" >FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Anna Paula Furtado</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">21 anos | São Paulo (SP)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:furtadoannapaula@gmail.com?subject=Contato%20com%20Anna">furtadoannapaula@gmail.com
+  </a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Estou no oitavo semestre da faculdade de Cinema. Dirijo e faço o roteiro do meu TCC, um documentário sobre resistência feminina no Samba. Busco atuar nessas áreas, de cultura popular e questões de gênero e raça. Estou no começo da minha carreira mas sonho grande e não paro quieta, estou sempre à disposição!  </p>
+                    </section>
+            <!--  PARA INSERIR SITE
+                    <section class="box-site">
+                        <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                    </section> -->
+
+                    <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Anna Paula Furtado<br>
+                          <a href="continuidade.html#annapaulafurtado">Continuidade</a> |
+                          <a href="direcao.html#annapaulafurtado">Direção</a> |
+                          <a href="producao.html#annapaulafurtado">Produção</a> |
+                          <a href="roteiro.html#annapaulafurtado">Roteiro</a>
+                          </h3>
+                    </section>
+                </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_annapaulafurtado.jpg" alt="Foto de Anna Paula Furtado"></a>
+                        <span class="close"></span>
+                      </div>
+
+
+                    <iframe class="video" src="https://www.youtube.com/embed/qWy5PXnsW2k" frameborder="0" allowfullscreen></iframe>
+                    <section class="video-mostra">
+                        <h3 class="video-mostra">Amostra de vídeo</h3>
+                    </section>
+                </section>
+              </section>
+            </section>
+            <!-- FIM BOX -->
+
+
+
+            <!-- NOVO BOX-->
+            <section class="result ba"  id="flip_evanizeessi">
+              <h3 class="flip" id="evanizeessi"> <a href="javascript:" onClick="profissional('evanizeessi')"><img src="../img/fotos/foto_evanizeessi.jpg" class="icone_funcoes">Evanize Essi (BA)</a></h3>
+            </section>
+
+              <section class="painel" id="painel_evanizeessi">
+                <section class="box">
+                  <section class="info">
+                    <div class="fechar">
+                      <h3 class="link"><a href="javascript:" onClick="profissional_fechar('evanizeessi')" >FECHAR </a></h3>
+                    </div>
+                      <section class="box-nome">
+                          <h1 class="nome">Evanize Essi</h1>
+                      </section>
+                      <section class="box-cidade">
+                          <h4 class="cidade">22 anos | Cachoeira (BA)</h4>
+                      </section>
+                      <section class="box-email">
+                          <h3 class="link"><a href="mailto:evanizeuk@gmail.com?subject=Contato%20com%20Evanize">evanizeuk@gmail.com</a></h3>
+                      </section>
+                      <section class="box-apresentacao">
+                          <p class="apresentacao"> Graduanda em Cinema e Audiovisual pela UFRB, integrante do PET Cinema e do Laboratório de Análise e Criação em Imagem e Som (LACIS). Conselheira suplente do Conselho Municipal de Cultura de Santo Amaro/BA e diretora de projetos na Ápice Empresa Jr. de comunicação.</p>
+                      </section>
+                      <section class="box-site">
+                          <h3 class="link"><a href="https://www.facebook.com/focoforcaeflash/" target="_blank"> https://www.facebook.com/focoforcaeflash/</a></h3>
+                      </section>
+
+                      <section class="box-outras-funcoes">
+                          <h3 class="link">Outras atividades de Evanize Essi<br>
+                            <a href="direcaodefoto.html#evanizeessi">Direção de fotografia</a> |
+                            <a href="edicao.html#evanizeessi">Edição</a> |
+                            <a href="iluminacao.html#evanizeessi">Iluminação</a>
+                            </h3>
+                      </section>
+                  </section>
+
+                    <section class="photo">
+                        <div class="photo_paisagem">
+                          <a tabindex="1">
+                            <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                            <img class="photo_paisagem" src="../img/fotos/foto_evanizeessi.jpg" alt="Foto de Evanize Essi"></a>
+                          <span class="close"></span>
+                        </div>
+
+
+                      <iframe class="video" src="https://www.youtube.com/embed/W5otyEWQbjA" frameborder="0" allowfullscreen></iframe>
+                      <section class="video-mostra">
+                          <h3 class="video-mostra">Amostra de vídeo</h3>
+                      </section>
+                  </section>
+                </section>
+              </section>
+              <!-- FIM BOX -->
+
+
+
+              <!-- NOVO BOX-->
             <section class="result ro"  id="flip_marcelabonfim">
               <h3 class="flip" id="marcelabonfim"><a href="javascript:" onClick="profissional('marcelabonfim')"><img src="../img/fotos/foto_marcelabonfim.jpg" class="icone_funcoes">Marcela Bonfim (RO)</a></h3>
             </section>
@@ -102,7 +226,7 @@
                           <h1 class="nome">Marcela Bonfim</h1>
                       </section>
                       <section class="box-cidade">
-                          <h4 class="cidade">33 anos | Porto Velho/RO</h4>
+                          <h4 class="cidade">33 anos | Porto Velho (RO)</h4>
                       </section>
                       <section class="box-email">
                           <h3 class="link"><a href="mailto:celabonfim@gmail.com?subject=Contato%20com%20Marcela">celabonfim@gmail.com</a></h3>
@@ -139,6 +263,65 @@
 
 
 
+              <!-- NOVO BOX -->
+              <section class="result rs"  id="flip_marinakerber">
+                <h3 class="flip" id="marinakerber"> <a href="javascript:" onClick="profissional('marinakerber')"><img src="../img/fotos/foto_marinakerber.jpg" class="icone_funcoes">Marina Kerber (RS/SP)</a></h3>
+              </section>
+
+                <section class="painel" id="painel_marinakerber">
+                  <section class="box">
+                    <section class="info">
+                      <div class="fechar">
+                        <h3 class="link"><a href="javascript:" onClick="profissional_fechar('marinakerber')" >FECHAR </a></h3>
+                      </div>
+                        <section class="box-nome">
+                            <h1 class="nome">Marina Kerber</h1>
+                        </section>
+                        <section class="box-cidade">
+                            <h4 class="cidade">25 anos | Porto Alegre (RS) e São Paulo (SP)</h4>
+                        </section>
+                        <section class="box-email">
+                            <h3 class="link"><a href="mailto:marinatkerber@gmail.com?subject=Contato%20com%20Marina">figueiroh@outlook.com</a></h3>
+                        </section>
+                        <section class="box-apresentacao">
+                            <p class="apresentacao"> Mestra em Meios e Processos Audiovisuais na USP. Bacharel em Realização Audiovisual pela UNISINOS. Tem experiência profissional em Cinema, principalmente, como diretora, diretora de arte, figurinista e animadora, tendo experiência em curta-metragens, longa-metragens e videoclipes. Já participou de festivais nacionais e internacionais de cinema, principalmente direcionados às técnicas de animação (Upto3/Canadá, Monstra Festival/Portugal) e ganhou prêmios em festivais como o Festival do Minuto (Recheio de Tinta, Pequena Porção vermelha e Martina) e o 1º Festival Luz de Cinema Latino-americano (Balão Selvagem). </p>
+                        </section>
+                        <section class="box-site">
+                            <h3 class="link"><a href="http://be.net/marinakerber" target="_blank"> http://be.net/marinakerber</a> </h3>
+                        </section>
+
+                        <section class="box-outras-funcoes">
+                            <h3 class="link">Outras atividades de Marina Kerber<br>
+                              <a href="animacao.html#marinakerber">Animação</a> |
+                              <a href="atuacao.html#marinakerber">Atuação</a> |
+                              <a href="direcao.html#marinakerber">Direção</a> |
+                              <a href="direcaodearte.html#marinakerber">Direção de arte</a> |
+                              <a href="figurino.html#marinakerber">Figurino</a>
+
+                              </h3>
+                        </section>
+                    </section>
+
+                      <section class="photo">
+                          <div class="photo_paisagem">
+                            <a tabindex="1">
+                              <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                              <img class="photo_paisagem" src="../img/fotos/foto_marinakerber.jpg" alt="Foto de Marina Kerber"></a>
+                            <span class="close"></span>
+                          </div>
+
+
+                          <iframe class="video" src="https://player.vimeo.com/video/48634298" frameborder="0" allowfullscreen></iframe>
+                          <section class="video-mostra">
+                              <h3 class="video-mostra">Amostra de vídeo</h3>
+                        </section>
+                    </section>
+                  </section>
+                </section>
+                <!-- FIM BOX -->
+
+
+
               <!-- NOVO BOX-->
                 <section class="result al"  id="flip_nairaevine">
                   <h3 class="flip" id="nairaevine"><a href="javascript:" onClick="profissional('nairaevine')"><img src="../img/fotos/foto_nairaevine.jpg" class="icone_funcoes">Naira Evine (AL)</a></h3>
@@ -154,7 +337,7 @@
                               <h1 class="nome">Naira Evine</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">23 anos | Maceió/AL</h4>
+                              <h4 class="cidade">23 anos | Maceió (AL)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:naira.nai@gmail.com?subject=Contato%20com%20Naira">naira.nai@gmail.com</a></h3>

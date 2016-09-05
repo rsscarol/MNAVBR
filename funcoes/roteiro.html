@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -31,12 +31,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -55,14 +55,17 @@
         <div class="checkbox" id="content1" style="display: none">
           <h3 class="checkbox">
           Você quer conhecer profissionais de quais estados?<br>
-          <input type="checkbox" checked id="chk1" value="pe" onclick="change()">
-          <label for="chk1">PE</label>
+          <input type="checkbox" checked id="chk1" value="ba" onclick="change()">
+          <label for="chk1">BA</label>
 
-          <input type="checkbox" checked id="chk2" value="rj" />
-          <label for="chk2">RJ</label>
+          <input type="checkbox" checked id="chk2" value="pe" onclick="change()">
+          <label for="chk2">PE</label>
 
-          <input type="checkbox" checked id="chk2" value="sp" />
-          <label for="chk2">SP</label>
+          <input type="checkbox" checked id="chk3" value="rj" />
+          <label for="chk3">RJ</label>
+
+          <input type="checkbox" checked id="chk4" value="sp" />
+          <label for="chk4">SP</label>
         </h3>
         </div>
 
@@ -90,6 +93,65 @@
 
         <section class="box-container" id="content" style="display: none">
 
+          <!-- NOVO BOX -->
+          <section class="result sp"  id="flip_annapaulafurtado">
+            <h3 class="flip" id="annapaulafurtado"> <a href="javascript:" onClick="profissional('annapaulafurtado')"><img src="../img/fotos/foto_annapaulafurtado.jpg" class="icone_funcoes">Anna Paula Furtado (SP)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_annapaulafurtado">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"><a href="javascript:" onClick="profissional_fechar('annapaulafurtado')" >FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Anna Paula Furtado</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">21 anos | São Paulo (SP)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:furtadoannapaula@gmail.com?subject=Contato%20com%20Anna">furtadoannapaula@gmail.com
+  </a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Estou no oitavo semestre da faculdade de Cinema. Dirijo e faço o roteiro do meu TCC, um documentário sobre resistência feminina no Samba. Busco atuar nessas áreas, de cultura popular e questões de gênero e raça. Estou no começo da minha carreira mas sonho grande e não paro quieta, estou sempre à disposição!  </p>
+                    </section>
+            <!--  PARA INSERIR SITE
+                    <section class="box-site">
+                        <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                    </section> -->
+
+                    <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Anna Paula Furtado<br>
+                          <a href="continuidade.html#annapaulafurtado">Continuidade</a> |
+                          <a href="direcao.html#annapaulafurtado">Direção</a> |
+                          <a href="still.html#annapaulafurtado">Fotografia Still</a> |
+                          <a href="producao.html#annapaulafurtado">Produção</a>
+                          </h3>
+                    </section>
+                </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_annapaulafurtado.jpg" alt="Foto de Anna Paula Furtado"></a>
+                        <span class="close"></span>
+                      </div>
+
+
+                    <iframe class="video" src="https://www.youtube.com/embed/qWy5PXnsW2k" frameborder="0" allowfullscreen></iframe>
+                    <section class="video-mostra">
+                        <h3 class="video-mostra">Amostra de vídeo</h3>
+                    </section>
+                </section>
+              </section>
+            </section>
+            <!-- FIM BOX -->
+
+
+
             <!-- NOVO BOX -->
               <section class="result rj"  id="flip_beatrizlima">
                 <h3 class="flip" id="beatrizlima"> <a href="javascript:" onClick="profissional('beatrizlima')"><img src="../img/fotos/foto_beatrizlima.jpg" class="icone_funcoes">Beatriz Lima (RJ)</a></h3>
@@ -105,7 +167,7 @@
                             <h1 class="nome">Beatriz Lima</h1>
                         </section>
                         <section class="box-cidade">
-                            <h4 class="cidade">22 anos | Rio de Janeiro/RJ</h4>
+                            <h4 class="cidade">22 anos | Rio de Janeiro (RJ)</h4>
                         </section>
                         <section class="box-email">
                             <h3 class="link"><a href="mailto:beatriz@caseirasproducoes.art.br?subject=Contato%20com%20Beatriz">beatriz@caseirasproducoes.art.br</a></h3>
@@ -136,11 +198,66 @@
                     </section>
                   </section>
                 </section>
-              <!-- FIM BOX-->
+                <!-- FIM BOX -->
 
 
 
-              <!-- NOVO BOX-->
+                <!-- NOVO BOX -->
+                <section class="result ba"  id="flip_beatrizvieirah">
+                  <h3 class="flip" id="beatrizvieirah"> <a href="javascript:" onClick="profissional('beatrizvieirah')"><img src="../img/fotos/foto_beatrizvieirah.jpg" class="icone_funcoes">Beatriz Vieirah (BA)</a></h3>
+                </section>
+
+                  <section class="painel" id="painel_beatrizvieirah">
+                    <section class="box">
+                      <section class="info">
+                        <div class="fechar">
+                          <h3 class="link"> <a href="javascript:" onClick="profissional_fechar('beatrizvieirah')"> FECHAR </a></h3>
+                        </div>
+                          <section class="box-nome">
+                              <h1 class="nome">Beatriz Vieirah</h1>
+                          </section>
+                          <section class="box-cidade">
+                              <h4 class="cidade">24 anos | São Félix (BA)</h4>
+                          </section>
+                          <section class="box-email">
+                              <h3 class="link"><a href="mailto:b.vieirah1@gmail.com?subject=Contato%20com%20Beatriz">b.vieirah1@gmail.com</a></h3>
+                          </section>
+                          <section class="box-apresentacao">
+                              <p class="apresentacao"> Graduanda em Cinema e Audiovisual pela Universidade Federal do Recôncavo da Bahia, ativista negra feminista, fotógrafa, coordenadora e idealizadora do Projeto Seminário Cinema Negro Brasileiro. Tem experiência no cinema e vídeo filmmaker, assistente de direção, câmera, roteiro e preparação de atores, com destaque para as obras cinematográficas, Lápis de Cor, O Cadeado, Entre Passos, Sinfonia de Uma Pequena Cidade, Noite de Baile, telefilme O milagre dos pássaros, videoclipe Mau Achismo e O corpo é meu. Já ministou oficinas de Produção de Vídeo. Suas pesquisa gira em torno de Mulheres Negras no Cinema Brasileiro. E atualmente está produzindo Lélia Gonzalez - O Filme, enquanto diretora. </p>
+                          </section>
+                          <section class="box-site">
+                            <!-- Para inserir link de site <h3 class="link"><a href="#" target="_blank"> http://</a></h3>--->
+                          </section>
+                            <section class="box-outras-funcoes">
+                                <h3 class="link">Outras atividades de Beatriz Vieirah<br>
+                                  <a href="direcao.html#beatrizvieirah">Direção</a> |
+                                  <a href="direcaodefoto.html#beatrizvieirah">Direção de fotografia</a> |
+                                  <a href="pesquisa.html#beatrizvieirah">Pesquisa e desenvolvimento</a> |
+                                  <a href="preparaelenco.html#beatrizvieirah">Preparação de elenco</a> |
+                                  <a href="oficinas.html#beatrizvieirah">Oficinas</a>
+                            </section>
+                        </section>
+
+                        <section class="photo">
+                            <div class="photo_paisagem">
+                              <a tabindex="1">
+                                <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                <img class="photo_paisagem" src="../img/fotos/foto_beatrizvieirah.jpg" alt="Foto de Beatriz Vieirah"></a>
+                              <span class="close"></span>
+                            </div>
+
+                            <iframe class="video" src="https://www.youtube.com/embed/Dp-LxZ3Ck7c" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                            <section class="video-mostra">
+                                <h3 class="video-mostra">Amostra de vídeo</h3>
+                            </section>
+                       </section>
+                      </section>
+                    </section>
+                    <!-- FIM BOX -->
+
+
+
+                    <!-- NOVO BOX-->
                 <section class="result pe"  id="flip_brendaligiamiguel">
                   <h3 class="flip" id="brendaligiamiguel"><a href="javascript:" onClick="profissional('brendaligiamiguel')"><img src="../img/fotos/foto_brendaligiamiguel.jpg" class="icone_funcoes">Brenda Ligia Miguel (PE)</a></h3>
                 </section>
@@ -155,7 +272,7 @@
                               <h1 class="nome">Brenda Ligia Miguel</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">Recife/PE</h4>
+                              <h4 class="cidade">Recife (PE)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:brenda.ligia@hotmail.com?subject=Contato%20com%20Brenda">brenda.ligia@hotmail.com</a></h3>
@@ -210,7 +327,7 @@
                                   <h1 class="nome">Carol Rodrigues</h1>
                               </section>
                               <section class="box-cidade">
-                                  <h4 class="cidade">32 anos | São Paulo/SP</h4>
+                                  <h4 class="cidade">32 anos | São Paulo (SP)</h4>
                               </section>
                               <section class="box-email">
                                   <h3 class="link"><a href="mailto:rsscarol@gmail.com?subject=Contato%20com%20Carol">rsscarol@gmail.com</a></h3>
@@ -245,11 +362,65 @@
                           </section>
                         </section>
                       </section>
-                    <!-- FIM BOX -->
+                      <!-- FIM BOX -->
 
 
 
-              <!-- NOVO BOX-->
+                      <!-- NOVO BOX-->
+                        <section class="result sp"  id="flip_danddara" >
+                          <h3 class="flip" id="danddara"><a href="javascript:" onClick="profissional('danddara')"><img src="../img/fotos/foto_danddara.jpg" class="icone_funcoes">Danddara (SP)</a></h3>
+                        </section>
+
+                          <section class="painel" id="painel_danddara">
+                            <section class="box">
+                              <section class="info">
+                                <div class="fechar">
+                                  <h3 class="link"><a href="javascript:" onClick="profissional_fechar('danddara')" >FECHAR </a></h3>
+                                </div>
+                                  <section class="box-nome">
+                                      <h1 class="nome">Danddara</h1>
+                                  </section>
+                                  <section class="box-cidade">
+                                      <h4 class="cidade">47 anos | Campinas (SP)</h4>
+                                  </section>
+                                  <section class="box-email">
+                                      <h3 class="link"><a href="mailto:dandarah@rocketmail.com?subject=Contato%20com%20Danddara">dandarah@rocketmail.com</a></h3>
+                                  </section>
+                                  <section class="box-apresentacao">
+                                      <p class="apresentacao"> DANDDARA nasce em 1968; cresce na cena cultural do Samba carioca. É cineasta, performer, escritora e artista florestal premiada no Brasil e nos EUA. Sua arte ambientalista explora as Florestas Brasileiras em várias mídias. Em 1985, estreia no palco em musical de Bia Lessa. Em 1988, estreia no livro em antologias da Oficina Literária Ivan Proença; no mesmo ano funda o TEATRO FLORESTAL DO RIO DE JANEIRO. Na RIO-92, seu show Amor à Natureza com Henrique Cazes apresenta repertório de EcoSambas em evento cultural oficial. Muda pra Nova York em 1993. Em 2000 com Gurufim na Mangueira, estreia no cinema e se torna a primeira mulher negra cineasta do Brasil.</p>
+                                  </section>
+                                  <section class="box-site">
+                                      <h3 class="link"><a href="https://branded.me/danddara" target="_blank"> https://branded.me/danddara </a></h3>
+                                  </section>
+                                  <section class="box-outras-funcoes">
+                                    <h3 class="link">Outras atividades de Danddara<br>
+                                      <a href="atuacao.html#danddara">Atuação</a> |
+                                      <a href="direcao.html#danddara">Direção</a> |
+                                      <a href="edicao.html#danddara">Edição</a>
+                                      </h3>
+                                  </section>
+                              </section>
+
+                              <section class="photo">
+                                  <div class="photo_paisagem">
+                                    <a tabindex="1">
+                                      <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                      <img class="photo_paisagem" src="../img/fotos/foto_danddara.jpg" alt="Foto de Danddara" id="dir"></a>
+                                    <span class="close"></span>
+                                  </div>
+
+                                  <iframe class="video" src="https://player.vimeo.com/video/17489319" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                                  <section class="video-mostra">
+                                      <h3 class="video-mostra">Amostra de vídeo </h3>
+                                  </section>
+                              </section>
+                            </section>
+                          </section>
+                          <!-- FIM BOX -->
+
+
+
+                          <!-- NOVO BOX-->
                 <section class="result rj"  id="flip_ellenpaes">
                   <h3 class="flip" id="ellenpaes"><a href="javascript:" onClick="profissional('ellenpaes')"><img src="../img/fotos/foto_ellenpaes.jpg" class="icone_funcoes">Ellen Paes (RJ)</a></h3>
                 </section>
@@ -264,7 +435,7 @@
                               <h1 class="nome">Ellen Paes</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">33 anos | Rio de Janeiro/RJ</h4>
+                              <h4 class="cidade">33 anos | Rio de Janeiro (RJ)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:paes.ellen@gmail.com?subject=Contato%20com%20Ellen">paes.ellen@gmail.com</a></h3>
@@ -315,7 +486,7 @@
                               <h1 class="nome">Francine Barbosa</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">31 anos | São Paulo/SP</h4>
+                              <h4 class="cidade">31 anos | São Paulo (SP)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:francinibarbosa@gmail.com?subject=Contato%20com%20Francine">francinibarbosa@gmail.com</a></h3>
@@ -366,7 +537,7 @@
                                 <h1 class="nome">Jessica Figueiró</h1>
                             </section>
                             <section class="box-cidade">
-                                <h4 class="cidade">23 anos | São Paulo/SP</h4>
+                                <h4 class="cidade">23 anos | São Paulo (SP)</h4>
                             </section>
                             <section class="box-email">
                                 <h3 class="link"><a href="mailto:figueiroh@outlook.com?subject=Contato%20com%20Jessica">figueiroh@outlook.com</a></h3>
@@ -409,7 +580,65 @@
 
 
 
-                    <!-- NOVO BOX-->
+                    <!-- NOVO BOX -->
+                    <section class="result sp"  id="flip_liliansantiago">
+                      <h3 class="flip" id="liliansantiago"> <a href="javascript:" onClick="profissional('liliansantiago')"><img src="../img/fotos/foto_liliansantiago.jpg" class="icone_funcoes">Lilian Santiago (SP)</a></h3>
+                    </section>
+
+                      <section class="painel" id="painel_liliansantiago">
+                        <section class="box">
+                          <section class="info">
+                            <div class="fechar">
+                              <h3 class="link"><a href="javascript:" onClick="profissional_fechar('liliansantiago')" >FECHAR </a></h3>
+                            </div>
+                              <section class="box-nome">
+                                  <h1 class="nome">Lilian Santiago</h1>
+                              </section>
+                              <section class="box-cidade">
+                                  <h4 class="cidade">46 anos | Salto (SP)</h4>
+                              </section>
+                              <section class="box-email">
+                                  <h3 class="link"><a href="mailto:lilianssantiago2014@gmail.com?subject=Contato%20com%20Lilian">lilianssantiago2014@gmail.com
+            </a></h3>
+                              </section>
+                              <section class="box-apresentacao">
+                                  <p class="apresentacao"> Lilian Solá Santiago é historiadora e Mestre e Integração da América Latina pela USP (Universidade de São Paulo) e atua há mais de 15 anos na área de produção e ensino audiovisual. Atualmente é professora-cineasta do curso de Cinema do CEUNSP - Centro Universitário Nossa Senhora do Patrocínio – Salto /SP, onde coordena a Produtora Experimental do curso, a Kimera Filmes.
+                                  Entre suas realizações audiovisuais estão os documentários "Fios do Passado" (2015), “Batuque de Graxa” (2012); “Eu tenho a palavra” (2010) ; "Roda o Tereré" (2009); o doc-ficção “Graffiti” (2008); “Balé de Pé no Chão”(2006) e o filme documentário “Família Alcântara” (2005), com Daniel Santiago.  </p>
+                              </section>
+                      <!--  PARA INSERIR SITE
+                              <section class="box-site">
+                                  <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                              </section> -->
+
+                              <section class="box-outras-funcoes">
+                                  <h3 class="link">Outras atividades de Lilian Santiago<br>
+                                    <a href="direcao.html#liliansantiago">Direção</a> |
+                                    <a href="producao.html#liliansantiago">Produção</a>
+                                    </h3>
+                              </section>
+                          </section>
+
+                            <section class="photo">
+                                <div class="photo_paisagem">
+                                  <a tabindex="1">
+                                    <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                    <img class="photo_paisagem" src="../img/fotos/foto_liliansantiago.jpg" alt="Foto de Lilian Santiago"></a>
+                                  <span class="close"></span>
+                                </div>
+
+
+                              <iframe class="video" src="https://www.youtube.com/embed/kb2tSAMFQuY" frameborder="0" allowfullscreen></iframe>
+                              <section class="video-mostra">
+                                  <h3 class="video-mostra">Amostra de vídeo</h3>
+                              </section>
+                          </section>
+                        </section>
+                      </section>
+                      <!-- FIM BOX -->
+
+
+
+                      <!-- NOVO BOX -->
                   <section class="result sp"  id="flip_lumareis">
                     <h3 class="flip" id="lumareis"> <a href="javascript:" onClick="profissional('lumareis')"><img src="../img/fotos/foto_lumareis.jpg" class="icone_funcoes">Luma Reis (SP)</a></h3>
                   </section>
@@ -424,7 +653,7 @@
                                 <h1 class="nome">Luma Reis</h1>
                             </section>
                             <section class="box-cidade">
-                                <h4 class="cidade">28 anos | Santo André/SP</h4>
+                                <h4 class="cidade">28 anos | Santo André (SP)</h4>
                             </section>
                             <section class="box-email">
                                 <h3 class="link"><a href="mailto:lumareis@gmail.com?subject=Contato%20com%20Luma">lumareis@gmail.com</a></h3>
@@ -478,7 +707,7 @@
                                   <h1 class="nome">Mariana Luiza</h1>
                               </section>
                               <section class="box-cidade">
-                                  <h4 class="cidade">34 anos | Rio de Janeio/RJ</h4>
+                                  <h4 class="cidade">34 anos | Rio de Janeio (RJ)</h4>
                               </section>
                               <section class="box-email">
                                   <h3 class="link"><a href="mailto:mariana.luiza@globo.com?subject=Contato%20com%20Mariana">mariana.luiza@globo.com</a></h3>
@@ -533,7 +762,7 @@
                                       <h1 class="nome">Renata Martins</h1>
                                   </section>
                                   <section class="box-cidade">
-                                      <h4 class="cidade">São Paulo/SP</h4>
+                                      <h4 class="cidade">São Paulo (SP)</h4>
                                   </section>
                                   <section class="box-email">
                                       <h3 class="link"><a href="mailto:recine12@gmail.com?subject=Contato%20com%20Renata">recine12@gmail.com</a></h3>

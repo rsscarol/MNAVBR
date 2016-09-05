@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
 
@@ -32,12 +32,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -56,6 +56,9 @@
           Você quer conhecer profissionais de quais estados?<br>
           <input type="checkbox" checked id="chk1" value="rj" onclick="change()">
           <label for="chk1">RJ</label>
+
+          <input type="checkbox" checked id="chk2" value="sp" onclick="change()">
+          <label for="chk2">SP</label>
 
         </h3>
         </div>
@@ -83,7 +86,66 @@
       <!-- BOXES -->
         <section class="box-container" id="content" style="display: none">
 
-                <!-- NOVO BOX -->
+          <!-- NOVO BOX -->
+          <section class="result sp"  id="flip_annapaulafurtado">
+            <h3 class="flip" id="annapaulafurtado"> <a href="javascript:" onClick="profissional('annapaulafurtado')"><img src="../img/fotos/foto_annapaulafurtado.jpg" class="icone_funcoes">Anna Paula Furtado (SP)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_annapaulafurtado">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"><a href="javascript:" onClick="profissional_fechar('annapaulafurtado')" >FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Anna Paula Furtado</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">21 anos | São Paulo (SP)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:furtadoannapaula@gmail.com?subject=Contato%20com%20Anna">furtadoannapaula@gmail.com
+</a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Estou no oitavo semestre da faculdade de Cinema. Dirijo e faço o roteiro do meu TCC, um documentário sobre resistência feminina no Samba. Busco atuar nessas áreas, de cultura popular e questões de gênero e raça. Estou no começo da minha carreira mas sonho grande e não paro quieta, estou sempre à disposição!  </p>
+                    </section>
+            <!--  PARA INSERIR SITE
+                    <section class="box-site">
+                        <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                    </section> -->
+
+                    <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Anna Paula Furtado<br>
+                          <a href="direcao.html#annapaulafurtado">Direção</a> |
+                          <a href="still.html#annapaulafurtado">Fotografia Still</a> |
+                          <a href="producao.html#annapaulafurtado">Produção</a> |
+                          <a href="roteiro.html#annapaulafurtado">Roteiro</a>
+                          </h3>
+                    </section>
+                </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_annapaulafurtado.jpg" alt="Foto de Anna Paula Furtado"></a>
+                        <span class="close"></span>
+                      </div>
+
+
+                    <iframe class="video" src="https://www.youtube.com/embed/qWy5PXnsW2k" frameborder="0" allowfullscreen></iframe>
+                    <section class="video-mostra">
+                        <h3 class="video-mostra">Amostra de vídeo</h3>
+                    </section>
+                </section>
+              </section>
+            </section>
+            <!-- FIM BOX -->
+
+
+
+            <!-- NOVO BOX -->
                 <section class="result rj"  id="flip_karinagama">
                   <h3 class="flip" id="karinagama"> <a href="javascript:" onClick="profissional('karinagama')"><img src="../img/fotos/foto_karinagama.jpg" class="icone_funcoes">Karina Gama (RJ)</a></h3>
                 </section>
@@ -98,7 +160,7 @@
                               <h1 class="nome">Karina Gama</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">24 anos | Rio de Janeiro/RJ</h4>
+                              <h4 class="cidade">24 anos | Rio de Janeiro (RJ)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:kakahgama@gmail.com?subject=Contato%20com%20Karina">kakahgama@gmail.com</a></h3>
@@ -135,7 +197,63 @@
                       </section>
                     </section>
                   </section>
-                <!-- FIM BOX -->
+                  <!-- FIM BOX -->
+
+
+
+                  <!-- NOVO BOX -->
+                  <section class="result sp"  id="flip_victoriamoreira">
+                    <h3 class="flip" id="victoriamoreira"> <a href="javascript:" onClick="profissional('victoriamoreira')"><img src="../img/fotos/foto_victoriamoreira.jpg" class="icone_funcoes">Victória Moreira (SP)</a></h3>
+                  </section>
+
+                    <section class="painel" id="painel_victoriamoreira">
+                      <section class="box">
+                        <section class="info">
+                          <div class="fechar">
+                            <h3 class="link"><a href="javascript:" onClick="profissional_fechar('victoriamoreira')" >FECHAR </a></h3>
+                          </div>
+                            <section class="box-nome">
+                                <h1 class="nome">Victória Moreira</h1>
+                            </section>
+                            <section class="box-cidade">
+                                <h4 class="cidade">21 anos | Osasco (SP)</h4>
+                            </section>
+                            <section class="box-email">
+                                <h3 class="link"><a href="mailto:victoria.mslopes@gmail.com?subject=Contato%20com%20Vitoria">victoria.mslopes@gmail.com</a></h3>
+                            </section>
+                            <section class="box-apresentacao">
+                                <p class="apresentacao"> Victória Moreira, 21 anos, estudante de rádio, TV e internet da faculdade Cásper Líbero. Experiência com os softwares: Illustrator, Photoshop, Premiere, After Effects e Audition. </p>
+                            </section>
+                            <section class="box-site">
+                                <h3 class="link"><a href="http://behance.com/victoriamslopes" target="_blank"> http://behance.com/victoriamslopes</a></h3>
+                            </section>
+
+                            <section class="box-outras-funcoes">
+                                <h3 class="link">Outras atividades de Victória Moreira<br>
+                                  <a href="correcaocor.html#victoriamoreira">Correção de cor</a> |
+                                  <a href="edicao.html#victoriamoreira">Edição</a> |
+                                  <a href="mixagem.html#victoriamoreira">Mixagem e efeitos sonoros</a>
+                                  </h3>
+                            </section>
+                        </section>
+
+                          <section class="photo">
+                              <div class="photo_paisagem">
+                                <a tabindex="1">
+                                  <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                  <img class="photo_paisagem" src="../img/fotos/foto_victoriamoreira.jpg" alt="Foto de Karoline Maia"></a>
+                                <span class="close"></span>
+                              </div>
+
+
+                            <iframe class="video" src="https://www.youtube.com/embed/iI80pJji8YE" frameborder="0" allowfullscreen></iframe>
+                            <section class="video-mostra">
+                                <h3 class="video-mostra">Amostra de vídeo</h3>
+                            </section>
+                        </section>
+                      </section>
+                    </section>
+                    <!-- FIM BOX -->
 
       </section>
     </article>

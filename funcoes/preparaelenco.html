@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -31,12 +31,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -54,6 +54,9 @@
         <div class="checkbox" id="content1" style="display: none">
           <h3 class="checkbox">
           Você quer conhecer profissionais de quais estados?<br>
+
+          <input type="checkbox" checked id="chk1" value="ba" />
+          <label for="chk1">BA</label>
 
           <input type="checkbox" checked id="chk2" value="rj" />
           <label for="chk2">RJ</label>
@@ -85,7 +88,64 @@
 
         <section class="box-container" id="content" style="display: none">
 
-          <!-- NOVO BOX-->
+
+
+          <!-- NOVO BOX -->
+          <section class="result ba"  id="flip_beatrizvieirah">
+            <h3 class="flip" id="beatrizvieirah"> <a href="javascript:" onClick="profissional('beatrizvieirah')"><img src="../img/fotos/foto_beatrizvieirah.jpg" class="icone_funcoes">Beatriz Vieirah (BA)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_beatrizvieirah">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"> <a href="javascript:" onClick="profissional_fechar('beatrizvieirah')"> FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Beatriz Vieirah</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">24 anos | São Félix (BA)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:b.vieirah1@gmail.com?subject=Contato%20com%20Beatriz">b.vieirah1@gmail.com</a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Graduanda em Cinema e Audiovisual pela Universidade Federal do Recôncavo da Bahia, ativista negra feminista, fotógrafa, coordenadora e idealizadora do Projeto Seminário Cinema Negro Brasileiro. Tem experiência no cinema e vídeo filmmaker, assistente de direção, câmera, roteiro e preparação de atores, com destaque para as obras cinematográficas, Lápis de Cor, O Cadeado, Entre Passos, Sinfonia de Uma Pequena Cidade, Noite de Baile, telefilme O milagre dos pássaros, videoclipe Mau Achismo e O corpo é meu. Já ministou oficinas de Produção de Vídeo. Suas pesquisa gira em torno de Mulheres Negras no Cinema Brasileiro. E atualmente está produzindo Lélia Gonzalez - O Filme, enquanto diretora. </p>
+                    </section>
+                    <section class="box-site">
+                      <!-- Para inserir link de site <h3 class="link"><a href="#" target="_blank"> http://</a></h3>--->
+                    </section>
+                      <section class="box-outras-funcoes">
+                          <h3 class="link">Outras atividades de Beatriz Vieirah<br>
+                            <a href="direcao.html#beatrizvieirah">Direção</a> |
+                            <a href="direcaodefoto.html#beatrizvieirah">Direção de fotografia</a> |
+                            <a href="pesquisa.html#beatrizvieirah">Pesquisa e desenvolvimento</a> |
+                            <a href="roteiro.html#beatrizvieirah">Roteiro</a> |
+                            <a href="oficinas.html#beatrizvieirah">Oficinas</a>
+                      </section>
+                  </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_beatrizvieirah.jpg" alt="Foto de Beatriz Vieirah"></a>
+                        <span class="close"></span>
+                      </div>
+
+                      <iframe class="video" src="https://www.youtube.com/embed/Dp-LxZ3Ck7c" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                      <section class="video-mostra">
+                          <h3 class="video-mostra">Amostra de vídeo</h3>
+                      </section>
+                 </section>
+                </section>
+              </section>
+              <!-- FIM BOX -->
+
+
+
+              <!-- NOVO BOX-->
             <section class="result rj"  id="flip_nadiabambirra">
               <h3 class="flip" id="nadiabambirra"><a href="javascript:" onClick="profissional('nadiabambirra')"><img src="../img/fotos/foto_nadiabambirra.jpg" class="icone_funcoes">Nadia Bambirra (RJ)</a></h3>
             </section>
@@ -100,7 +160,7 @@
                           <h1 class="nome">Nadia Bambirra</h1>
                       </section>
                       <section class="box-cidade">
-                          <h4 class="cidade">51 anos | Rio de Janeiro/RJ</h4>
+                          <h4 class="cidade">51 anos | Rio de Janeiro (RJ)</h4>
                       </section>
                       <section class="box-email">
                           <h3 class="link"><a href="mailto:nadiabambirra@hotmail.com?subject=Contato%20com%20Nadia">nadiabambirra@hotmail.com</a></h3>

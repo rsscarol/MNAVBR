@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -31,12 +31,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -56,6 +56,9 @@
           Você quer conhecer profissionais de quais estados?<br>
           <input type="checkbox" checked id="chk1" value="al" onclick="change()">
           <label for="chk1">AL</label>
+
+          <input type="checkbox" checked id="chk2" value="ba" />
+          <label for="chk2">BA</label>
 
           <input type="checkbox" checked id="chk3" value="pe" onclick="change()">
           <label for="chk3">PE</label>
@@ -105,7 +108,7 @@
                         <h1 class="nome">Brenda Ligia Miguel</h1>
                     </section>
                     <section class="box-cidade">
-                        <h4 class="cidade">Recife/PE</h4>
+                        <h4 class="cidade">Recife (PE)</h4>
                     </section>
                     <section class="box-email">
                         <h3 class="link"><a href="mailto:brenda.ligia@hotmail.com?subject=Contato%20com%20Brenda">brenda.ligia@hotmail.com</a></h3>
@@ -159,7 +162,7 @@
                           <h1 class="nome">Carol Rodrigues</h1>
                       </section>
                       <section class="box-cidade">
-                          <h4 class="cidade">32 anos | São Paulo/SP</h4>
+                          <h4 class="cidade">32 anos | São Paulo (SP)</h4>
                       </section>
                       <section class="box-email">
                           <h3 class="link"><a href="mailto:rsscarol@gmail.com?subject=Contato%20com%20Carol">rsscarol@gmail.com</a></h3>
@@ -213,7 +216,7 @@
                           <h1 class="nome">Catarina Apolonio</h1>
                       </section>
                       <section class="box-cidade">
-                          <h4 class="cidade">36 anos | Fortaleza/CE e Recife/PE</h4>
+                          <h4 class="cidade">36 anos | Fortaleza (CE) e Recife (PE)</h4>
                       </section>
                       <section class="box-email">
                           <h3 class="link"><a href="mailto:catapolonio@gmail.com?subject=Contato%20com%20Catarina">catapolonio@gmail.com</a></h3>
@@ -249,7 +252,61 @@
 
 
 
-              <!-- NOVO BOX -->
+              <!-- NOVO BOX-->
+                <section class="result sp"  id="flip_danddara" >
+                  <h3 class="flip" id="danddara"><a href="javascript:" onClick="profissional('danddara')"><img src="../img/fotos/foto_danddara.jpg" class="icone_funcoes">Danddara (SP)</a></h3>
+                </section>
+
+                  <section class="painel" id="painel_danddara">
+                    <section class="box">
+                      <section class="info">
+                        <div class="fechar">
+                          <h3 class="link"><a href="javascript:" onClick="profissional_fechar('danddara')" >FECHAR </a></h3>
+                        </div>
+                          <section class="box-nome">
+                              <h1 class="nome">Danddara</h1>
+                          </section>
+                          <section class="box-cidade">
+                              <h4 class="cidade">47 anos | Campinas (SP)</h4>
+                          </section>
+                          <section class="box-email">
+                              <h3 class="link"><a href="mailto:dandarah@rocketmail.com?subject=Contato%20com%20Danddara">dandarah@rocketmail.com</a></h3>
+                          </section>
+                          <section class="box-apresentacao">
+                              <p class="apresentacao"> DANDDARA nasce em 1968; cresce na cena cultural do Samba carioca. É cineasta, performer, escritora e artista florestal premiada no Brasil e nos EUA. Sua arte ambientalista explora as Florestas Brasileiras em várias mídias. Em 1985, estreia no palco em musical de Bia Lessa. Em 1988, estreia no livro em antologias da Oficina Literária Ivan Proença; no mesmo ano funda o TEATRO FLORESTAL DO RIO DE JANEIRO. Na RIO-92, seu show Amor à Natureza com Henrique Cazes apresenta repertório de EcoSambas em evento cultural oficial. Muda pra Nova York em 1993. Em 2000 com Gurufim na Mangueira, estreia no cinema e se torna a primeira mulher negra cineasta do Brasil.</p>
+                          </section>
+                          <section class="box-site">
+                              <h3 class="link"><a href="https://branded.me/danddara" target="_blank"> https://branded.me/danddara </a></h3>
+                          </section>
+                          <section class="box-outras-funcoes">
+                            <h3 class="link">Outras atividades de Danddara<br>
+                              <a href="atuacao.html#danddara">Atuação</a> |
+                              <a href="direcao.html#danddara">Direção</a> |
+                              <a href="roteiro.html#danddara">Roteiro</a>
+                              </h3>
+                          </section>
+                      </section>
+
+                      <section class="photo">
+                          <div class="photo_paisagem">
+                            <a tabindex="1">
+                              <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                              <img class="photo_paisagem" src="../img/fotos/foto_danddara.jpg" alt="Foto de Danddara" id="dir"></a>
+                            <span class="close"></span>
+                          </div>
+
+                          <iframe class="video" src="https://player.vimeo.com/video/17489319" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                          <section class="video-mostra">
+                              <h3 class="video-mostra">Amostra de vídeo </h3>
+                          </section>
+                      </section>
+                    </section>
+                  </section>
+                  <!-- FIM BOX -->
+
+
+
+                  <!-- NOVO BOX-->
               <section class="result sp"  id="flip_jessicafigueiro">
                 <h3 class="flip" id="jessicafigueiro"> <a href="javascript:" onClick="profissional('jessicafigueiro')"><img src="../img/fotos/foto_jessicafigueiro.jpg" class="icone_funcoes">Jessica Figueiró (SP)</a></h3>
               </section>
@@ -264,7 +321,7 @@
                             <h1 class="nome">Jessica Figueiró</h1>
                         </section>
                         <section class="box-cidade">
-                            <h4 class="cidade">23 anos | São Paulo/SP</h4>
+                            <h4 class="cidade">23 anos | São Paulo (SP)</h4>
                         </section>
                         <section class="box-email">
                             <h3 class="link"><a href="mailto:figueiroh@outlook.com?subject=Contato%20com%20Jessica">figueiroh@outlook.com</a></h3>
@@ -322,7 +379,7 @@
                             <h1 class="nome">Karoline Maia</h1>
                         </section>
                         <section class="box-cidade">
-                            <h4 class="cidade">22 anos | São Paulo/SP</h4>
+                            <h4 class="cidade">22 anos | São Paulo (SP)</h4>
                         </section>
                         <section class="box-email">
                             <h3 class="link"><a href="mailto:karolinemaias@gmail.com?subject=Contato%20com%20Karoline">karolinemaias@gmail.com</a></h3>
@@ -364,6 +421,62 @@
 
 
                 <!-- NOVO BOX-->
+                <section class="result ba"  id="flip_evanizeessi">
+                  <h3 class="flip" id="evanizeessi"> <a href="javascript:" onClick="profissional('evanizeessi')"><img src="../img/fotos/foto_evanizeessi.jpg" class="icone_funcoes">Evanize Essi (BA)</a></h3>
+                </section>
+
+                  <section class="painel" id="painel_evanizeessi">
+                    <section class="box">
+                      <section class="info">
+                        <div class="fechar">
+                          <h3 class="link"><a href="javascript:" onClick="profissional_fechar('evanizeessi')" >FECHAR </a></h3>
+                        </div>
+                          <section class="box-nome">
+                              <h1 class="nome">Evanize Essi</h1>
+                          </section>
+                          <section class="box-cidade">
+                              <h4 class="cidade">22 anos | Cachoeira (BA)</h4>
+                          </section>
+                          <section class="box-email">
+                              <h3 class="link"><a href="mailto:evanizeuk@gmail.com?subject=Contato%20com%20Evanize">evanizeuk@gmail.com</a></h3>
+                          </section>
+                          <section class="box-apresentacao">
+                              <p class="apresentacao"> Graduanda em Cinema e Audiovisual pela UFRB, integrante do PET Cinema e do Laboratório de Análise e Criação em Imagem e Som (LACIS). Conselheira suplente do Conselho Municipal de Cultura de Santo Amaro/BA e diretora de projetos na Ápice Empresa Jr. de comunicação.</p>
+                          </section>
+                          <section class="box-site">
+                              <h3 class="link"><a href="https://www.facebook.com/focoforcaeflash/" target="_blank"> https://www.facebook.com/focoforcaeflash/</a></h3>
+                          </section>
+
+                          <section class="box-outras-funcoes">
+                              <h3 class="link">Outras atividades de Evanize Essi<br>
+                                <a href="direcaodefoto.html#evanizeessi">Direção de fotografia</a> |
+                                <a href="still.html#evanizeessi">Fotografia still</a> |
+                                <a href="iluminacao.html#evanizeessi">Iluminação</a>
+                                </h3>
+                          </section>
+                      </section>
+
+                        <section class="photo">
+                            <div class="photo_paisagem">
+                              <a tabindex="1">
+                                <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                <img class="photo_paisagem" src="../img/fotos/foto_evanizeessi.jpg" alt="Foto de Evanize Essi"></a>
+                              <span class="close"></span>
+                            </div>
+
+
+                          <iframe class="video" src="https://www.youtube.com/embed/W5otyEWQbjA" frameborder="0" allowfullscreen></iframe>
+                          <section class="video-mostra">
+                              <h3 class="video-mostra">Amostra de vídeo</h3>
+                          </section>
+                      </section>
+                    </section>
+                  </section>
+                  <!-- FIM BOX -->
+
+
+
+                  <!-- NOVO BOX-->
                   <section class="result al"  id="flip_nairaevine">
                     <h3 class="flip" id="nairaevine"><a href="javascript:" onClick="profissional('nairaevine')"><img src="../img/fotos/foto_nairaevine.jpg" class="icone_funcoes">Naira Evine (AL)</a></h3>
                   </section>
@@ -378,7 +491,7 @@
                                 <h1 class="nome">Naira Evine</h1>
                             </section>
                             <section class="box-cidade">
-                                <h4 class="cidade">23 anos | Maceió/AL</h4>
+                                <h4 class="cidade">23 anos | Maceió (AL)</h4>
                             </section>
                             <section class="box-email">
                                 <h3 class="link"><a href="mailto:naira.nai@gmail.com?subject=Contato%20com%20Naira">naira.nai@gmail.com</a></h3>
@@ -417,6 +530,119 @@
                       </section>
                     </section>
                     <!-- FIM BOX -->
+
+
+
+                    <!-- NOVO BOX -->
+                    <section class="result sp"  id="flip_victoriaduarte">
+                      <h3 class="flip" id="victoriaduarte"> <a href="javascript:" onClick="profissional('victoriaduarte')"><img src="../img/fotos/foto_victoriaduarte.jpg" class="icone_funcoes">Victória Duarte (SP)</a></h3>
+                    </section>
+
+                      <section class="painel" id="painel_victoriaduarte">
+                        <section class="box">
+                          <section class="info">
+                            <div class="fechar">
+                              <h3 class="link"><a href="javascript:" onClick="profissional_fechar('victoriaduarte')" >FECHAR </a></h3>
+                            </div>
+                              <section class="box-nome">
+                                  <h1 class="nome">Victória Duarte</h1>
+                              </section>
+                              <section class="box-cidade">
+                                  <h4 class="cidade">19 anos | São Paulo (SP)</h4>
+                              </section>
+                              <section class="box-email">
+                                  <h3 class="link"><a href="mailto:vitoriafirmiano2009@hotmail.com?subject=Contato%20com%20Vitoria">vitoriafirmiano2009@hotmail.com</a></h3>
+                              </section>
+                              <section class="box-apresentacao">
+                                  <p class="apresentacao"> Fiz um curso técnico de multimídia de 1 ano e meio, no meu TCC fiquei responsável pela parte de fotografia, gravação dos vídeos e edição de ambos. Realizei também um curso básico de cinema (É NOIS NA FITA) fiquei como assistente de fotografia do curta que realizamos. E atualmente fotografo por aí. </p>
+                              </section>
+                              <section class="box-site">
+                                  <!-- INSERIR SITE
+                                  <h3 class="link"><a href="http://behance.com/victoriamslopes" target="_blank"> http://behance.com/victoriamslopes</a></h3>-->
+                              </section>
+
+                              <section class="box-outras-funcoes">
+                                  <h3 class="link">Outras atividades de Victória Duarte<br>
+                                    <a href="assistfoto.html#victoriaduarte">Assistência de fotografia</a> |
+                                    <a href="captacaosom.html#victoriaduarte">Captação de som</a> |
+                                    <a href="iluminacao.html#victoriaduarte">Iluminação</a>
+                                    </h3>
+                              </section>
+                          </section>
+
+                            <section class="photo">
+                                <div class="photo_paisagem">
+                                  <a tabindex="1">
+                                    <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                    <img class="photo_paisagem" src="../img/fotos/foto_victoriaduarte.jpg" alt="Foto de Victória Duarte"></a>
+                                  <span class="close"></span>
+                                </div>
+
+
+                              <iframe class="video" src="https://www.youtube.com/embed/a4-ERUpcgu0" frameborder="0" allowfullscreen></iframe>
+                              <section class="video-mostra">
+                                  <h3 class="video-mostra">Amostra de vídeo</h3>
+                              </section>
+                          </section>
+                        </section>
+                      </section>
+                      <!-- FIM BOX -->
+
+
+
+                    <!-- NOVO BOX -->
+                    <section class="result sp"  id="flip_victoriamoreira">
+                      <h3 class="flip" id="victoriamoreira"> <a href="javascript:" onClick="profissional('victoriamoreira')"><img src="../img/fotos/foto_victoriamoreira.jpg" class="icone_funcoes">Victória Moreira (SP)</a></h3>
+                    </section>
+
+                      <section class="painel" id="painel_victoriamoreira">
+                        <section class="box">
+                          <section class="info">
+                            <div class="fechar">
+                              <h3 class="link"><a href="javascript:" onClick="profissional_fechar('victoriamoreira')" >FECHAR </a></h3>
+                            </div>
+                              <section class="box-nome">
+                                  <h1 class="nome">Victória Moreira</h1>
+                              </section>
+                              <section class="box-cidade">
+                                  <h4 class="cidade">21 anos | Osasco (SP)</h4>
+                              </section>
+                              <section class="box-email">
+                                  <h3 class="link"><a href="mailto:victoria.mslopes@gmail.com?subject=Contato%20com%20Vitoria">victoria.mslopes@gmail.com</a></h3>
+                              </section>
+                              <section class="box-apresentacao">
+                                  <p class="apresentacao"> Victória Moreira, 21 anos, estudante de rádio, TV e internet da faculdade Cásper Líbero. Experiência com os softwares: Illustrator, Photoshop, Premiere, After Effects e Audition. </p>
+                              </section>
+                              <section class="box-site">
+                                  <h3 class="link"><a href="http://behance.com/victoriamslopes" target="_blank"> http://behance.com/victoriamslopes</a></h3>
+                              </section>
+
+                              <section class="box-outras-funcoes">
+                                  <h3 class="link">Outras atividades de Victória Moreira<br>
+                                    <a href="continuidade.html#victoriamoreira">Continuidade</a> |
+                                    <a href="correcaocor.html#victoriamoreira">Correção de cor</a> |
+                                    <a href="mixagem.html#victoriamoreira">Mixagem e efeitos sonoros</a>
+                                    </h3>
+                              </section>
+                          </section>
+
+                            <section class="photo">
+                                <div class="photo_paisagem">
+                                  <a tabindex="1">
+                                    <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                    <img class="photo_paisagem" src="../img/fotos/foto_victoriamoreira.jpg" alt="Foto de Victória Moreira"></a>
+                                  <span class="close"></span>
+                                </div>
+
+
+                              <iframe class="video" src="https://www.youtube.com/embed/iI80pJji8YE" frameborder="0" allowfullscreen></iframe>
+                              <section class="video-mostra">
+                                  <h3 class="video-mostra">Amostra de vídeo</h3>
+                              </section>
+                          </section>
+                        </section>
+                      </section>
+                      <!-- FIM BOX -->
 
 
 

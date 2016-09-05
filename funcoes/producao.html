@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Mulheres Negras no Audiovisual Brasileiro</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px)">
-    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-width: 700px)">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -31,12 +31,12 @@
         <li><a href="../apresentacao.html">Apresentação</a></li>
         <li><a href="../buscar.html" class="active">Buscar</a>
           <ul class="submenu">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
           <ul class="submenu_responsivo">
-            <li><a href="nome.html">por NOME</a></li>
-            <li><a href="funcao.html">pela FUNÇÃO</a></li>
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
           </ul>
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
@@ -60,8 +60,11 @@
           <input type="checkbox" checked id="chk2" value="rj" />
           <label for="chk2">RJ</label>
 
-          <input type="checkbox" checked id="chk3" value="sp" />
-          <label for="chk3">SP</label>
+          <input type="checkbox" checked id="chk3" value="se" />
+          <label for="chk3">SE</label>
+
+          <input type="checkbox" checked id="chk4" value="sp" />
+          <label for="chk4">SP</label>
         </h3>
         </div>
 
@@ -90,6 +93,65 @@
         <section class="box-container" id="content" style="display: none">
 
           <!-- NOVO BOX -->
+          <section class="result sp"  id="flip_annapaulafurtado">
+            <h3 class="flip" id="annapaulafurtado"> <a href="javascript:" onClick="profissional('annapaulafurtado')"><img src="../img/fotos/foto_annapaulafurtado.jpg" class="icone_funcoes">Anna Paula Furtado (SP)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_annapaulafurtado">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"><a href="javascript:" onClick="profissional_fechar('annapaulafurtado')" >FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Anna Paula Furtado</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">21 anos | São Paulo (SP)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:furtadoannapaula@gmail.com?subject=Contato%20com%20Anna">furtadoannapaula@gmail.com
+  </a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Estou no oitavo semestre da faculdade de Cinema. Dirijo e faço o roteiro do meu TCC, um documentário sobre resistência feminina no Samba. Busco atuar nessas áreas, de cultura popular e questões de gênero e raça. Estou no começo da minha carreira mas sonho grande e não paro quieta, estou sempre à disposição!  </p>
+                    </section>
+            <!--  PARA INSERIR SITE
+                    <section class="box-site">
+                        <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                    </section> -->
+
+                    <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Anna Paula Furtado<br>
+                          <a href="continuidade.html#annapaulafurtado">Continuidade</a> |
+                          <a href="direcao.html#annapaulafurtado">Direção</a> |
+                          <a href="still.html#annapaulafurtado">Fotografia Still</a> |
+                          <a href="roteiro.html#annapaulafurtado">Roteiro</a>
+                          </h3>
+                    </section>
+                </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_annapaulafurtado.jpg" alt="Foto de Anna Paula Furtado"></a>
+                        <span class="close"></span>
+                      </div>
+
+
+                    <iframe class="video" src="https://www.youtube.com/embed/qWy5PXnsW2k" frameborder="0" allowfullscreen></iframe>
+                    <section class="video-mostra">
+                        <h3 class="video-mostra">Amostra de vídeo</h3>
+                    </section>
+                </section>
+              </section>
+            </section>
+            <!-- FIM BOX -->
+
+
+
+            <!-- NOVO BOX -->
           <section class="result pe"  id="flip_amandaramos">
             <h3 class="flip" id="brendaligiamiguel"> <a href="javascript:" onClick="profissional('amandaramos')"><img src="../img/fotos/foto_amandaramos.jpg" class="icone_funcoes">Amanda Ramos (PE)</a></h3>
           </section>
@@ -104,7 +166,7 @@
                         <h1 class="nome">Amanda Ramos</h1>
                     </section>
                     <section class="box-cidade">
-                        <h4 class="cidade">29 anos | Olinda/PE</h4>
+                        <h4 class="cidade">29 anos | Olinda (PE)</h4>
                     </section>
                     <section class="box-email">
                         <h3 class="link"><a href="mailto:aamandaramos@gmail.com?subject=Contato%20com%20Amanda">aamandaramos@gmail.com</a></h3>
@@ -153,7 +215,7 @@
                           <h1 class="nome">Beatriz Lima</h1>
                       </section>
                       <section class="box-cidade">
-                          <h4 class="cidade">22 anos | Rio de Janeiro/RJ</h4>
+                          <h4 class="cidade">22 anos | Rio de Janeiro (RJ)</h4>
                       </section>
                       <section class="box-email">
                           <h3 class="link"><a href="mailto:beatriz@caseirasproducoes.art.br?subject=Contato%20com%20Beatriz">beatriz@caseirasproducoes.art.br</a></h3>
@@ -258,7 +320,7 @@
                             <h1 class="nome">Dielly Amarante</h1>
                         </section>
                         <section class="box-cidade">
-                            <h4 class="cidade">25 anos | São Paulo/SP</h4>
+                            <h4 class="cidade">25 anos | São Paulo (SP)</h4>
                         </section>
                         <section class="box-email">
                             <h3 class="link"><a href="mailto:diellyamrante@gmail.com?subject=Contato%20com%20Dielly">diellyamrante@gmail.com</a></h3>
@@ -314,7 +376,7 @@
                               <h1 class="nome">Issis Valenzuela</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">33 anos | São Paulo/SP</h4>
+                              <h4 class="cidade">33 anos | São Paulo (SP)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:issis@tabuleirofilmes.com.br?subject=Contato%20com%20Issis">issis@tabuleirofilmes.com.br</a></h3>
@@ -354,6 +416,60 @@
 
 
                 <!-- NOVO BOX-->
+                  <section class="result sp"  id="flip_jaquelineoliveira">
+                    <h3 class="flip" id="jaquelineoliveira"><a href="javascript:" onClick="profissional('jaquelineoliveira')"><img src="../img/fotos/foto_jaquelineoliveira.jpg" class="icone_funcoes">Jaqueline Oliveira (SP)</a></h3>
+                  </section>
+
+                    <section class="painel" id="painel_jaquelineoliveira">
+                      <section class="box">
+                        <section class="info">
+                          <div class="fechar">
+                            <h3 class="link"><a href="javascript:" onClick="profissional_fechar('jaquelineoliveira')" >FECHAR </a></h3>
+                          </div>
+                            <section class="box-nome">
+                                <h1 class="nome">Jaqueline Oliveira</h1>
+                            </section>
+                            <section class="box-cidade">
+                                <h4 class="cidade">32 anos | São Paulo (SP)</h4>
+                            </section>
+                            <section class="box-email">
+                                <h3 class="link"><a href="mailto:jornalista.jack@gmail.com?subject=Contato%20com%20Jaqueline">jornalista.jack@gmail.com</a></h3>
+                            </section>
+                            <section class="box-apresentacao">
+                                <p class="apresentacao"> Sou comunicadora e me especializei em produção audiviosual por acreditar que precisamos de conteúdos mais profundos e realistas. Ainda não me envolvi em nenhum trabalho do tipo, a não ser durante os estudos. Porém, estou à disposição para colaborar com todas as manas desse grandioso movimento de representatividade da mulher negra e sobretudo, do nosso cinema. Sou fã de documentários e tenho muita vontade de produzir algum de temática relevante a sociedade. Acredito que o audiovisual tem muito potencial de levar conhecimento e reflexão por meio de obras nacionais de qualidade. </p>
+                            </section>
+
+                            <section class="box-site">
+                                <h3 class="link"><a href="https://medium.com/@jornalista.jack" target="_blank"> https://medium.com/@jornalista.jack/</a></h3>
+                            </section>
+
+                            <section class="box-outras-funcoes">
+                              <!-- <h3 class="link">Outras atividades de Jaqueline Oliveira<br>
+                                  <a href="direcao.html#jaquelineoliveira">Direção</a>
+                                </h3> -->
+                            </section>
+                        </section>
+
+                        <section class="photo">
+                            <div class="photo_retrato">
+                              <a tabindex="1">
+                                <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                <img class="photo_retrato" src="../img/fotos/foto_jaquelineoliveira.jpg" alt="Foto de Jaqueline Oliveira" id="esq"></a>
+                              <span class="close"></span>
+                            </div>
+                            <!-- Para inserir video e label
+                            <iframe class="video" src="#" frameborder="0" allowfullscreen></iframe>
+                            <section class="video-mostra">
+                                 <h3 class="video-mostra">Amostra de vídeo</h3>
+                            </section> --->
+                        </section>
+                      </section>
+                    </section>
+                    <!-- FIM BOX -->
+
+
+
+                  <!-- NOVO BOX-->
                 <section class="result rj"  id="flip_karinagama">
                   <h3 class="flip" id="karinagama"> <a href="javascript:" onClick="profissional('karinagama')"><img src="../img/fotos/foto_karinagama.jpg" class="icone_funcoes">Karina Gama (RJ)</a></h3>
                 </section>
@@ -368,7 +484,7 @@
                               <h1 class="nome">Karina Gama</h1>
                           </section>
                           <section class="box-cidade">
-                              <h4 class="cidade">24 anos | Rio de Janeiro/RJ</h4>
+                              <h4 class="cidade">24 anos | Rio de Janeiro (RJ)</h4>
                           </section>
                           <section class="box-email">
                               <h3 class="link"><a href="mailto:kakahgama@gmail.com?subject=Contato%20com%20Karina">kakahgama@gmail.com</a></h3>
@@ -424,7 +540,7 @@
                                 <h1 class="nome">Karoline Maia</h1>
                             </section>
                             <section class="box-cidade">
-                                <h4 class="cidade">22 anos | São Paulo/SP</h4>
+                                <h4 class="cidade">22 anos | São Paulo (SP)</h4>
                             </section>
                             <section class="box-email">
                                 <h3 class="link"><a href="mailto:karolinemaias@gmail.com?subject=Contato%20com%20Karoline">karolinemaias@gmail.com</a></h3>
@@ -466,6 +582,64 @@
 
 
                     <!-- NOVO BOX -->
+                    <section class="result sp"  id="flip_liliansantiago">
+                      <h3 class="flip" id="liliansantiago"> <a href="javascript:" onClick="profissional('liliansantiago')"><img src="../img/fotos/foto_liliansantiago.jpg" class="icone_funcoes">Lilian Santiago (SP)</a></h3>
+                    </section>
+
+                      <section class="painel" id="painel_liliansantiago">
+                        <section class="box">
+                          <section class="info">
+                            <div class="fechar">
+                              <h3 class="link"><a href="javascript:" onClick="profissional_fechar('liliansantiago')" >FECHAR </a></h3>
+                            </div>
+                              <section class="box-nome">
+                                  <h1 class="nome">Lilian Santiago</h1>
+                              </section>
+                              <section class="box-cidade">
+                                  <h4 class="cidade">46 anos | Salto (SP)</h4>
+                              </section>
+                              <section class="box-email">
+                                  <h3 class="link"><a href="mailto:lilianssantiago2014@gmail.com?subject=Contato%20com%20Lilian">lilianssantiago2014@gmail.com
+            </a></h3>
+                              </section>
+                              <section class="box-apresentacao">
+                                  <p class="apresentacao"> Lilian Solá Santiago é historiadora e Mestre e Integração da América Latina pela USP (Universidade de São Paulo) e atua há mais de 15 anos na área de produção e ensino audiovisual. Atualmente é professora-cineasta do curso de Cinema do CEUNSP - Centro Universitário Nossa Senhora do Patrocínio – Salto /SP, onde coordena a Produtora Experimental do curso, a Kimera Filmes.
+                                  Entre suas realizações audiovisuais estão os documentários "Fios do Passado" (2015), “Batuque de Graxa” (2012); “Eu tenho a palavra” (2010) ; "Roda o Tereré" (2009); o doc-ficção “Graffiti” (2008); “Balé de Pé no Chão”(2006) e o filme documentário “Família Alcântara” (2005), com Daniel Santiago.  </p>
+                              </section>
+                      <!--  PARA INSERIR SITE
+                              <section class="box-site">
+                                  <h3 class="link"><a href=# target="_blank"> https://</a></h3>
+                              </section> -->
+
+                              <section class="box-outras-funcoes">
+                                  <h3 class="link">Outras atividades de Lilian Santiago<br>
+                                    <a href="direcao.html#liliansantiago">Direção</a> |
+                                    <a href="roteiro.html#liliansantiago">Roteiro</a>
+                                    </h3>
+                              </section>
+                          </section>
+
+                            <section class="photo">
+                                <div class="photo_paisagem">
+                                  <a tabindex="1">
+                                    <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                    <img class="photo_paisagem" src="../img/fotos/foto_liliansantiago.jpg" alt="Foto de Lilian Santiago"></a>
+                                  <span class="close"></span>
+                                </div>
+
+
+                              <iframe class="video" src="https://www.youtube.com/embed/kb2tSAMFQuY" frameborder="0" allowfullscreen></iframe>
+                              <section class="video-mostra">
+                                  <h3 class="video-mostra">Amostra de vídeo</h3>
+                              </section>
+                          </section>
+                        </section>
+                      </section>
+                      <!-- FIM BOX -->
+
+
+
+                      <!-- NOVO BOX -->
                     <section class="result rj"  id="flip_luanadias">
                       <h3 class="flip" id="luanadias"> <a href="javascript:" onClick="profissional('luanadias')"><img src="../img/fotos/foto_luanadias.jpg" class="icone_funcoes">Luana Dias (RJ)</a></h3>
                     </section>
@@ -480,7 +654,7 @@
                                   <h1 class="nome">Luana Dias</h1>
                               </section>
                               <section class="box-cidade">
-                                  <h4 class="cidade">31 anos | Rio de Janeiro/RJ</h4>
+                                  <h4 class="cidade">31 anos | Rio de Janeiro (RJ)</h4>
                               </section>
                               <section class="box-email">
                                   <h3 class="link"><a href="mailto:luanaasd@gmail.com?subject=Contato%20com%20Luana">luanaasd@gmail.com </a></h3>
@@ -522,6 +696,59 @@
 
 
                       <!-- NOVO BOX -->
+                      <section class="result se"  id="flip_lucianaoliveira">
+                        <h3 class="flip" id="lucianaoliveira"> <a href="javascript:" onClick="profissional('lucianaoliveira')"><img src="../img/fotos/foto_lucianaoliveira.jpg" class="icone_funcoes">Luciana Oliveira (SE)</a></h3>
+                      </section>
+
+                        <section class="painel" id="painel_lucianaoliveira">
+                          <section class="box">
+                            <section class="info">
+                              <div class="fechar">
+                                <h3 class="link"> <a href="javascript:" onClick="profissional_fechar('lucianaoliveira')"> FECHAR </a></h3>
+                              </div>
+                                <section class="box-nome">
+                                    <h1 class="nome">Luciana Oliveira</h1>
+                                </section>
+                                <section class="box-cidade">
+                                    <h4 class="cidade">26 anos | Aracaju (SE)</h4>
+                                </section>
+                                <section class="box-email">
+                                    <h3 class="link"><a href="mailto:luoliveira.vieira@gmail.com?subject=Contato%20com%20Luciana">luoliveira.vieira@gmail.com</a></h3>
+                                </section>
+                                <section class="box-apresentacao">
+                                    <p class="apresentacao"> Cineasta. Graduada em Audiovisual e Mestranda em Cinema pela Universidade Federal de Sergipe. Pesquisa o cinema de autorrepresentação realizado por mulheres negras atualmente no Brasil.  </p>
+                                </section>
+                                <section class="box-site">
+                                  <!-- Para inserir link de site <h3 class="link"><a href="#" target="_blank"> http://</a></h3>--->
+                                </section>
+                                  <section class="box-outras-funcoes">
+                                      <h3 class="link">Outras atividades de Luciana Oliveira<br>
+                                        <a href="direcao.html#lucianaoliveira">Direção</a> |
+                                        <a href="figurino.html#lucianaoliveira">Figurino</a>
+
+                                  </section>
+                              </section>
+
+                              <section class="photo">
+                                  <div class="photo_paisagem">
+                                    <a tabindex="1">
+                                      <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                                      <img class="photo_paisagem" src="../img/fotos/foto_lucianaoliveira.jpg" alt="Foto de Luciana Oliveira" id="dir"></a>
+                                    <span class="close"></span>
+                                  </div>
+
+                                  <iframe class="video" src="https://player.vimeo.com/video/131422910" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                                  <section class="video-mostra">
+                                      <h3 class="video-mostra">Amostra de vídeo</h3>
+                                  </section>
+                             </section>
+                            </section>
+                          </section>
+                          <!-- FIM BOX -->
+
+
+
+                          <!-- NOVO BOX-->
                       <section class="result sp"  id="flip_lumareis">
                         <h3 class="flip" id="lumareis"> <a href="javascript:" onClick="profissional('lumareis')"><img src="../img/fotos/foto_lumareis.jpg" class="icone_funcoes">Luma Reis (SP)</a></h3>
                       </section>
@@ -536,7 +763,7 @@
                                     <h1 class="nome">Luma Reis</h1>
                                 </section>
                                 <section class="box-cidade">
-                                    <h4 class="cidade">28 anos | Santo André/SP</h4>
+                                    <h4 class="cidade">28 anos | Santo André (SP)</h4>
                                 </section>
                                 <section class="box-email">
                                     <h3 class="link"><a href="mailto:lumareis@gmail.com?subject=Contato%20com%20Luma">lumareis@gmail.com</a></h3>
@@ -590,7 +817,7 @@
                                         <h1 class="nome">Nadia Bambirra</h1>
                                     </section>
                                     <section class="box-cidade">
-                                        <h4 class="cidade">51 anos | Rio de Janeiro/RJ</h4>
+                                        <h4 class="cidade">51 anos | Rio de Janeiro (RJ)</h4>
                                     </section>
                                     <section class="box-email">
                                         <h3 class="link"><a href="mailto:nadiabambirra@hotmail.com?subject=Contato%20com%20Nadia">nadiabambirra@hotmail.com</a></h3>
@@ -644,7 +871,7 @@
                                             <h1 class="nome">Sheila Pereira</h1>
                                         </section>
                                         <section class="box-cidade">
-                                            <h4 class="cidade">38 anos | Paulista/PE</h4>
+                                            <h4 class="cidade">38 anos | Paulista (PE)</h4>
                                         </section>
                                         <section class="box-email">
                                             <h3 class="link"><a href="mailto:sheilaborboleta33@hotmail.com?subject=Contato%20com%20Sheila">sheilaborboleta33@hotmail.com</a></h3>
@@ -698,7 +925,7 @@
                                               <h1 class="nome">Stella Zimmerman</h1>
                                           </section>
                                           <section class="box-cidade">
-                                              <h4 class="cidade">54 anos | Recife/PE</h4>
+                                              <h4 class="cidade">54 anos | Recife (PE)</h4>
                                           </section>
                                           <section class="box-email">
                                               <h3 class="link"><a href="mailto:agirafilmes@gmail.com?subject=Contato%20com%20Stella">agirafilmes@gmail.com</a></h3>
@@ -754,7 +981,7 @@
                                                 <h1 class="nome">Vânia Feitosa</h1>
                                             </section>
                                             <section class="box-cidade">
-                                                <h4 class="cidade">36 anos | Jundiaí/SP</h4>
+                                                <h4 class="cidade">36 anos | Jundiaí (SP)</h4>
                                             </section>
                                             <section class="box-email">
                                                 <h3 class="link"><a href="mailto:feitosavcf@yahoo.com.br?subject=Contato%20com%20Stella">feitosavcf@yahoo.com.br</a></h3>

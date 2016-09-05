@@ -83,14 +83,14 @@ header {
     font-family: 'Lora', serif;
     font-size: 0.5em;
     display: inline-block;
-    padding: 1em 0.1em;
+    padding: 1em 0.5em;
 }
 
 .main a:not(.active) {
     font-size: 2em;
     text-decoration: none;
     color: #4d004d;
-    padding: 0.5em;
+    padding: 0.5em 0.5em;
 }
 .main li:hover .submenu {
     position: absolute;
@@ -112,6 +112,7 @@ header {
     text-decoration: none;
     color: #929292;
     border-radius: 0.1em;
+    padding: 0.5em 0.5em;
 }
 
 .active:hover {
@@ -257,6 +258,10 @@ h2.funcoes_macro {
     line-height: 1.4;
 }
 
+.none{
+  display: none;
+}
+
 h2.nomes_macro {
     font-family: 'Lato', sans-serif;
     padding: 0em 0em 0em 2.4em;
@@ -267,7 +272,7 @@ h2.nomes_macro {
 }
 
 h2.logo_header{
-  padding: 0em 3em 0em 1em;
+  padding: 0.4em 3em 0em 1em;
   font-size: 1.5em;
   color: #e863a5;
 }
@@ -421,7 +426,6 @@ p.referencia {
     color: #4d004d;
     text-align: left;
     line-height: 1.6;
-    padding: 0em 0em;
     word-wrap: break-word;
 }
 
@@ -431,7 +435,7 @@ p.referencia_titulo {
     color: #4d004d;
     text-align: left;
     line-height: 1.4;
-    padding: 0em 0em;
+    padding: 1em 0em 0em;
 }
 
 .intertitulo{
@@ -781,7 +785,7 @@ img.destaque:hover {
 /* BUSCAR - Grade */
 
 ul.buscar_grade{
-  margin: 0em 4.5em;
+  margin: 0em 5em;
 }
 
 .buscar_grade a {
@@ -800,11 +804,13 @@ ul.buscar_grade{
   height: 7em;
   object-fit: cover;
   padding: 0;
+  margin: -0.2em;
 }
 
 .buscar_grade img:hover{
-  opacity: 0.5;
+  opacity: 0.9;
   background-color: #e863a5;
+  margin: -0.2em;
 }
 
 
