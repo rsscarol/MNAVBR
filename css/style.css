@@ -286,6 +286,10 @@ h3 {
     font-weight: 100;
 }
 
+h3.observacao{
+  text-align: right;
+  padding-right: 5%;
+}
 
 h3.flip {
     font-family: 'Lora', serif;
@@ -457,10 +461,10 @@ article.post-container-funcao {
 .funcoes li {
     font-family: 'Lora', serif;
     font-size: 0.9em;
+    color: #4d004d;
     padding: 0.5em 0em 0em 0.5em;
 }
 .funcoes a {
-    color: #e863a5;
     text-decoration: none;
 }
 
@@ -765,6 +769,11 @@ img.destaque:hover {
   object-fit: cover;
   padding: 0em;
   border-radius: 3em;
+  cursor: pointer;
+}
+
+.icone:hover {
+  opacity: 0.5;
 }
 
 .funcoes_img{
@@ -808,7 +817,7 @@ ul.buscar_grade{
 }
 
 .buscar_grade img:hover{
-  opacity: 0.9;
+  opacity: 0.6;
   background-color: #e863a5;
   margin: -0.2em;
 }

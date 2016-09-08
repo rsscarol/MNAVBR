@@ -463,6 +463,7 @@ article.post-container-funcao {
 .funcoes li {
     font-family: 'Lora', serif;
     font-size: 0.9em;
+    color: #4d004d;
     padding: 0.5em 0em 0em 0.5em;
 }
 .funcoes a {
@@ -771,6 +772,11 @@ img.destaque:hover {
   object-fit: cover;
   padding: 0em;
   border-radius: 3em;
+  cursor: pointer;
+}
+
+.icone:hover {
+  opacity: 0.5;
 }
 
 .funcoes_img{

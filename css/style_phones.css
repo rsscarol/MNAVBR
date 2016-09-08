@@ -342,6 +342,13 @@ h3 {
     font-weight: 100;
 }
 
+h3.observacao{
+  font-size: 1.7em;
+  line-height: 1.4;
+  text-align: right;
+  padding-right: 10%;
+  white-space: pre-wrap;
+}
 
 h3.flip {
     font-family: 'Lora', serif;
@@ -519,6 +526,7 @@ article.post-container-funcao {
 .funcoes li {
     font-family: 'Lora', serif;
     font-size: 3em;
+    color: #4d004d;
     padding: 0.5em 0em 0em 1em;
 }
 
@@ -817,7 +825,13 @@ img.destaque:hover {
   margin-left: 2em;
   margin-right: 1em;
   border-radius: 10em;
+  cursor: pointer;
 }
+
+.icone:hover {
+  opacity: 0.5;
+}
+
 
 .funcoes_img{
   display: flex;
