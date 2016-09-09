@@ -483,12 +483,10 @@ article.post-container-funcao {
         /* Lista por Função em 2 COLUNAS*/
 
 section.inner-left-right {
-    width: 100%;
-    background-color: #f5f4f4;
-    position: relative;
-    display: inline-flex;
-    padding-bottom: 4em;
-
+  width: 100%;
+  background-color: #f5f4f4;
+  position: relative;
+  display: inline-flex;
 }
 
 

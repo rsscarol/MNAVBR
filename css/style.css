@@ -256,6 +256,8 @@ h2.funcoes_macro {
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
+    display: block;
+    page-break-before: always;
 }
 
 .none{
@@ -269,6 +271,7 @@ h2.nomes_macro {
     color: #4d004d;
     margin: 0;
     line-height: 1.4;
+    page-break-after: always;
 }
 
 h2.logo_header{
@@ -489,8 +492,8 @@ section.inner-left-right {
     width: 100%;
     background-color: #f5f4f4;
     position: relative;
-    display: inline-flex;
     padding-bottom: 4em;
+    display: inline-flex;
 }
 
 
