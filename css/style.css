@@ -373,7 +373,22 @@ h3.link_nomes {
     font-family: 'Merriweather', serif;
     font-size: 0.8em;
     text-align: left;
-    padding: 0em 0em 1em 1em;
+    padding: 0em 1em 1em 1em;
+    box-sizing:content-box;
+    width:20em;
+    overflow:scroll;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+h3.link_nomes:hover{
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
+  text-align: left;
+  padding: 0em 0em 1em 1em;
+  width:20em;
+  overflow:visible;
+  white-space:normal;
 }
 
 h3.video-mostra {
@@ -785,8 +800,8 @@ img.destaque:hover {
 }
 
 .funcoes_img{
-  display: flex;
-  align-items: center;
+  display:inline-flex;
+  align-items: flex-start;
   padding: 0em;
 }
 
@@ -898,3 +913,5 @@ h1.load{
   color: rgba(74, 0, 74, 1);
   margin: 0;
 }
+
+/* FIM CARREGADOR */
