@@ -375,10 +375,10 @@ h3.link_nomes {
     text-align: left;
     padding: 0em 1em 1em 1em;
     box-sizing:content-box;
-    width:20em;
+    width:22em;
     overflow:scroll;
     text-overflow:ellipsis;
-    white-space: nowrap;
+    white-space:nowrap;
 }
 
 h3.link_nomes:hover{
@@ -386,9 +386,9 @@ h3.link_nomes:hover{
   font-size: 0.8em;
   text-align: left;
   padding: 0em 0em 1em 1em;
-  width:20em;
+  width:24em;
   overflow:visible;
-  white-space:normal;
+  white-space: normal;
 }
 
 h3.video-mostra {
