@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mulheres Negras no Audiovisual Brasileiro</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_phones.css"  media="(max-device-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../.js/flip_paineis1.js"></script>
+    <script src="../.js/loading.js"></script>
+    <script src="../.js/checkbox.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+  <input type="checkbox" id="control-nav" class="menu"/>
+  <label for="control-nav" class="control-nav"></label>
+  <label for="control-nav" class="control-nav-close"></label>
+
+
+    <nav>
+      <ul class="main">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../apresentacao.html">Apresentação</a></li>
+        <li><a href="../buscar.html" class="active">Buscar</a>
+          <ul class="submenu">
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
+          </ul>
+          <ul class="submenu_responsivo">
+            <li><a href="../nome.html">por NOME</a></li>
+            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
+          </ul>
+        <li><a href="../formulario.html">Inscreva-se</a></li>
+        <li><a href="../referencias.html">Referências</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+        <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
+      </ul>
+    </nav>
+  </header>
+
+    <article class="post-container-boxes">
+        <h1 class="paginas"><a href="../funcao.html">Funções</a> / Crítica </h1>
+
+        <h3 class="observacao">As informações de cada perfil são de
+          responsabilidade das profissionais. </h3>
+
+        <!-- CHECKBOX ESTADOS-->
+
+        <div class="checkbox" id="content1" style="display: none">
+          <h3 class="checkbox">
+          Você quer conhecer profissionais de quais estados?<br>
+
+          <input type="checkbox" checked id="chk4" value="sp" />
+          <label for="chk4">SP</label>
+
+          &nbsp;&nbsp;&nbsp;<input type="checkbox" checked id="select_all"/>Marcar/Desmarcar todos</li>
+        </h3>
+        </div>
+
+      <script>
+
+        $('input:checkbox').on('change', function (event) {
+            if ($(this).is(':checked')) {
+                $('.' + $(this).val()).show();
+            } else {
+                $('.' + $(this).val()).hide();
+            }
+        });
+
+        //# sourceURL=pen.js
+      </script>
+
+      <!-- CARREGADOR -->
+
+              <div id="loading">
+                <div class="loader"></div>
+                <h1 class="load"> CARREGANDO ... </h1>
+              </div>
+
+      <!-- BOXES -->
+
+        <section class="box-container" id="content" style="display: none">
+
+
+              <!-- NOVO BOX-->
+
+                <section class="result sp" id="flip_lucianagoncalves">
+                  <h3 class="flip" id="lucianagoncalves"><a href="javascript:" onClick="profissional('lucianagoncalves')"><img src="../img/fotos/foto_lucianagoncalves.jpg" class="icone_funcoes">Luciana Gonçalves (SP)</a></h3>
+                </section>
+
+                  <section class="painel" id="painel_lucianagoncalves" >
+                    <section class="box">
+                      <section class="info">
+                        <div class="fechar">
+                          <h3 class="link"><a href="javascript:" onClick="profissional_fechar('lucianagoncalves')" >FECHAR </a></h3>
+                        </div>
+                          <section class="box-nome">
+                              <h1 class="nome">Luciana Gonçalves</h1>
+                          </section>
+                          <section class="box-cidade">
+                              <h4 class="cidade">36 anos | São Paulo (SP)</h4>
+                          </section>
+                          <section class="box-email">
+                              <h3 class="link"><a href="mailto:lucianagoncalveslg@yahoo.com.br?subject=Contato%20com%20Luciana">lucianagoncalveslg@yahoo.com.br</a></h3>
+                          </section>
+                          <section class="box-apresentacao">
+                              <p class="apresentacao"> Estou me graduando em letras, escrevo textos de assuntos diversos. Estou sempre presente em eventos culturais. Feminista, Africanista e independente. Possuo comunicação eficiente oral e escrita. </p>
+                          </section>
+                          <section class="box-site">
+                              <h3 class="link"><a href="https://www.linkedin.com/pulse/recursos-humanos-luciana-gon%C3%A7alves?trk=pulse_spock-articles" target="_blank"> https://www.linkedin.com/pulse/recursos-humanos-luciana-gon%C3%A7alves?trk=pulse_spock-articles</a> | <a href="https://br.linkedin.com/in/lucianagoncalveslg" target="_blank"> https://br.linkedin.com/in/lucianagoncalveslg</a> </h3>
+                          </section>
+                          <section class="box-outras-funcoes">
+                              <h3 class="link">Outras atividades de Luciana Gonçalves<br>
+                                <a href="atuacao.html#lucianagoncalves">Atuação</a> |
+                                <a href="critica.html#lucianagoncalves">Crítica</a> |
+                                <a href="dublagem.html#lucianagoncalves">Dublagem</a>
+                          </section>
+                      </section>
+
+                      <section class="photo">
+                         <div class="photo_paisagem">
+                           <a tabindex="1">
+                             <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+
+                             <img class="photo_paisagem" src="../img/fotos/foto_lucianagoncalves.jpg" alt="Foto de Luciana Gonçalves"></a>
+                           <span class="close"></span>
+                         </div>
+
+                         <!-- Para inserir video e label
+                         <iframe class="video" src="#" frameborder="0" allowfullscreen></iframe>
+                         <section class="video-mostra">
+                              <h3 class="video-mostra">Amostra de vídeo</h3> --->
+                       </section>
+                     </section>
+                   </section>
+                <!-- FIM BOX -->
+
+
+
+        </section>
+    </article>
+    <!--FOOTER-->
+        <div class="footer">
+          <h3 class="license"> MULHERES NEGRAS do Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+          <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+          Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
+</body>
+
+</html>
