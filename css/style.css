@@ -223,7 +223,7 @@ h1.paginas a:hover {
     font-weight: lighter;
 }
 h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.1em;
     padding: 0em 4.4em 2em 4.4em;
     color: #4d004d;
@@ -295,7 +295,7 @@ h3.observacao{
 }
 
 h3.flip {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1em;
     text-align: left;
     padding: 0em 0em 0em 5em;
@@ -327,12 +327,11 @@ h3.flip {
 }
 
 h3.link {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1em;
     color: rgba(77, 0, 77, 0.6);
     text-align: right;
     padding: 0em;
-    font-weight: 100;
 }
 
 h3.link_referencia {
@@ -398,8 +397,8 @@ h3.video-mostra {
     white-space: nowrap;
 }
 h4.cidade {
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
     color: #4d004d;
     font-weight: normal;
     text-align: right;
@@ -410,7 +409,7 @@ p {
     font-size: 0.8em;
     color: #330033;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.8;
     font-weight: 100;
     word-wrap: normal;
 }
@@ -419,6 +418,7 @@ p.textos {
   padding: 2em 6em;
   text-align: left;
   -moz-column-count: 3;
+  clear: both;
   -webkit-column-count: 3;
   -moz-column-gap: 3em;
   -webkit-column-gap: 3em;
@@ -440,7 +440,7 @@ p.textos a:hover {
 }
 
 p.apresentacao {
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #4d004d;
     text-align: justify;
     line-height: 1.6;
@@ -483,7 +483,7 @@ article.post-container-funcao {
 }
 
 .funcoes li {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 0.9em;
     color: #4d004d;
     padding: 0.5em 0em 0em 0.5em;
@@ -849,6 +849,7 @@ ul.buscar_grade{
 /* CHECKBOX */
 
 h3.checkbox{
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
   text-align: left;
   padding: 0em 5em;
@@ -868,7 +869,7 @@ background: transparent;
 }
 
 h3.license{
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   color: #bfb9b6;
 }
