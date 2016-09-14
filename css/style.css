@@ -374,7 +374,7 @@ h3.link_nomes {
     text-align: left;
     padding: 0em 1em 1em 1em;
     box-sizing:content-box;
-    width:22em;
+    width:24em;
     overflow:scroll;
     text-overflow:ellipsis;
     white-space:nowrap;
@@ -385,7 +385,7 @@ h3.link_nomes:hover{
   font-size: 0.8em;
   text-align: left;
   padding: 0em 0em 1em 1em;
-  width:24em;
+  width:26em;
   overflow:visible;
   white-space: normal;
 }
