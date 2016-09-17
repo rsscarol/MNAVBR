@@ -922,13 +922,13 @@ ul.buscar_grade{
   height: 7em;
   object-fit: cover;
   padding: 0;
-  margin: -0.2em;
+  margin: -0.13em;
+  font-size: 1em;
 }
 
 .buscar_grade img:hover{
   opacity: 0.6;
   background-color: #e863a5;
-  margin: -0.2em;
 }
 
 
