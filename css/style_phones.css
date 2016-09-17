@@ -149,7 +149,7 @@ input.menu{
 
 .main li {
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: 16px;
     display: block;
     padding: 1.5em 2em;
     text-align:left;
@@ -207,6 +207,10 @@ input.menu{
 /* FIM do MENU DE NAVEGACAO RESPONSIVO */
 
 li.logo_header_position {
+  display: none;
+}
+
+li.busca {
   display: none;
 }
 
@@ -434,7 +438,9 @@ h3.link_nomes {
     font-family: 'Merriweather', serif;
     font-size: 2.5em;
     text-align: left;
-    padding: 0em 0em 1em 1em;
+    padding: 1em;
+    white-space:pre-line;
+    box-sizing:border-box;
 }
 
 h3.video-mostra {
@@ -528,6 +534,7 @@ article.post-container-funcao {
     font-size: 3em;
     color: #4d004d;
     padding: 0.5em 0em 0em 1em;
+
 }
 
 #autora{
@@ -811,6 +818,16 @@ img.destaque:hover {
 
 .destaque1, .destaque2, .destaque3 {
   width: 95%;
+}
+
+div.referencias_video{
+  display: block;
+}
+
+iframe.video_referencia{
+    border-radius: 0em;
+    width:100%;
+    height:25em;
 }
 
 

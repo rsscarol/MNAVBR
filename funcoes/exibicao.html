@@ -44,6 +44,14 @@
         <li><a href="../formulario.html">Inscreva-se</a></li>
         <li><a href="../referencias.html">Referências</a></li>
         <li><a href="../contato.html">Contato</a></li>
+
+        <li class="busca">
+          <FORM method=GET action=http://www.google.com/search target="_blank">
+          <input type=hidden name=sitesearch value=mulheresnegrasavbr.com>
+          <input type=text name=q size=20>
+          <input type=submit value=Procurar>
+        </li>
+
         <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
       </ul>
     </nav>
@@ -60,6 +68,9 @@
         <div class="checkbox" id="content1" style="display: none">
           <h3 class="checkbox">
           Você quer conhecer profissionais de quais estados?<br>
+          <input type="checkbox" checked id="chk1" value="al" onclick="change()">
+          <label for="chk1">AL</label>
+
           <input type="checkbox" checked id="chk2" value="am" onclick="change()">
           <label for="chk2">AM</label>
 
@@ -68,6 +79,9 @@
 
           <input type="checkbox" checked id="chk1" value="pe" />
           <label for="chk1">PE</label>
+
+          <input type="checkbox" checked id="chk1" value="sp" />
+          <label for="chk1">SP</label>
 
           &nbsp;&nbsp;&nbsp;<input type="checkbox" checked id="select_all"/>Marcar/Desmarcar todos</li>
         </h3>
@@ -95,6 +109,123 @@
 
       <!-- BOXES -->
         <section class="box-container" id="content" style="display: none">
+
+
+          <!-- NOVO BOX -->
+            <section class="result al"  id="flip_amandaduarte">
+              <h3 class="flip" id="amandaduarte"><a href="javascript:" onClick="profissional('amandaduarte')"><img src="../img/fotos/foto_amandaduarte.jpg" class="icone_funcoes">Amanda Duarte (AL)</a></h3>
+            </section>
+
+              <section class="painel" id="painel_amandaduarte">
+                <section class="box">
+                  <section class="info">
+                    <div class="fechar">
+                      <h3 class="link"><a href="javascript:" onClick="profissional_fechar('amandaduarte')" >FECHAR </a></h3>
+                    </div>
+                      <section class="box-nome">
+                          <h1 class="nome">Amanda Duarte</h1>
+                      </section>
+                      <section class="box-cidade">
+                          <h4 class="cidade">Maceió (AL)</h4>
+                      </section>
+                      <section class="box-email">
+                          <h3 class="link"><a href="mailto:amandad.mov@gmail.com?subject=Contato%20com%20Amanda">amandad.mov@gmail.com</a></h3>
+                      </section>
+                      <section class="box-apresentacao">
+                          <p class="apresentacao"> Comunicadora social com habilitação em Jornalismo, graduada pela Universidade Federal de Alagoas. Começou a se aproximar do Cinema e do Audiovisual em 2012 e, desde então, tem atuado nas áreas de produção, difusão e formação. É feminista, idealista social e militante cultural.  </p>
+                      </section>
+                      <section class="box-site">
+                          <h3 class="link"><a href="http://amandaduarte.jor.br" target="_blank"> http://amandaduarte.jor.br</a></h3>
+                      </section>
+                      <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Amanda Duarte<br>
+                          <a href="assistproducao.html#amandaduarte">Assistência de Produção </a> |
+                          <a href="direcao.html#amandaduarte">Direção</a> |
+                          <a href="oficinas.html#amandaduarte">Oficinas e cursos livres</a> |
+                          <a href="programacao.html#amandaduarte">Programação e curadoria</a> |
+                          <a href="roteiro.html#amandaduarte">Roteiro </a>
+                      </section>
+                </section>
+
+                <section class="photo">
+                    <div class="photo_paisagem">
+                      <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                        <img class="photo_paisagem" src="../img/fotos/foto_amandaduarte.jpg" alt="Foto de Amanda Duarte"></a>
+                      <span class="close"></span>
+                    </div>
+
+                    <iframe class="video" src="https://www.youtube.com/embed/YKaNSHQZgrc" frameborder="0" allowfullscreen></iframe>
+                    <section class="video-mostra">
+                        <h3 class="video-mostra">Amostra de vídeo</h3>
+                    </section>
+                </section>
+              </section>
+            </section>
+          <!-- FIM BOX -->
+
+
+
+          <!-- NOVO BOX -->
+          <section class="result sp"  id="flip_amandalopes">
+            <h3 class="flip" id="amandalopes"> <a href="javascript:" onClick="profissional('amandalopes')"><img src="../img/fotos/foto_amandalopes.jpg" class="icone_funcoes">Amanda Lopes (SP)</a></h3>
+          </section>
+
+            <section class="painel" id="painel_amandalopes">
+              <section class="box">
+                <section class="info">
+                  <div class="fechar">
+                    <h3 class="link"><a href="javascript:" onClick="profissional_fechar('amandalopes')" >FECHAR </a></h3>
+                  </div>
+                    <section class="box-nome">
+                        <h1 class="nome">Amanda Lopes</h1>
+                    </section>
+                    <section class="box-cidade">
+                        <h4 class="cidade">34 anos | São Paulo (SP)</h4>
+                    </section>
+                    <section class="box-email">
+                        <h3 class="link"><a href="mailto:amanda_lopes0@hotmail.com?subject=Contato%20com%20Amanda">amanda_lopes0@hotmail.com</a></h3>
+                    </section>
+                    <section class="box-apresentacao">
+                        <p class="apresentacao"> Formada em Administração de Empresas e professora de matemática. Atuei por 10 anos na área de Recursos Humanos. Graduanda do último ano em Comunicação Social com ênfase em Cinema. Persistente, bastante curiosa e proativa. Me sinto uma eterna aluna. Crio histórias há 20 anos, porém somente nos últimos 4 anos encarei o cinema e pude participar de mais de 25 curtas metragens. FIES, zero recursos, muita fé e alguns amigos, arrisquei nos meus projetos próprios. Empreendedora atualmente desenvolvo a plataforma Mulheres Audiovisual voltada para distribuição de filmes feitos por mulher e vagas direcionadas a esse público. </p>
+                    </section>
+                    <section class="box-site">
+
+                        <h3 class="link"><a href="http://amandalopesfilmes.wixsite.com/portfolio" target="_blank">http://amandalopesfilmes.wixsite.com/portfolio </a> </h3>
+                    </section>
+
+                    <section class="box-outras-funcoes">
+                        <h3 class="link">Outras atividades de Amanda Lopes<br>
+                          <a href="assistdirecao.html#amandalopes">Assistência de Direção</a> |
+                          <a href="captacao.html#amandalopes">Captação de Recursos</a> |
+                          <a href="coordenaprojeto.html#amandalopes">Coordenação de Projeto</a> |
+                          <a href="direcao.html#amandalopes">Direção</a> |
+                          <a href="edicao.html#amandalopes">Edição</a> |
+                          <a href="oficinas.html#amandalopes">Oficinas e cursos livres </a> |
+                          <a href="producao.html#amandalopes">Produção</a> |
+                          <a href="programacao.html#amandalopes">Programação e curadoria</a> |
+                          <a href="roteiro.html#amandalopes">Roteiro</a>
+
+                          </h3>
+                    </section>
+                </section>
+
+                  <section class="photo">
+                      <div class="photo_paisagem">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_paisagem" src="../img/fotos/foto_amandalopes.jpg" alt="Foto de Amanda Lopes" id="esq"></a>
+                        <span class="close"></span>
+                      </div>
+
+                      <iframe class="video" src="https://www.youtube.com/embed/mrg8pMp7_Jg" frameborder="0" allowfullscreen></iframe>
+                      <section class="video-mostra">
+                          <h3 class="video-mostra">Amostra de vídeo</h3>
+                      </section>
+                  </section>
+                </section>
+              </section>
+            <!-- FIM BOX -->
 
 
 
@@ -281,7 +412,7 @@
     </article>
     <!--FOOTER-->
       <div class="footer">
-        <h3 class="license"> MULHERES NEGRAS do Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+        <h3 class="license"> MULHERES NEGRAS no Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
         <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
         Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
   </body>

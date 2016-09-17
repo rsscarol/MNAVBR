@@ -141,9 +141,11 @@ header {
 }
 
 li.logo_header_position {
-  float: right;
-  margin-top: -0.2em;
-  border-left: 0.1em solid #bbb;
+  display: none;
+}
+
+li.busca {
+  display: none;
 }
 
 input.menu{
@@ -371,7 +373,11 @@ h3.link_nomes {
     font-size: 0.8em;
     text-align: left;
     padding: 0em 0em 1em 1em;
+    white-space:pre-line;
+    box-sizing:border-box;
 }
+
+
 
 h3.video-mostra {
     color: #e863a5;
@@ -480,30 +486,28 @@ article.post-container-funcao {
     text-decoration: underline;
 }
 
-        /* Lista por Função em 2 COLUNAS*/
+/* Lista por Função em 2 COLUNAS*/
 
 section.inner-left-right {
   width: 100%;
   background-color: #f5f4f4;
   position: relative;
-  display: inline-flex;
+  display: block;
+  padding-bottom: 5em;
 }
-
 
 /*DUAS COLUNAS NAO-FLEX*/
 .inner-left, .inner-right {
-    width: 50%;
-    background-color: #f5f4f4;
-    display: block;
-    text-align: left;
+  width: 100%;
+  display: block;
 }
 
 section.inner-left {
-    left: 0%;
+  left: 0%;
 }
 
 section.inner-right {
-    right: 0%;
+  right: 0%;
 }
 
 /* BOXES*/
