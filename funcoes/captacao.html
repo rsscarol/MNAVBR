@@ -11,50 +11,66 @@
     <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="../.js/flip_paineis1.js"></script>
-    <script src="../.js/loading.js"></script>
-    <script src="../.js/checkbox.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+
 
 
 </head>
 
 <body>
 
-  <header>
+  <header id="main-header">
+    <a href="#">
+      <img src="../img/logo.png" alt="Mulheres Negras no Audiovisual Brasileiro" id="logo">
+    </a>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
 
-  <input type="checkbox" id="control-nav" class="menu"/>
-  <label for="control-nav" class="control-nav"></label>
-  <label for="control-nav" class="control-nav-close"></label>
-
-
-    <nav>
-      <ul class="main">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="../apresentacao.html">Apresentação</a></li>
-        <li><a href="../buscar.html" class="active">Buscar</a>
-          <ul class="submenu">
-            <li><a href="../nome.html">por NOME</a></li>
-            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
-          </ul>
-          <ul class="submenu_responsivo">
-            <li><a href="../nome.html">por NOME</a></li>
-            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
-          </ul>
-        <li><a href="../formulario.html">Inscreva-se</a></li>
-        <li><a href="../referencias.html">Referências</a></li>
-        <li><a href="../contato.html">Contato</a></li>
-
+      <ul>
+        <li>
+          <a href="../index.html">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="../apresentacao.html"  >
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="../buscar.html" class="active">
+            Buscar profissionais
+          </a>
+        </li>
+        <li>
+          <a href="../formulario.html">
+            Inscreva-se
+          </a>
+        </li>
+        <li>
+          <a href="../referencias.html">
+            Referências
+          </a>
+        </li>
+        <li>
+          <a href="../contato.html">
+            Contato
+          </a>
+        </li>
         <li class="busca">
           <FORM method=GET action=http://www.google.com/search target="_blank">
           <input type=hidden name=sitesearch value=mulheresnegrasavbr.com>
-          <input type=text name=q size=20>
-          <input type=submit value=Procurar>
+          <input type=text name=q size=20 class="campo_busca"><input type="image" src="../img/busca.png" class="busca">
         </li>
-
-        <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
       </ul>
     </nav>
+    <div id="menu-overlay"></div>
   </header>
 
     <article class="post-container-boxes">
@@ -623,6 +639,13 @@
           <h3 class="license"> MULHERES NEGRAS no Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
           <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
           Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
+
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="../.js/flip_paineis1.js"></script>
+          <script src="../.js/loading.js"></script>
+          <script src="../.js/checkbox.js"></script>
+          <script src="../.js/header.js"></script>
+
 </body>
 
 </html>

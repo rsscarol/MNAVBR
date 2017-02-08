@@ -11,50 +11,71 @@
     <link rel="stylesheet" href="../css/style_telaspequenas.css"  media="(max-device-width:768px) and (orientation:landscape)">
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="css/header.css">
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../.js/flip_paineis1.js"></script>
     <script src="../.js/loading.js"></script>
     <script src="../.js/checkbox.js"></script>
+    <script src="../.js/header.js"></script>
 
 
 </head>
 
 <body>
 
-  <header>
+  <header id="main-header">
+    <a href="#">
+      <img src="../img/logo.png" alt="Mulheres Negras no Audiovisual Brasileiro" id="logo">
+    </a>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
 
-  <input type="checkbox" id="control-nav" class="menu"/>
-  <label for="control-nav" class="control-nav"></label>
-  <label for="control-nav" class="control-nav-close"></label>
-
-
-    <nav>
-      <ul class="main">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="../apresentacao.html">Apresentação</a></li>
-        <li><a href="../buscar.html" class="active">Buscar</a>
-          <ul class="submenu">
-            <li><a href="../nome.html">por NOME</a></li>
-            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
-          </ul>
-          <ul class="submenu_responsivo">
-            <li><a href="../nome.html">por NOME</a></li>
-            <li><a href="../funcao.html">pela FUNÇÃO</a></li>
-          </ul>
-        <li><a href="../formulario.html">Inscreva-se</a></li>
-        <li><a href="../referencias.html">Referências</a></li>
-        <li><a href="../contato.html">Contato</a></li>
-
+      <ul>
+        <li>
+          <a href="../index.html">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="../apresentacao.html"  >
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="../buscar.html" class="active">
+            Buscar profissionais
+          </a>
+        </li>
+        <li>
+          <a href="../formulario.html">
+            Inscreva-se
+          </a>
+        </li>
+        <li>
+          <a href="../referencias.html">
+            Referências
+          </a>
+        </li>
+        <li>
+          <a href="../contato.html">
+            Contato
+          </a>
+        </li>
         <li class="busca">
           <FORM method=GET action=http://www.google.com/search target="_blank">
           <input type=hidden name=sitesearch value=mulheresnegrasavbr.com>
-          <input type=text name=q size=20>
-          <input type=submit value=Procurar>
+          <input type=text name=q size=20 class="campo_busca"><input type="image" src="../img/busca.png" class="busca">
         </li>
-
-        <li class="logo_header_position"><h2 class="logo_header"> MNavbr</h2></li>
       </ul>
     </nav>
+    <div id="menu-overlay"></div>
   </header>
 
     <article class="post-container-boxes">
@@ -330,60 +351,6 @@
                         </section>
                       </section>
                     </section>
-                  </div>
-                  <!-- FIM BOX -->
-
-
-
-              <!-- NOVO BOX-->
-              <div class="result pe">
-                <section id="flip_dandarademorais" >
-                  <h3 class="flip" id="dandarademorais"><a href="javascript:" onClick="profissional('dandarademorais')"><img src="../img/fotos/foto_dandarademorais.jpg" class="icone_funcoes">Dandara de Morais (PE)</a></h3>
-                </section>
-
-                  <section class="painel" id="painel_dandarademorais">
-                    <section class="box">
-                      <section class="info">
-                        <div class="fechar">
-                          <h3 class="link"><a href="javascript:" onClick="profissional_fechar('dandarademorais')" >FECHAR </a></h3>
-                        </div>
-                          <section class="box-nome">
-                              <h1 class="nome">Dandara de Morais</h1>
-                          </section>
-                          <section class="box-cidade">
-                              <h4 class="cidade">26 anos | Recife (PE)</h4>
-                          </section>
-                          <section class="box-email">
-                              <h3 class="link"><a href="mailto:dandarademorais@gmail.com?subject=Contato%20com%20Dandara">dandarademorais@gmail.com</a></h3>
-                          </section>
-                          <section class="box-apresentacao">
-                              <p class="apresentacao"> Atriz premiada pela sua performance em Ventos de Agosto (2014) - Gabriel Mascaro. Atualmente prepara-se para protagonizar uma série de TV e mais um longa metragem. Seu último longa, Açúcar, está em finalização e será lançado em breve.</p>
-                          </section>
-                          <section class="box-site">
-                              <h3 class="link"><a href="http://dandarademorais.tumblr.com/" target="_blank"> http://dandarademorais.tumblr.com/ </a></h3>
-                          </section>
-                          <section class="box-outras-funcoes">
-                            <!-- PARA INSERIR OUTRAS FUNCOES <h3 class="link">Outras atividades de Dandara de Morais<br>
-                              <a href=#></a> |
-                              </h3> -->
-                          </section>
-                      </section>
-
-                      <section class="photo">
-                          <div class="photo_retrato">
-                            <a tabindex="1">
-                              <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
-                              <img class="photo_retrato" src="../img/fotos/foto_dandarademorais.jpg" alt="Foto de Cíntia Lima"></a>
-                            <span class="close"></span>
-                          </div>
-
-                          <iframe class="video" src="https://player.vimeo.com/video/108611441" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
-                          <section class="video-mostra">
-                              <h3 class="video-mostra">Amostra de vídeo </h3>
-                          </section>
-                      </section>
-                    </section>
-                  </section>
                   </div>
                   <!-- FIM BOX -->
 
@@ -1315,6 +1282,13 @@ Conheça minha trajetória artística em meu site. </p>
           <h3 class="license"> MULHERES NEGRAS no Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
           <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
           Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
+
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          <script src="../.js/flip_paineis1.js"></script>
+          <script src="../.js/loading.js"></script>
+          <script src="../.js/checkbox.js"></script>
+          <script src="../.js/header.js"></script>
+
 </body>
 
 </html>

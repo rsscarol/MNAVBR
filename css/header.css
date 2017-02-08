@@ -1,0 +1,199 @@
+/**
+ * Main header styles.
+ * Contains all styles for both the large and small versions of the header.
+ */
+
+/**
+ * Styles shared by small and large
+ */
+
+#logo {
+  display: block;
+  height: 25px;
+}
+
+#main-header {
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* header's height should match main-content's padding-top */
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+  background-color: rgba(252, 252, 252, 0.95);
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#main-nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 4px;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: #4d004d;
+  background-color: #e0e0e0;
+
+  height: 30px;
+}
+
+#main-nav a.active {
+  font-size: 1em;
+  color: #757575;
+}
+
+/**
+ * Styles used only by large devices
+ */
+@media (min-width: 501px) {
+  #main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #main-nav ul li {
+    margin-right: 20px;
+  }
+
+  #main-nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  #main-nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /**
+   * Hide small-device-only elements
+   */
+  #menu-trigger {
+    display: none;
+  }
+
+  #menu-overlay {
+    display: none;
+  }
+}
+
+/**
+ * Styles used only by small devices
+ * 500px is an appropriate breakpoint for this project,
+ * it may vary acording to interactions and usability
+ */
+@media (max-width: 500px) {
+  #main-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /**
+   * When in small device, the main-nav is positioned fixed -
+   * always relative to the window - at left: 100vw (100% viewport width).
+   * That means that the left edge of the main-nav box is aligned to
+   * the right edge of the window.
+   */
+  #main-nav {
+    background-color: #e0e0e0;
+
+    height: 100vh;
+    width: 60vw;
+
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 100vw;
+
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+
+    transition: transform .3s ease;
+  }
+
+  #main-nav a {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  /**
+   * The menu trigger is a button element
+   * with a background-image that has 2 images:
+   *  - the menu icon
+   *  - the close icon
+   *
+   * In order to change the image, we use the background-position
+   * property.
+   * This is known as 'CSS sprites'.
+   * Learn more at: https://css-tricks.com/css-sprites/
+   */
+  #menu-trigger {
+    position: absolute;
+    top: 25px;
+    right: 100%;
+
+    transform: translate(-20px, -50%);
+
+    border: none;
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../img/menu-trigger-images.svg);
+    background-position: 0 bottom;
+    background-color: #e0e0e0;
+  }
+
+  #menu-overlay {
+    display: none;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /**
+   * Modify the menu-trigger's background-position so that
+   * the close icon is displayed instead of the menu icon.
+   */
+  body.menu-open #menu-trigger {
+    background-position: 0 top;
+  }
+
+  /**
+   * Translate the main-nav -100% in the x-axis, so that
+   * the main-nav's box is moved towards left the same amount
+   * as its full width.
+   */
+  body.menu-open #main-nav {
+    transform: translateX(-100%);
+  }
+
+  /**
+   * Make the menu-overlay visible.
+   */
+  body.menu-open #menu-overlay {
+    display: block;
+  }
+}
