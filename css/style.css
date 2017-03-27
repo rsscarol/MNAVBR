@@ -65,6 +65,14 @@ picture img{
   padding: 4em 0em 0em 0em;
 }
 
+.capa1{
+  display: block;
+}
+
+.capa2{
+  display: none;
+}
+
 /* Definições do MENU DE NAVEGACAO */
 
 header {
@@ -154,14 +162,8 @@ input.menu{
   display: none;
 }
 
-.campo_busca {
-  position: relative;
-  top: -0.7em;
-  height: 2.2em;
-}
-
 .busca{
-  height: 20px;
+  height: 2em;
   padding-left: 1em;
 }
 
@@ -681,139 +683,142 @@ article.post-container-boxes {
   display: flex;
 }
 
+
+@media screen and (min-device-width: 630px){
 /* PHOTO ZOOM OUT - PAISAGEM e QUADRADO */
 
-.photo_paisagem a {
-    display: block;
-    position: relative;
+    .photo_paisagem a {
+        display: block;
+        position: relative;
 
-}
-.photo_paisagem a img{
-  display: flex;
-  object-fit: cover;
-  position: relative;
-  height:468px;
-  width: 100%;
-  z-index: 5;
-  transition-property: z-index;
-  transition-duration: 0.5s;
-  border-radius: 1.5em;
-  padding-bottom: 0.5em;
-}
+    }
+    .photo_paisagem a img{
+      display: flex;
+      object-fit: cover;
+      position: relative;
+      height:468px;
+      width: 100%;
+      z-index: 5;
+      transition-property: z-index;
+      transition-duration: 0.5s;
+      border-radius: 1.5em;
+      padding-bottom: 0.5em;
+    }
 
-/* Style of image when zoomed out */
-.photo_paisagem a:focus img {
-    position:absolute;
-    object-fit: cover;
-    right: -5em;
-    top: -1em;
-    width:auto;
-    height: 550px;
-    z-index:20;
-    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
-    transition-property: width, height, z-index;
-    transition-duration: 0.5s;
-    border-radius: 0em;
-    padding-bottom: 0em;
-    border: 0em;
-}
+    /* Style of image when zoomed out */
+    .photo_paisagem a:focus img {
+        position:absolute;
+        object-fit: cover;
+        right: -5em;
+        top: -1em;
+        width:auto;
+        height: 550px;
+        z-index:20;
+        box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
+        transition-property: width, height, z-index;
+        transition-duration: 0.5s;
+        border-radius: 0em;
+        padding-bottom: 0em;
+        border: 0em;
+    }
 
-/* extra close layer */
-.photo_paisagem .close {
-  background:transparent;
-  cursor:crosshair;
-  display:none;
-  height:600px;
-  left:0px;
-  position:relative;
-  top:0px;
-  width:100%;
-  z-index:30;
-}
-.photo_paisagem a:focus ~ .close {
-    display:block;
-}
+    /* extra close layer */
+    .photo_paisagem .close {
+      background:transparent;
+      cursor:crosshair;
+      display:none;
+      height:600px;
+      left:0px;
+      position:relative;
+      top:0px;
+      width:100%;
+      z-index:30;
+    }
+    .photo_paisagem a:focus ~ .close {
+        display:block;
+    }
 
 
-/* PHOTO ZOOM OUT - RETRATO */
-.photo_retrato a {
-    display: block;
-    position: relative;
+    /* PHOTO ZOOM OUT - RETRATO */
+    .photo_retrato a {
+        display: block;
+        position: relative;
 
-}
-.photo_retrato a img{
-  display: flex;
-  object-fit: cover;
-  object-position: 25% 75%;
-  position: relative;
-  height:468px;
-  width: 100%;
-  z-index: 5;
-  transition-property: z-index;
-  transition-duration: 0.5s;
-  border-radius: 1.5em;
-  padding-bottom: 0.5em;
-}
+    }
+    .photo_retrato a img{
+      display: flex;
+      object-fit: cover;
+      object-position: 25% 75%;
+      position: relative;
+      height:468px;
+      width: 100%;
+      z-index: 5;
+      transition-property: z-index;
+      transition-duration: 0.5s;
+      border-radius: 1.5em;
+      padding-bottom: 0.5em;
+    }
 
-/* CORRECAO da POSICAO INTERNA DAS FOTOS */
-#esq {
-  object-position: 80% 20%;
-}
+    /* Style of image when zoomed out */
+    .photo_retrato a:focus img {
+        position:absolute;
+        object-fit: cover;
+        right: -5em;
+        top: -1em;
+        width:auto;
+        height: 600px;
+        z-index:20;
+        box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
+        transition-property: width, height, z-index;
+        transition-duration: 0.5s;
+        border-radius: 0em;
+        padding-bottom: 0em;
+        border: 0em;
+    }
 
-#dir {
-  object-position: 20% 80%;
-}
+    /* extra close layer */
+    .photo_retrato .close {
+      background:transparent;
+      cursor:crosshair;
+      display:none;
+      height:600px;
+      left:0px;
+      position:relative;
+      top:0px;
+      width:100%;
+      z-index:30;
+    }
+    .photo_retrato a:focus ~ .close {
+        display:block;
+    }
 
-/* Style of image when zoomed out */
-.photo_retrato a:focus img {
-    position:absolute;
-    object-fit: cover;
-    right: -5em;
-    top: -1em;
-    width:auto;
-    height: 600px;
-    z-index:20;
-    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.5);
-    transition-property: width, height, z-index;
-    transition-duration: 0.5s;
-    border-radius: 0em;
-    padding-bottom: 0em;
-    border: 0em;
-}
+    /*AVISO ZOOM*/
 
-/* extra close layer */
-.photo_retrato .close {
-  background:transparent;
-  cursor:crosshair;
-  display:none;
-  height:600px;
-  left:0px;
-  position:relative;
-  top:0px;
-  width:100%;
-  z-index:30;
-}
-.photo_retrato a:focus ~ .close {
-    display:block;
-}
+    .zoom_aviso .link{
+      background-color: rgba(13, 17, 32, 0.5);
+      color: rgba(255, 255, 250, 0.8);
+      text-align: center;
+      padding: 0.5em;
+      position: absolute;
+      z-index: 6;
+      top: 85%;
+      right:0;
+      left: 0;
+    }
 
-/*AVISO ZOOM*/
+    .zoom_aviso:hover .link{
+      display: block;
+    }
+  }
 
-.zoom_aviso .link{
-  background-color: rgba(13, 17, 32, 0.5);
-  color: rgba(255, 255, 250, 0.8);
-  text-align: center;
-  padding: 0.5em;
-  position: absolute;
-  z-index: 6;
-  top: 85%;
-  right:0;
-  left: 0;
-}
+  /* CORRECAO da POSICAO INTERNA DAS FOTOS */
+  #esq {
+    object-position: 80% 20%;
+  }
 
-.zoom_aviso:hover .link{
-  display: block;
-}
+  #dir {
+    object-position: 20% 80%;
+  }
 
 /* REFERENCIAS */
 
