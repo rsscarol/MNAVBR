@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta property="og:image" content="http://mulheresnegrasavbr.com/img/logo_mnav_og.jpg"/>
+    <meta property="og:title" content="Mulheres Negras no Audiovisual Brasileiro - Animação"/>
+    <title>Mulheres Negras no Audiovisual Brasileiro - Motion graphics</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_phones.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/header.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header id="main-header">
+
+    <input type="checkbox" id="control-nav" class="menu"/>
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <a href="../index.html">
+      <img src="../img/logo.png" alt="Mulheres Negras no Audiovisual Brasileiro" id="logo">
+    </a>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
+
+      <ul>
+        <li>
+          <a href="../index.html">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="../apresentacao.html"  >
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="../buscar.html" class="active">
+            Buscar profissionais
+          </a>
+        </li>
+        <li>
+          <a href="../formulario.html">
+            Inscreva-se
+          </a>
+        </li>
+        <li>
+          <a href="../referencias.html">
+            Referências
+          </a>
+        </li>
+        <li>
+          <a href="../contato.html">
+            Contato
+          </a>
+        </li>
+
+        <li>
+          <a href="../oficinaeliseo.html">
+            Oficina de Roteiro
+          </a>
+        </li>
+
+        <li class="busca">
+          <FORM method=GET action=http://www.google.com/search target="_blank">
+          <input type=hidden name=sitesearch value=mulheresnegrasavbr.com>
+          <input type=text name=q size=20 class="campo_busca"><input type="image" src="../img/busca.png" class="busca">
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+  </header>
+
+
+    <article class="post-container-boxes">
+        <h1 class="paginas"><a href="../funcao.html">Funções</a> / Motion graphics</h1>
+
+        <h3 class="observacao">As informações de cada perfil são de
+          responsabilidade das profissionais. </h3>
+
+        <!-- CHECKBOX ESTADOS-->
+
+        <div class="checkbox" id="content1" style="display: none">
+          <h3 class="checkbox">
+          Você quer conhecer profissionais de quais estados?<br>
+
+          <input type="checkbox" checked id="chk2" value="sp" onclick="change()">
+          <label for="chk2">SP</label>
+
+          <br><input type="checkbox" checked id="select_all"/>Marcar/Desmarcar todos</li>
+        </h3>
+        </div>
+
+      <script>
+
+        $('input:checkbox').on('change', function (event) {
+            if ($(this).is(':checked')) {
+                $('.' + $(this).val()).show();
+            } else {
+                $('.' + $(this).val()).hide();
+            }
+        });
+
+        //# sourceURL=pen.js
+      </script>
+
+      <!-- CARREGADOR -->
+
+              <div id="loading">
+                <div class="loader"></div>
+                <h1 class="load"> CARREGANDO ... </h1>
+              </div>
+
+      <!-- BOXES -->
+        <section class="box-container" id="content" style="display: none">
+
+
+            <!-- NOVO BOX-->
+            <div class="result sp">
+              <section id="flip_janainadonascimento">
+                <h3 class="flip" id="janainadonascimento"><a href="javascript:" onClick="profissional('janainadonascimento')"><img src="../img/fotos/foto_janainadonascimento.jpg" class="icone_funcoes">Janaina do Nascimento (SP)</a></h3>
+              </section>
+
+                <section class="painel" id="painel_janainadonascimento" >
+                  <section class="box">
+                    <section class="info">
+                      <div class="fechar">
+                        <h3 class="link"><a href="javascript:" onClick="profissional_fechar('janainadonascimento')" >FECHAR </a></h3>
+                      </div>
+                        <section class="box-nome">
+                            <h1 class="nome">Janaina do Nascimento</h1>
+                        </section>
+                        <section class="box-cidade">
+                            <h4 class="cidade">35 anos | São Paulo (SP)</h4>
+                        </section>
+                        <section class="box-email">
+                            <h3 class="link"><a href="mailto:jann.motion@gmail.com?subject=Contato%20com%20Janaina">jann.motion@gmail.com</a></h3>
+                        </section>
+                        <section class="box-apresentacao">
+                            <p class="apresentacao"> Graduada em Comunicação Social - Publicidade e Propaganda, especializando-se em animação pelo Senac. Realizadora audiovisual, atua na área de pós produção (Montagem e Motiongraphics) de curtas, videoclipes e filmes publicitários. </p>
+                        </section>
+                        <section class="box-site">
+                            <h3 class="link"><a href="http:///vimeo.com/jannnascimento" target="_blank">http:///vimeo.com/jannnascimento</a></h3>
+                        </section>
+                        <section class="box-outras-funcoes">
+                            <h3 class="link">Outras atividades de Janaina do Nascimento<br>
+                            <a href="animacao.html#janainadonascimento">Animação</a> |
+                            <a href="correcaocor.html#janainadonascimento">Correção de cor</a> |
+                            <a href="edicao.html#janainadonascimento">Edição</a>
+                        </section>
+                    </section>
+
+                    <section class="photo">
+                        <div class="photo_retrato">
+                          <a tabindex="1">
+                            <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                            <img class="photo_retrato" src="../img/fotos/foto_janainadonascimento.jpg" alt="Foto de Janaina do Nascimento"></a>
+                          <span class="close"></span>
+                        </div>
+
+                        <iframe class="video" src="https://www.youtube.com/embed/V-G7LC6QzTA" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                        <section class="video-mostra">
+                            <h3 class="video-mostra">Amostra de vídeo</h3>
+                        </section>
+                    </section>
+                  </section>
+                </section>
+              </div>
+              <!-- FIM BOX -->
+
+
+
+      </section>
+    </article>
+    <!--FOOTER-->
+      <div class="footer">
+        <h3 class="license"> MULHERES NEGRAS no Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+        <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
+
+
+        <script src="../.js/flip_paineis1.js"></script>
+        <script src="../.js/loading.js"></script>
+        <script src="../.js/checkbox.js"></script>
+        <script src="../.js/header.js"></script>
+
+  </body>
+
+</html>

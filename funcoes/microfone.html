@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta property="og:image" content="http://mulheresnegrasavbr.com/img/logo_mnav_og.jpg"/>
+    <meta property="og:title" content="Mulheres Negras no Audiovisual Brasileiro - Captação de som"/>
+    <title>Mulheres Negras no Audiovisual Brasileiro - Microfone</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_phones.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/header.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <header id="main-header">
+
+
+        <input type="checkbox" id="control-nav" class="menu"/>
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+
+    <a href="../index.html">
+      <img src="../img/logo.png" alt="Mulheres Negras no Audiovisual Brasileiro" id="logo">
+    </a>
+    <nav id="main-nav">
+      <!-- Element used to open and close the side menu -->
+      <button id="menu-trigger" type="button"></button>
+
+      <ul>
+        <li>
+          <a href="../index.html">
+            <!--
+              This item is the currently active one.
+              Your code is responsible for switching the
+              active item's class.
+            -->
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="../apresentacao.html"  >
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="../buscar.html" class="active">
+            Buscar profissionais
+          </a>
+        </li>
+        <li>
+          <a href="../formulario.html">
+            Inscreva-se
+          </a>
+        </li>
+        <li>
+          <a href="../referencias.html">
+            Referências
+          </a>
+        </li>
+        <li>
+          <a href="../contato.html">
+            Contato
+          </a>
+        </li>
+
+        <li>
+          <a href="../oficinaeliseo.html">
+            Oficina de Roteiro
+          </a>
+        </li>
+
+        <li class="busca">
+          <FORM method=GET action=http://www.google.com/search target="_blank">
+          <input type=hidden name=sitesearch value=mulheresnegrasavbr.com>
+          <input type=text name=q size=20 class="campo_busca"><input type="image" src="../img/busca.png" class="busca">
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+  </header>
+
+    <article class="post-container-boxes">
+        <h1 class="paginas"><a href="../funcao.html">Funções</a> / Microfone </h1>
+
+        <h3 class="observacao">As informações de cada perfil são de
+          responsabilidade das profissionais. </h3>
+
+        <!-- CHECKBOX ESTADOS-->
+
+        <div class="checkbox" id="content1" style="display: none">
+          <h3 class="checkbox">
+          Você quer conhecer profissionais de quais estados?<br>
+
+          <input type="checkbox" checked id="chk1" value="sp" />
+          <label for="chk1">SP</label>
+
+          &nbsp;&nbsp;&nbsp;<input type="checkbox" checked id="select_all"/>Marcar/Desmarcar todos</li>
+        </h3>
+        </div>
+
+      <script>
+
+        $('input:checkbox').on('change', function (event) {
+            if ($(this).is(':checked')) {
+                $('.' + $(this).val()).show();
+            } else {
+                $('.' + $(this).val()).hide();
+            }
+        });
+
+        //# sourceURL=pen.js
+      </script>
+
+      <!-- CARREGADOR -->
+
+              <div id="loading">
+                <div class="loader"></div>
+                <h1 class="load"> CARREGANDO ... </h1>
+              </div>
+
+      <!-- BOXES -->
+
+        <section class="box-container" id="content" style="display: none">
+
+
+          <!-- NOVO BOX-->
+          <div class="result sp">
+            <section id="flip_andressaclain">
+              <h3 class="flip" id="andressaclain"><a href="javascript:" onClick="profissional('andressaclain')"><img src="../img/fotos/foto_andressaclain.jpg" class="icone_funcoes">Andressa Clain (SP)</a></h3>
+            </section>
+
+              <section class="painel" id="painel_andressaclain" >
+                <section class="box">
+                  <section class="info">
+                    <div class="fechar">
+                      <h3 class="link"><a href="javascript:" onClick="profissional_fechar('andressaclain')" >FECHAR </a></h3>
+                    </div>
+                      <section class="box-nome">
+                          <h1 class="nome">Andressa Clain</h1>
+                      </section>
+                      <section class="box-cidade">
+                          <h4 class="cidade">26 anos | São Paulo (SP)</h4>
+                      </section>
+                      <section class="box-email">
+                          <h3 class="link"><a href="mailto:andressaclainneves@gmail.com ?subject=Contato%20com%20Andressa">andressaclainneves@gmail.com</a></h3>
+                      </section>
+                      <section class="box-apresentacao">
+                          <p class="apresentacao"> Andressa Clain é formada em "Fundamentos de Áudio e Acústica" pelo Instituto de Áudio e Vídeo - IAV. Atualmente trabalha como microfonista. Tendo feito recentemente o filme "Guigo Offline" (Telefilme para a TV Cultura), o filme "Sobre Rodas", o curta "Vaca Profana", série documental para HBO chamada "Jovens Primeira Liberdade", a série "Vidas Secretas dos Casais" também para o canal HBO, realizou esses e mais outros trabalhos. É técnica de áudio no Projeto Empoderadas. </p>
+                      </section>
+                      <section class="box-site">
+                          <h3 class="link"><a href="http://crisnogue.wixsite.com/crisnogue" target="_blank"> http://crisnogue.wixsite.com/crisnogue</a></h3>
+                      </section>
+                      <section class="box-outras-funcoes">
+                          <h3 class="link">Outras atividades de Andressa Clain<br>
+                            <a href="captacaosom.html#andressaclain">Captação de som</a>
+                      </section>
+                  </section>
+
+                  <section class="photo">
+                      <div class="photo_retrato">
+                        <a tabindex="1">
+                          <div class="zoom_aviso"><h3 class="link">CLIQUE NA IMAGEM PARA ZOOM</h3></div>
+                          <img class="photo_retrato" src="../img/fotos/foto_andressaclain.jpg" alt="Foto de Andressa Clain"></a>
+                        <span class="close"></span>
+                      </div>
+
+                      <iframe class="video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fprogramaempoderadas%2Fvideos%2F1964560967113460%2F&show_text=0&width=560" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen ></iframe>
+                      <section class="video-mostra">
+                          <h3 class="video-mostra">Amostra de vídeo</h3>
+                      </section>
+                  </section>
+                </section>
+              </section>
+            </div>
+            <!-- FIM BOX -->
+
+
+
+      </section>
+    </article>
+    <!--FOOTER-->
+      <div class="footer">
+        <h3 class="license"> MULHERES NEGRAS no Audiovisual Brasileiro<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+        <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Atribuição  4.0 Internacional</a></h3></div>
+
+
+        <script src="../.js/flip_paineis1.js"></script>
+        <script src="../.js/loading.js"></script>
+        <script src="../.js/checkbox.js"></script>
+        <script src="../.js/header.js"></script>
+
+
+</body>
+
+</html>

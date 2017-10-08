@@ -551,6 +551,7 @@ article.post-container-funcao {
 }
 .funcoes a {
     text-decoration: none;
+
 }
 
 .funcoes a:visited {
@@ -706,7 +707,7 @@ article.post-container-boxes {
     }
 
     /* Style of image when zoomed out */
-    .photo_paisagem a:focus img {
+    /* .photo_paisagem a:focus img {
         position:absolute;
         object-fit: cover;
         right: -5em;
@@ -720,10 +721,10 @@ article.post-container-boxes {
         border-radius: 0em;
         padding-bottom: 0em;
         border: 0em;
-    }
+    }*/
 
     /* extra close layer */
-    .photo_paisagem .close {
+    /* .photo_paisagem .close {
       background:transparent;
       cursor:crosshair;
       display:none;
@@ -735,7 +736,7 @@ article.post-container-boxes {
       z-index:30;
     }
     .photo_paisagem a:focus ~ .close {
-        display:block;
+        display:block; */
     }
 
 
@@ -745,6 +746,7 @@ article.post-container-boxes {
         position: relative;
 
     }
+
     .photo_retrato a img{
       display: flex;
       object-fit: cover;
@@ -760,7 +762,7 @@ article.post-container-boxes {
     }
 
     /* Style of image when zoomed out */
-    .photo_retrato a:focus img {
+    /*.photo_retrato a:focus img {
         position:absolute;
         object-fit: cover;
         right: -5em;
@@ -774,10 +776,10 @@ article.post-container-boxes {
         border-radius: 0em;
         padding-bottom: 0em;
         border: 0em;
-    }
+    }*/
 
     /* extra close layer */
-    .photo_retrato .close {
+    /*.photo_retrato .close {
       background:transparent;
       cursor:crosshair;
       display:none;
@@ -790,12 +792,13 @@ article.post-container-boxes {
     }
     .photo_retrato a:focus ~ .close {
         display:block;
-    }
+    }*/
 
     /*AVISO ZOOM*/
 
     .zoom_aviso .link{
-      background-color: rgba(13, 17, 32, 0.5);
+      display:none;
+      /*background-color: rgba(13, 17, 32, 0.5);
       color: rgba(255, 255, 250, 0.8);
       text-align: center;
       padding: 0.5em;
@@ -803,7 +806,7 @@ article.post-container-boxes {
       z-index: 6;
       top: 85%;
       right:0;
-      left: 0;
+      left: 0;*/
     }
 
     .zoom_aviso:hover .link{
@@ -818,6 +821,10 @@ article.post-container-boxes {
 
   #dir {
     object-position: 20% 80%;
+  }
+
+  #center {
+    object-position: 50% 50%;
   }
 
 /* REFERENCIAS */
