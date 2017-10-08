@@ -823,6 +823,14 @@ article.post-container-boxes {
     object-position: 20% 80%;
   }
 
+  #dirmais {
+    object-position: 95% 5%;
+  }
+
+  #esqmais {
+    object-position: 5% 95%;
+  }
+
   #center {
     object-position: 50% 50%;
   }
